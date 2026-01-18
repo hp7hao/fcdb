@@ -60,6 +60,11 @@ jobs:
         # Run pack command pointing to the fcdb directory
         node out/cli.js pack pico8 --data-dir ../fcdb
 
+    - name: Rename Database for Release
+      run: |
+        # Rename db.json to db_pico8.json to avoid collisions with other platforms in the future
+        mv fcdb/dist/pico8/db.json fcdb/dist/pico8/db_pico8.json
+
     - name: Get Date
       id: date
       run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
@@ -71,6 +76,7 @@ jobs:
         name: FCDB Release ${{ steps.date.outputs.date }}
         files: |
           fcdb/releases/fcdb_pico8_*.zip
+          fcdb/dist/pico8/db_pico8.json
         body: |
           Automated release of FCDB PICO-8 database.
           Generated on ${{ steps.date.outputs.date }}.
