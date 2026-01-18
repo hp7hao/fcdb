@@ -1,0 +1,75 @@
+name: Build and Release FCDB
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Run every Sunday at midnight (optional, keeps data fresh)
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout FCDB Data
+      uses: actions/checkout@v3
+      with:
+        path: fcdb
+
+    - name: Checkout FCDB Tool
+      uses: actions/checkout@v3
+      with:
+        repository: hp7hao/fcdbtool
+        path: fcdbtool
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install Tool Dependencies
+      run: |
+        cd fcdbtool
+        npm install
+
+    - name: Build Tool
+      run: |
+        cd fcdbtool
+        npm run build
+
+    - name: Fetch Latest Data (Optional)
+      # Uncomment to enable auto-fetching new games during build
+      # run: |
+      #   cd fcdbtool
+      #   node out/cli.js fetch pico8 bbs release --data-dir ../fcdb
+
+    - name: Build Database
+      run: |
+        cd fcdbtool
+        # Run build command pointing to the fcdb directory
+        node out/cli.js build pico8 --data-dir ../fcdb
+
+    - name: Pack Release
+      run: |
+        cd fcdbtool
+        # Run pack command pointing to the fcdb directory
+        node out/cli.js pack pico8 --data-dir ../fcdb
+
+    - name: Get Date
+      id: date
+      run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v${{ steps.date.outputs.date }}
+        name: FCDB Release ${{ steps.date.outputs.date }}
+        files: |
+          fcdb/releases/fcdb_pico8_*.zip
+        body: |
+          Automated release of FCDB PICO-8 database.
+          Generated on ${{ steps.date.outputs.date }}.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

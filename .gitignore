@@ -1,0 +1,22 @@
+# Temporary build artifacts and cache
+build/
+dist/
+releases/
+
+# Large binaries / Assets
+# User requested to ignore carts and thumbnails for now
+platforms/
+
+# System files
+.DS_Store
+Thumbs.db
+._*
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+
+# Node modules (if any)
+node_modules/
+npm-debug.log
