@@ -23,6 +23,7 @@ jobs:
       with:
         repository: hp7hao/fcdbtool
         path: fcdbtool
+        token: ${{ secrets.FCDBTOOL }}
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
