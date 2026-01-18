@@ -39,11 +39,10 @@ jobs:
         cd fcdbtool
         npm run build
 
-    - name: Fetch Latest Data (Optional)
-      # Uncomment to enable auto-fetching new games during build
-      # run: |
-      #   cd fcdbtool
-      #   node out/cli.js fetch pico8 bbs release --data-dir ../fcdb
+    # - name: Fetch Latest Data (Optional)
+    #   run: |
+    #     cd fcdbtool
+    #     node out/cli.js fetch pico8 bbs release --data-dir ../fcdb
 
     - name: Build Database
       run: |
