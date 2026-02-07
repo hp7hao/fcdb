@@ -60,25 +60,16 @@ jobs:
         # Run pack command pointing to the fcdb directory
         node out/cli.js pack pico8 --data-dir ../fcdb
 
-    - name: Rename Database for Release
-      run: |
-        # Rename db.json to db_pico8.json to avoid collisions with other platforms in the future
-        mv fcdb/dist/pico8/db.json fcdb/dist/pico8/db_pico8.json
-
-    - name: Get Date
-      id: date
-      run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: v${{ steps.date.outputs.date }}
-        name: FCDB Release ${{ steps.date.outputs.date }}
+        tag_name: latest
+        name: Latest FCDB Release
         files: |
-          fcdb/releases/fcdb_pico8_*.zip
-          fcdb/dist/pico8/db_pico8.json
+          fcdb/releases/fcdb_pico8.zip
         body: |
           Automated release of FCDB PICO-8 database.
-          Generated on ${{ steps.date.outputs.date }}.
+          Generated on ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}.
+        make_latest: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
