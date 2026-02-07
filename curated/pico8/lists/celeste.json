@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "name": "Celeste-inspired",
+    "description": "Games inspired by or derived from Celeste.",
+    "order": 20
+  },
+  "filter": {
+    "keyword": "celeste"
+  }
+}

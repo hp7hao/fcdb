@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "name": "picovibe",
+    "description": "一个自定义PICO-8游戏列表，支持振动和中文本地化。振动功能仅支持基于RGB30的定制设备。"
+  }
+}
