@@ -1,7 +1,7 @@
 {
   "meta": {
-    "name": "Celeste-inspired",
-    "description": "Games inspired by or derived from Celeste.",
+    "name": "Celeste Collection",
+    "description": "Celeste Classic and games inspired by or derived from it.",
     "order": 20
   },
   "filter": {

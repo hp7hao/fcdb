@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "name": "BBS Fan Favorites",
+    "description": "Top 100 most liked games on the PICO-8 BBS.",
+    "order": 5
+  },
+  "rank": {
+    "field": "likes",
+    "order": "desc",
+    "limit": 100
+  }
+}
