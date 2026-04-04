@@ -4,8 +4,11 @@ dist/
 releases/
 
 # Large binaries / Assets
-# User requested to ignore carts and thumbnails for now
-platforms/
+# Ignore everything under platforms/ except pyxel thumbs
+/platforms/*
+!/platforms/pyxel/
+/platforms/pyxel/*
+!/platforms/pyxel/thumbs/
 
 # System files
 .DS_Store
