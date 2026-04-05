@@ -18,11 +18,13 @@ fcdb_{platform}.zip
 ├── version.json          # Build date and version info
 ├── db.json               # Master database (all games)
 ├── db.{lang}.json        # Translated metadata (if available)
-├── lists/                # Curated game lists (subsets of db.json)
-│   └── *.json
+├── lists/                # Curated + auto-generated game lists
+│   ├── {name}.json       # List with { meta, games[] }
+│   └── {name}.{lang}.json # List meta translations
+├── carts/                # Non-BBS cartridge files
+│   └── {source}/         # e.g. picovibe/, pyxelpico/
 └── thumbs/               # Thumbnail images
-    ├── custom/            # Manually added thumbnails
-    └── {source}/          # Source-specific thumbnails (e.g. bbs/, examples/)
+    └── {source}/          # e.g. bbs/, picovibe/, examples/
 ```
 
 ## Database Schema
@@ -88,18 +90,35 @@ Each platform release uses a fixed tag (`pico8-latest`, `pyxel-latest`). Use HTT
 
 ```
 fcdb/
-├── sources/{platform}/          # Raw scraped metadata (JSON)
+├── sources/{platform}/              # Raw scraped metadata
+│   ├── {source}.json                # Game data (single-dot basename)
+│   └── {source}.{lang}.json         # Game-level translations (companion files)
 ├── platforms/{platform}/
-│   ├── carts/{source}/          # Game cartridges
-│   └── thumbs/{source}/         # Thumbnail images
+│   ├── carts/{source}/              # Game cartridges
+│   └── thumbs/{source}/             # Thumbnail images
 ├── curated/{platform}/
-│   ├── overrides.json           # Manual metadata overrides
-│   └── lists/                   # Curated game lists
-├── i18n/{lang}/{platform}.json  # Translations by game ID
-├── dist/{platform}/             # Built output (db.json + lists/)
-├── releases/                    # Packaged ZIPs
-└── build/                       # Temp build artifacts (gitignored)
+│   ├── overrides.json               # Manual metadata overrides
+│   └── lists/                       # Curated game lists
+│       ├── {name}.json              # List definition (IDs, filters, or inline games)
+│       └── {name}.{lang}.json       # List meta translations
+├── dist/{platform}/                 # Built output
+│   ├── db.json                      # Master database
+│   ├── db.{lang}.json               # Merged game translations
+│   └── lists/                       # Curated + auto-generated lists
+├── releases/                        # Packaged ZIPs
+└── build/                           # Temp build artifacts (gitignored)
 ```
+
+### Translation (i18n)
+
+Two layers of companion files:
+
+1. **Game-level**: `sources/{platform}/{source}.{lang}.json` — keyed by game ID, merged into `dist/db.{lang}.json` at build time
+2. **List-level**: `curated/{platform}/lists/{name}.{lang}.json` — copied to `dist/lists/` at build time
+
+### Auto-generated Lists
+
+Sources without a hand-curated list in `curated/{platform}/lists/` get an auto-generated list view at build time. BBS sources are excluded (too large for a single list).
 
 ## Maintenance
 
@@ -108,4 +127,4 @@ This repository is maintained by [fcdbtool](https://github.com/hp7hao/fcdbtool).
 ## Data Sources
 
 - **PICO-8**: [Lexaloffle BBS](https://www.lexaloffle.com/bbs/?cat=7)
-- **Pyxel**: [Pyxel User Examples](https://kitao.github.io/pyxel-user-examples/)
+- **Pyxel**: [Pyxel User Examples](https://kitao.github.io/pyxel-user-examples/), [Pyxelpico Games](https://github.com/nicoptere/pyxelpico-games)
