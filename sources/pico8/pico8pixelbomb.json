@@ -9,8 +9,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_splooshdemo.p8.png",
-      "cart_path": "carts/pico8pixelbomb/splooshdemo/splooshdemo.p8.png",
+      "cart_file": "picovibe_splooshdemo.p8mod",
+      "cart_path": "carts/pico8pixelbomb/splooshdemo/splooshdemo.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_splooshdemo.png",
       "tags": ["demo"]
     }
@@ -25,8 +25,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_yxkl.p8.png",
-      "cart_path": "carts/pico8pixelbomb/yxkl/yxkl.p8.png",
+      "cart_file": "picovibe_yxkl.p8mod",
+      "cart_path": "carts/pico8pixelbomb/yxkl/yxkl.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_yxkl.png",
       "tags": ["demo", "festival"]
     }
@@ -41,8 +41,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_i18ndemo.p8.png",
-      "cart_path": "carts/pico8pixelbomb/i18ndemo/i18ndemo.p8.png",
+      "cart_file": "picovibe_i18ndemo.p8mod",
+      "cart_path": "carts/pico8pixelbomb/i18ndemo/i18ndemo.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_i18ndemo.png",
       "tags": ["demo", "i18n"]
     }
@@ -57,8 +57,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_nezhapoems.p8.png",
-      "cart_path": "carts/pico8pixelbomb/nezhapoems/nezhapoems.zhcn.p8.png",
+      "cart_file": "picovibe_nezhapoems.p8mod",
+      "cart_path": "carts/pico8pixelbomb/nezhapoems/nezhapoems.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_nezhapoems.png",
       "tags": ["poetry", "education"]
     }
@@ -74,8 +74,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_bas_mod.p8.png",
-      "cart_path": "carts/pico8pixelbomb/bas-pico8gomod/basmodcn.p8.png",
+      "cart_file": "picovibe_bas_mod.p8mod",
+      "cart_path": "carts/pico8pixelbomb/bas-pico8gomod/basmod.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_bas_mod.png",
       "tags": ["mod", "pico8go", "platformer"]
     }
@@ -91,8 +91,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_celeste_mod.p8.png",
-      "cart_path": "carts/pico8pixelbomb/celeste-pico8gomod/celestemodcn.p8.png",
+      "cart_file": "picovibe_celeste_mod.p8mod",
+      "cart_path": "carts/pico8pixelbomb/celeste-pico8gomod/celestemod.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_celeste_mod.png",
       "tags": ["mod", "pico8go", "platformer"]
     }
@@ -108,8 +108,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_justoneboss_mod.p8.png",
-      "cart_path": "carts/pico8pixelbomb/justoneboss-pico8gomod/justonebossmodcn.p8.png",
+      "cart_file": "picovibe_justoneboss_mod.p8mod",
+      "cart_path": "carts/pico8pixelbomb/justoneboss-pico8gomod/justonebossmod.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_justoneboss_mod.png",
       "tags": ["mod", "pico8go", "action"]
     }
@@ -125,8 +125,8 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_petthecat_mod.p8.png",
-      "cart_path": "carts/pico8pixelbomb/pet-the-cat-pico8gomod/pet-the-cat.p8.png",
+      "cart_file": "picovibe_petthecat_mod.p8mod",
+      "cart_path": "carts/pico8pixelbomb/pet-the-cat-pico8gomod/pet-the-cat.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_petthecat_mod.png",
       "tags": ["mod", "pico8go", "casual"]
     }
