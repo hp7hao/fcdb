@@ -1,7 +1,7 @@
 {
   "meta": {
-    "name": "picovibe",
-    "description": "A test list to demostrate a customized PICO-8 game list with vibration support and Chinese localization. The vibration is only supported on a RGB30-based mod. I call it pico8go.",
+    "name": "pico8pixelbomb",
+    "description": "A custom PICO-8 game list from the pico8pixelbomb QQ group",
     "order": 10
   },
   "games": [

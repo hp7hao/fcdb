@@ -22,9 +22,9 @@ fcdb_{platform}.zip
 │   ├── {name}.json       # List with { meta, games[] }
 │   └── {name}.{lang}.json # List meta translations
 ├── carts/                # Non-BBS cartridge files
-│   └── {source}/         # e.g. picovibe/, pyxelpico/
+│   └── {source}/         # e.g. pico8pixelbomb/, pyxelpico/
 └── thumbs/               # Thumbnail images
-    └── {source}/          # e.g. bbs/, picovibe/, examples/
+    └── {source}/          # e.g. bbs/, pico8pixelbomb/, examples/
 ```
 
 ## Database Schema
