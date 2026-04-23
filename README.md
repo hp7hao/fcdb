@@ -124,6 +124,15 @@ Sources without a hand-curated list in `curated/{platform}/lists/` get an auto-g
 
 This repository is maintained by [fcdbtool](https://github.com/hp7hao/fcdbtool). Releases are built automatically via GitHub Actions when platform data changes.
 
+## Source Update Commands
+
+To refresh Pyxel data in `fcdbtool`, run both commands:
+
+```bash
+node out/cli.js fetch pyxel examples release
+node out/cli.js fetch pyxel pyxelpico release
+```
+
 ## Data Sources
 
 - **PICO-8**: [Lexaloffle BBS](https://www.lexaloffle.com/bbs/?cat=7)
