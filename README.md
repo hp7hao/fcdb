@@ -6,7 +6,7 @@ A curated game database for fantasy console platforms. Each platform is built an
 
 | Platform | Download | Contents |
 |----------|----------|----------|
-| PICO-8 | [fcdb_pico8.zip](https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip) | Game metadata + PNG thumbnails |
+| PICO-8 | [fcdb_pico8.zip](https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip) | Game metadata + thumbnails + permitted non-BBS carts/source artifacts |
 | Pyxel | [fcdb_pyxel.zip](https://github.com/hp7hao/fcdb/releases/download/pyxel-latest/fcdb_pyxel.zip) | Game metadata + GIF thumbnails |
 
 Each ZIP is updated independently — downloading one platform won't pull changes from another.
@@ -23,6 +23,8 @@ fcdb_{platform}.zip
 │   └── {name}.{lang}.json # List meta translations
 ├── carts/                # Non-BBS cartridge files
 │   └── {source}/         # e.g. pico8pixelbomb/, pyxelpico/
+├── sources/              # Optional editable source artifacts
+│   └── {source}/         # e.g. .p8mod files for Pico8IDE
 └── thumbs/               # Thumbnail images
     └── {source}/          # e.g. bbs/, pico8pixelbomb/, examples/
 ```
@@ -69,6 +71,10 @@ fcdb_{platform}.zip
 - `extension.lid` — Lexaloffle BBS lid (cartridge version ID)
 - `extension.cart_url` — Direct URL to .p8.png cartridge
 - `extension.thumb_url` — Direct URL to thumbnail on BBS
+
+**PICO-8** (non-BBS sources):
+- `extension.cart_file` — First-class runtime cart in `carts/{source}/`, preferably `.p8.png`
+- `extension.source_file` — Optional editor source in `sources/{source}/`, either `.p8mod` or `.p8`
 
 **Pyxel** (`source: "examples"`):
 - `extension.number` — Example number from the Pyxel User Examples page
