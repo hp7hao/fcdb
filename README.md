@@ -8,6 +8,7 @@ A curated game database for fantasy console platforms. Each platform is built an
 |----------|----------|----------|
 | PICO-8 | [fcdb_pico8.zip](https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip) | Game metadata + thumbnails + permitted non-BBS carts/source artifacts |
 | Pyxel | [fcdb_pyxel.zip](https://github.com/hp7hao/fcdb/releases/download/pyxel-latest/fcdb_pyxel.zip) | Game metadata + GIF thumbnails |
+| PyxelPico | [fcdb_pyxelpico.zip](https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_pyxelpico.zip) + [runtime](https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_runtime_pyxelpico_web.zip) | Game metadata + PyxelPico zip carts + optional web runtime |
 
 Each ZIP is updated independently — downloading one platform won't pull changes from another.
 
@@ -81,6 +82,20 @@ fcdb_{platform}.zip
 - `extension.project_url` — GitHub repository URL
 - `extension.image_url` — URL to GIF preview
 
+**PyxelPico** (`platform: "pyxelpico"`, `source: "pyxelpico"`):
+- `extension.cart_file` — Single-file PyxelPico cart zip in `carts/pyxelpico/`
+- `extension.cart_format` — `pyxelpico-cart-zip`
+- `extension.runtime` — `pyxelpico`
+- `extension.controls` — Handheld control summary
+- `extension.scaling_strategy` — Migration scaling strategy
+
+PyxelPico cart zips contain `pyxelpico-cart.json`, a `native/` payload,
+browser-ready `web/index.html`, and `cover.png` when available. The shared
+browser runtime is shipped as the dedicated
+`fcdb_runtime_pyxelpico_web.zip` release asset. Extract it beside
+`fcdb_pyxelpico.zip` so `runtimes/pyxelpico/web/` is available, then serve a
+cart's `web/` directory without building from `pyxelpico-games`.
+
 ### Thumbnails
 
 Thumbnails are stored in the `thumbs/` directory, named by game ID:
@@ -132,14 +147,40 @@ This repository is maintained by [fcdbtool](https://github.com/hp7hao/fcdbtool).
 
 ## Source Update Commands
 
-To refresh Pyxel data in `fcdbtool`, run both commands:
+To refresh Pyxel data:
 
 ```bash
 node out/cli.js fetch pyxel examples release
-node out/cli.js fetch pyxel pyxelpico release
+node out/cli.js build pyxel
+node out/cli.js pack pyxel
 ```
+
+To refresh PyxelPico data, run the extraction locally and commit the resulting
+FCDB source metadata plus shippable cart files. The release workflow does not
+check out or resolve `pyxelpico-games`; it only packages data already committed
+here.
+
+```bash
+node out/cli.js fetch pyxelpico pyxelpico release --source-dir ../pyxelpico-games --pyxelpico-dir ../pyxelpico
+node out/cli.js build pyxelpico
+node out/cli.js pack pyxelpico
+```
+
+Commit `sources/pyxelpico/pyxelpico_release.json`,
+`platforms/pyxelpico/carts/pyxelpico/*.zip`, and
+`platforms/pyxelpico/runtimes/pyxelpico/web/` after refreshing PyxelPico games. The
+`fetch pyxelpico pyxelpico` command creates those zip carts from a local
+`../pyxelpico-games` checkout and copies the shared web runtime from a local
+`../pyxelpico` checkout.
+
+`pack pyxelpico` creates two release artifacts:
+
+- `releases/fcdb_pyxelpico.zip` — metadata, lists, and game carts
+- `releases/fcdb_runtime_pyxelpico_web.zip` — shared web runtime that
+  extracts to `runtimes/pyxelpico/web/`
 
 ## Data Sources
 
 - **PICO-8**: [Lexaloffle BBS](https://www.lexaloffle.com/bbs/?cat=7)
-- **Pyxel**: [Pyxel User Examples](https://kitao.github.io/pyxel-user-examples/), [Pyxelpico Games](https://github.com/nicoptere/pyxelpico-games)
+- **Pyxel**: [Pyxel User Examples](https://kitao.github.io/pyxel-user-examples/)
+- **PyxelPico**: Local `pyxelpico-games` port repository

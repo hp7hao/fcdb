@@ -19,6 +19,7 @@ jobs:
     outputs:
       pico8: ${{ steps.check.outputs.pico8 }}
       pyxel: ${{ steps.check.outputs.pyxel }}
+      pyxelpico: ${{ steps.check.outputs.pyxelpico }}
     steps:
     - uses: actions/checkout@v3
       with:
@@ -33,11 +34,14 @@ jobs:
           if [ "$PLATFORMS" = "all" ]; then
             echo "pico8=true" >> $GITHUB_OUTPUT
             echo "pyxel=true" >> $GITHUB_OUTPUT
+            echo "pyxelpico=true" >> $GITHUB_OUTPUT
           else
             echo "pico8=false" >> $GITHUB_OUTPUT
             echo "pyxel=false" >> $GITHUB_OUTPUT
+            echo "pyxelpico=false" >> $GITHUB_OUTPUT
             if echo "$PLATFORMS" | grep -q "pico8"; then echo "pico8=true" >> $GITHUB_OUTPUT; fi
             if echo "$PLATFORMS" | grep -q "pyxel"; then echo "pyxel=true" >> $GITHUB_OUTPUT; fi
+            if echo "$PLATFORMS" | grep -q "pyxelpico"; then echo "pyxelpico=true" >> $GITHUB_OUTPUT; fi
           fi
           exit 0
         fi
@@ -47,6 +51,7 @@ jobs:
 
         PICO8=false
         PYXEL=false
+        PYXELPICO=false
 
         if echo "$CHANGED" | grep -qE "^(sources/pico8|platforms/pico8|curated/pico8|i18n/.*/pico8)"; then
           PICO8=true
@@ -54,15 +59,20 @@ jobs:
         if echo "$CHANGED" | grep -qE "^(sources/pyxel|platforms/pyxel|curated/pyxel|i18n/.*/pyxel)"; then
           PYXEL=true
         fi
+        if echo "$CHANGED" | grep -qE "^(sources/pyxelpico|platforms/pyxelpico|curated/pyxelpico|i18n/.*/pyxelpico)"; then
+          PYXELPICO=true
+        fi
 
         # If workflow file changed, rebuild all
         if echo "$CHANGED" | grep -q "build_and_release.yml"; then
           PICO8=true
           PYXEL=true
+          PYXELPICO=true
         fi
 
         echo "pico8=$PICO8" >> $GITHUB_OUTPUT
         echo "pyxel=$PYXEL" >> $GITHUB_OUTPUT
+        echo "pyxelpico=$PYXELPICO" >> $GITHUB_OUTPUT
 
   # Build and release PICO-8
   release-pico8:
@@ -110,6 +120,61 @@ jobs:
           PICO-8 game database from Lexaloffle BBS.
 
           **Download:** `https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip`
+
+          Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
+        make_latest: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Build and release PyxelPico
+  release-pyxelpico:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.pyxelpico == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout FCDB Data
+      uses: actions/checkout@v3
+      with:
+        path: fcdb
+
+    - name: Checkout FCDB Tool
+      uses: actions/checkout@v3
+      with:
+        repository: hp7hao/fcdbtool
+        ref: main
+        path: fcdbtool
+        token: ${{ secrets.FCDBTOOL }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install & Build Tool
+      run: cd fcdbtool && npm install && npm run build
+
+    - name: Build & Pack PyxelPico
+      run: |
+        cd fcdbtool
+        node out/cli.js build pyxelpico --data-dir ../fcdb
+        node out/cli.js pack pyxelpico --data-dir ../fcdb
+
+    - name: Release PyxelPico
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: pyxelpico-latest
+        name: "PyxelPico Database"
+        files: |
+          fcdb/releases/fcdb_pyxelpico.zip
+          fcdb/releases/fcdb_runtime_pyxelpico_web.zip
+        body: |
+          PyxelPico fantasy console game database.
+
+          **Download:** `https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_pyxelpico.zip`
+          **Web Runtime:** `https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_runtime_pyxelpico_web.zip`
 
           Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
         make_latest: false
