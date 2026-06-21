@@ -105,7 +105,9 @@ Thumbnails are stored in the `thumbs/` directory, named by game ID:
 
 ## Version Checking
 
-Each platform release uses a fixed tag (`pico8-latest`, `pyxel-latest`). Use HTTP `ETag` or `Last-Modified` headers on the download URL to check for updates without re-downloading the full ZIP.
+Each platform release uses a fixed tag (`pico8-latest`, `pyxel-latest`,
+`pyxelpico-latest`). Use HTTP `ETag` or `Last-Modified` headers on the
+download URL to check for updates without re-downloading the full ZIP.
 
 ## Directory Structure (Source Repository)
 
