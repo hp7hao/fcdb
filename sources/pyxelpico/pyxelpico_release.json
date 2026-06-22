@@ -120,7 +120,7 @@
     "extension": {
       "source_url": "https://github.com/Hiekichi/ChottoCopter",
       "scaling_strategy": "native-240",
-      "controls": "Analog stick move, A change direction, B fire, Start begin",
+      "controls": "D-pad move, A change direction, B fire, Start begin",
       "original_resolution": "240x240",
       "has_assets": true,
       "migration_date": "2026-04-04",
