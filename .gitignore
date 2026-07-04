@@ -26,6 +26,12 @@ releases/
 /platforms/pyxelpico/runtimes/pyxelpico/*
 !/platforms/pyxelpico/runtimes/pyxelpico/web/
 
+# Track TIC-80 community carts and covers
+!/platforms/tic80/
+/platforms/tic80/*
+!/platforms/tic80/carts/
+!/platforms/tic80/thumbs/
+
 # System files
 .DS_Store
 Thumbs.db
