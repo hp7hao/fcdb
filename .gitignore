@@ -5,10 +5,8 @@ releases/
 
 # Large binaries / Assets
 /platforms/*
-# Track pico8 platform, but exclude BBS assets (too large)
+# Track pico8 platform including BBS carts and thumbs
 !/platforms/pico8/
-/platforms/pico8/carts/bbs/
-/platforms/pico8/thumbs/bbs/
 # Track pyxel thumbs only
 !/platforms/pyxel/
 /platforms/pyxel/*
