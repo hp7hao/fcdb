@@ -18,10 +18,10 @@ Each ZIP is updated independently — downloading one platform won't pull change
 fcdb_{platform}.zip
 ├── version.json          # Build date and version info
 ├── db.json               # Master database (all games)
-├── db.{lang}.json        # Translated metadata (if available)
+├── db.{locale}.json      # Game metadata translation overlays, e.g. db.zh-CN.json
 ├── lists/                # Curated + auto-generated game lists
 │   ├── {name}.json       # List with { meta, games[] }
-│   └── {name}.{lang}.json # List meta translations
+│   └── {name}.{locale}.json # List meta translations, e.g. celeste.zh-CN.json
 ├── carts/                # Non-BBS cartridge files
 │   └── {source}/         # e.g. pico8pixelbomb/, pyxelpico/
 ├── sources/              # Optional editable source artifacts
@@ -32,7 +32,9 @@ fcdb_{platform}.zip
 
 ## Database Schema
 
-`db.json` contains an array of game objects:
+The durable database and release-package contract is defined in
+`docs/specs/fcdb_database_contract_spec.md`. `db.json` contains an array of
+game objects:
 
 ```json
 {
@@ -44,7 +46,10 @@ fcdb_{platform}.zip
     "name": "Author Name",
     "url": "https://..."
   },
-  "license": "CC4-BY-NC-SA",
+  "license": {
+    "type": "CC4-BY-NC-SA",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
   "created": "2024-01-15",
   "updated": "2024-02-20",
   "extension": {}
@@ -55,16 +60,22 @@ fcdb_{platform}.zip
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `id` | string | Unique ID within the platform (e.g. PICO-8 BBS `pid`) |
+| `id` | string | Source-native ID (e.g. PICO-8 BBS `pid`) |
 | `name` | string | Game title |
 | `description` | string? | Short description |
 | `source` | string | Data source (`bbs`, `examples`, etc.) |
 | `author.name` | string | Author display name |
 | `author.url` | string? | Author profile URL |
-| `license` | string? | License identifier |
+| `license.type` | string? | License identifier |
+| `license.url` | string? | License URL |
 | `created` | string | ISO date (YYYY-MM-DD) when first scraped |
 | `updated` | string | ISO date (YYYY-MM-DD) of last metadata change |
 | `extension` | object | Platform-specific fields (see below) |
+
+The public identity for a distributed game record is
+`fcdb:<platform>:<source>:<id>`, for example
+`fcdb:pico8:pico8pixelbomb:picovibe_i18ndemo`. Do not treat `id` or `slug`
+alone as a global identity.
 
 ### Platform Extensions
 
@@ -115,7 +126,7 @@ download URL to check for updates without re-downloading the full ZIP.
 fcdb/
 ├── sources/{platform}/              # Raw scraped metadata
 │   ├── {source}.json                # Game data (single-dot basename)
-│   └── {source}.{lang}.json         # Game-level translations (companion files)
+│   └── {source}.{locale}.json       # Game-level translations, e.g. source.zh-CN.json
 ├── platforms/{platform}/
 │   ├── carts/{source}/              # Game cartridges
 │   └── thumbs/{source}/             # Thumbnail images
@@ -123,10 +134,10 @@ fcdb/
 │   ├── overrides.json               # Manual metadata overrides
 │   └── lists/                       # Curated game lists
 │       ├── {name}.json              # List definition (IDs, filters, or inline games)
-│       └── {name}.{lang}.json       # List meta translations
+│       └── {name}.{locale}.json     # List meta translations, e.g. celeste.zh-CN.json
 ├── dist/{platform}/                 # Built output
 │   ├── db.json                      # Master database
-│   ├── db.{lang}.json               # Merged game translations
+│   ├── db.{locale}.json             # Canonical-key game translation overlays
 │   └── lists/                       # Curated + auto-generated lists
 ├── releases/                        # Packaged ZIPs
 └── build/                           # Temp build artifacts (gitignored)
@@ -136,8 +147,13 @@ fcdb/
 
 Two layers of companion files:
 
-1. **Game-level**: `sources/{platform}/{source}.{lang}.json` — keyed by game ID, merged into `dist/db.{lang}.json` at build time
-2. **List-level**: `curated/{platform}/lists/{name}.{lang}.json` — copied to `dist/lists/` at build time
+1. **Game-level**: `sources/{platform}/{source}.{locale}.json` — keyed by
+   canonical FCDB key, merged into `dist/db.{locale}.json` at build time
+2. **List-level**: `curated/{platform}/lists/{name}.{locale}.json` — `meta`
+   overlays copied to `dist/lists/` at build time
+
+Locale filenames use BCP-47 casing such as `zh-CN`, `en-US`, and `ja-JP`.
+Missing localized fields fall back to base `db.json` fields.
 
 ### Auto-generated Lists
 

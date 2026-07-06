@@ -1,0 +1,9 @@
+{
+  "fcdb:pico8:pico8pixelbomb:picovibe_i18ndemo": {
+    "name": "i18n 演示",
+    "description": "PICO-8 多语言国际化演示。",
+    "author": {
+      "name": "hp7hao"
+    }
+  }
+}
