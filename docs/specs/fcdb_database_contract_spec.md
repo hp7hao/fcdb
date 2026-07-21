@@ -1,11 +1,11 @@
 # FCDB Database Contract Specification
 
-**Version**: 0.1.0
+**Version**: 0.3.0
 **Status**: Draft
 **Level**: feature
 **Owner**: fcdb
 **Parent**: docs/specs/GLOBAL_SPEC.md
-**Last Reviewed**: 2026-07-06
+**Last Reviewed**: 2026-07-20
 
 ## 1. Purpose
 
@@ -211,6 +211,8 @@ Common extension fields must keep consistent meaning across tools:
 |---|---|
 | `extension.cart_file` | Package-relative runtime artifact under `carts/<source>/`. |
 | `extension.cart_path` | Source-repository input path used by tooling; not required in releases. |
+| `extension.cart_locale` | Optional BCP-47 locale label for the primary `cart_file`/`cart_path`. |
+| `extension.cart_variants` | Optional BCP-47 locale-to-`{ file, path }` map containing only additional runtime artifacts. |
 | `extension.cart_url` | Remote runtime cart URL. |
 | `extension.source_file` | Package-relative editable source artifact under `sources/<source>/`. |
 | `extension.source_path` | Source-repository input path used by tooling; not required in releases. |
@@ -233,6 +235,28 @@ Requirements:
   FCDB fields, but FCDB must keep source facts explicit.
 - **ASSET-004**: New reusable extension keys MUST be added to this contract
   before tools or agents rely on them across more than one source or consumer.
+- **ASSET-005**: `cart_file` and `cart_path` remain the primary runtime contract
+  for original and localized games. A normal single-cart game requires no locale
+  fields. When `cart_variants` is present, `cart_locale` MUST be a correctly
+  cased BCP-47 locale identifying the primary scalar cart; `cart_variants` MUST
+  be a non-empty object whose correctly cased BCP-47 keys exclude
+  `cart_locale`, and each value MUST contain safe relative `file` and `path`
+  strings. Localized runtime filenames use `<base>.<locale>.<format>`, for
+  example `picovibe_i18ndemo.zh-CN.p8.png`.
+- **ASSET-006**: Consumers that support localized runtime artifacts SHOULD
+  select `cart_file` when the configured locale equals `cart_locale`, otherwise
+  select the exact `cart_variants` entry, then fall back to scalar `cart_file`.
+  Consumers that understand only the original scalar contract therefore keep
+  working without localization awareness. Producers MUST NOT infer locale from
+  translated game titles or from ambient host locale.
+- **ASSET-007**: During a source-repository build, FCDBTool MUST publish only
+  localized runtime artifacts that exist and were copied successfully. If the
+  primary scalar artifact is unavailable but an additional locale succeeds, the
+  lexicographically first successful variant is promoted into `cart_file`,
+  `cart_path`, and `cart_locale` and removed from `cart_variants`. If no runtime
+  artifact succeeds, runtime cart fields are omitted while any redistributable
+  `source_file` remains available. `source_file`/`source_path` are orthogonal to
+  localization and never activate localized handling by themselves.
 
 ## 7. Release Package Contract
 

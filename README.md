@@ -85,7 +85,10 @@ alone as a global identity.
 - `extension.thumb_url` — Direct URL to thumbnail on BBS
 
 **PICO-8** (non-BBS sources):
-- `extension.cart_file` — First-class runtime cart in `carts/{source}/`, preferably `.p8.png`
+- `extension.cart_file` — First-class primary runtime cart in `carts/{source}/`, preferably `.p8.png`
+- `extension.cart_path` — Producer path for the primary runtime cart
+- `extension.cart_locale` — Optional BCP-47 locale label for the primary cart
+- `extension.cart_variants` — Optional additional BCP-47 runtime carts as `{ "locale": { "file", "path" } }`
 - `extension.source_file` — Optional editor source in `sources/{source}/`, either `.p8mod` or `.p8`
 
 **Pyxel** (`source: "examples"`):

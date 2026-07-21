@@ -9,8 +9,17 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_splooshdemo.p8mod",
-      "cart_path": "carts/pico8pixelbomb/splooshdemo/splooshdemo.p8mod",
+      "cart_file": "picovibe_splooshdemo.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_splooshdemo.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "cart_variants": {
+        "en-US": {
+          "file": "picovibe_splooshdemo.en-US.p8.png",
+          "path": "release/fcdb/picovibe_splooshdemo.en-US.p8.png"
+        }
+      },
+      "source_file": "picovibe_splooshdemo.p8mod",
+      "source_path": "carts/pico8pixelbomb/splooshdemo/splooshdemo.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_splooshdemo.png",
       "tags": ["demo"]
     }
@@ -25,8 +34,11 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_yxkl.p8mod",
-      "cart_path": "carts/pico8pixelbomb/yxkl/yxkl.p8mod",
+      "cart_file": "picovibe_yxkl.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_yxkl.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "source_file": "picovibe_yxkl.p8mod",
+      "source_path": "carts/pico8pixelbomb/yxkl/yxkl.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_yxkl.png",
       "tags": ["demo", "festival"]
     }
@@ -41,8 +53,17 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_i18ndemo.p8mod",
-      "cart_path": "carts/pico8pixelbomb/i18ndemo/i18ndemo.p8mod",
+      "cart_file": "picovibe_i18ndemo.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_i18ndemo.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "cart_variants": {
+        "en-US": {
+          "file": "picovibe_i18ndemo.en-US.p8.png",
+          "path": "release/fcdb/picovibe_i18ndemo.en-US.p8.png"
+        }
+      },
+      "source_file": "picovibe_i18ndemo.p8mod",
+      "source_path": "carts/pico8pixelbomb/i18ndemo/i18ndemo.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_i18ndemo.png",
       "tags": ["demo", "i18n"]
     }
@@ -57,8 +78,11 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_nezhapoems.p8mod",
-      "cart_path": "carts/pico8pixelbomb/nezhapoems/nezhapoems.p8mod",
+      "cart_file": "picovibe_nezhapoems.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_nezhapoems.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "source_file": "picovibe_nezhapoems.p8mod",
+      "source_path": "carts/pico8pixelbomb/nezhapoems/nezhapoems.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_nezhapoems.png",
       "tags": ["poetry", "education"]
     }
@@ -74,8 +98,17 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_bas_mod.p8mod",
-      "cart_path": "carts/pico8pixelbomb/bas-pico8gomod/basmod.p8mod",
+      "cart_file": "picovibe_bas_mod.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_bas_mod.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "cart_variants": {
+        "en-US": {
+          "file": "picovibe_bas_mod.en-US.p8.png",
+          "path": "release/fcdb/picovibe_bas_mod.en-US.p8.png"
+        }
+      },
+      "source_file": "picovibe_bas_mod.p8mod",
+      "source_path": "carts/pico8pixelbomb/bas-pico8gomod/basmod.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_bas_mod.png",
       "tags": ["mod", "pico8go", "platformer"]
     }
@@ -91,8 +124,17 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_celeste_mod.p8mod",
-      "cart_path": "carts/pico8pixelbomb/celeste-pico8gomod/celestemod.p8mod",
+      "cart_file": "picovibe_celeste_mod.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_celeste_mod.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "cart_variants": {
+        "en-US": {
+          "file": "picovibe_celeste_mod.en-US.p8.png",
+          "path": "release/fcdb/picovibe_celeste_mod.en-US.p8.png"
+        }
+      },
+      "source_file": "picovibe_celeste_mod.p8mod",
+      "source_path": "carts/pico8pixelbomb/celeste-pico8gomod/celestemod.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_celeste_mod.png",
       "tags": ["mod", "pico8go", "platformer"]
     }
@@ -108,8 +150,11 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_justoneboss_mod.p8mod",
-      "cart_path": "carts/pico8pixelbomb/justoneboss-pico8gomod/justonebossmod.p8mod",
+      "cart_file": "picovibe_justoneboss_mod.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_justoneboss_mod.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "source_file": "picovibe_justoneboss_mod.p8mod",
+      "source_path": "carts/pico8pixelbomb/justoneboss-pico8gomod/justonebossmod.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_justoneboss_mod.png",
       "tags": ["mod", "pico8go", "action"]
     }
@@ -125,8 +170,17 @@
     "created": "2024-04-20 00:00:00",
     "updated": "2024-05-02 00:00:00",
     "extension": {
-      "cart_file": "picovibe_petthecat_mod.p8mod",
-      "cart_path": "carts/pico8pixelbomb/pet-the-cat-pico8gomod/pet-the-cat.p8mod",
+      "cart_file": "picovibe_petthecat_mod.zh-CN.p8.png",
+      "cart_path": "release/fcdb/picovibe_petthecat_mod.zh-CN.p8.png",
+      "cart_locale": "zh-CN",
+      "cart_variants": {
+        "en-US": {
+          "file": "picovibe_petthecat_mod.en-US.p8.png",
+          "path": "release/fcdb/picovibe_petthecat_mod.en-US.p8.png"
+        }
+      },
+      "source_file": "picovibe_petthecat_mod.p8mod",
+      "source_path": "carts/pico8pixelbomb/pet-the-cat-pico8gomod/pet-the-cat.p8mod",
       "thumbnail_path": "pico8pixelbomb/picovibe_petthecat_mod.png",
       "tags": ["mod", "pico8go", "casual"]
     }
