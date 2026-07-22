@@ -1,11 +1,11 @@
 # FCDB Database Contract Specification
 
-**Version**: 0.3.0
-**Status**: Draft
+**Version**: 0.4.0
+**Status**: Active
 **Level**: feature
 **Owner**: fcdb
 **Parent**: docs/specs/GLOBAL_SPEC.md
-**Last Reviewed**: 2026-07-20
+**Last Reviewed**: 2026-07-22
 
 ## 1. Purpose
 
@@ -61,10 +61,9 @@ Requirements:
 - **ID-002**: `platform + source + id` MUST be unique inside a platform release.
 - **ID-003**: `id` alone MUST NOT be treated as globally unique by tools,
   translations, list membership validators, importers, or consumers.
-- **ID-004**: Derivative relationships MUST NOT be represented by merging two
-  records that share `id` across sources. Use an explicit relationship field,
-  such as `ref_id`, plus source/platform context until a richer relationship
-  schema exists.
+- **ID-004**: Relationships MUST use `relationships[]`. Every relationship
+  contains a `kind` and canonical FCDB `target` key. `ref_id` is retired and
+  MUST NOT appear in schema `0.4.0` source, dist, or release records.
 - **ID-005**: String list membership references in source or built list files
   MUST use canonical FCDB keys. Producer tooling may read unambiguous legacy
   source-native IDs only inside repository migration code, but agents MUST write
@@ -91,23 +90,31 @@ Required distributed fields:
 | `license.url` | string? | License URL; optional. |
 | `created` | string | Source creation/upload date; required when known. |
 | `updated` | string | Source metadata/content update date; required when known. |
-| `ref_id` | string? | Source-native related/original game ID; optional. |
+| `relationships` | `{ kind: string, target: string }[]?` | Typed links to canonical FCDB game keys; optional. |
 | `extension` | object | Source/platform extension fields; required, may be empty. |
 
 Requirements:
 
 - **DB-001**: `db.json` MUST be valid UTF-8 JSON.
 - **DB-001A**: `db.json` ordering MUST be deterministic for the same source
-  inputs. The producer MUST write records in stable input/list order and MUST
-  sort locale companion filenames before emitting them.
+  inputs. The producer MUST sort source and locale companion filenames before
+  reading them and MUST emit records in canonical-key order.
 - **DB-002**: `slug` MUST NOT be used as identity. Slugs may collide and may
   contain non-ASCII or source-provided punctuation.
 - **DB-003**: Date strings SHOULD use `YYYY-MM-DD` or ISO-like
   `YYYY-MM-DD HH:MM:SS` source timestamps. Unknown dates MUST be represented by
   a missing or `null` optional field only after the schema is updated to allow it.
-- **DB-004**: The package `version.json` SHOULD declare `schema_version`,
-  `platform`, `default_locale`, `available_locales`, and build timestamp once
-  the schema migration begins.
+- **DB-004**: The package `version.json` MUST declare `schema_version`,
+  `package_version`, `platform`, `default_locale`, `available_locales`,
+  `source_revision`, `producer_revision`, and `built_at`. Revisions MUST be
+  immutable Git object IDs. `package_version` MUST identify the packaged
+  content rather than a fixed placeholder.
+- **DB-005**: Schema `0.x` minor versions are breaking. A consumer MUST reject
+  a package whose exact `schema_version` it does not support before replacing
+  an installed/cache package. It MUST NOT guess compatibility from fields.
+- **DB-006**: Every relationship `target` MUST be a canonical FCDB key and MUST
+  differ from the source record key. Cross-platform targets are allowed even
+  when the target record is not present in the current platform package.
 
 ## 5. Multilingual Metadata Contract
 
@@ -194,8 +201,10 @@ Requirements:
 - **LIST-003**: Localized list membership, if needed later, MUST use a new
   explicitly named file type rather than overloading `lists/<id>.<locale>.json`.
 - **LIST-004**: Built list files MUST use the shape `{ "meta": object,
-  "games": GameMetadata[] }`. Translation list files MUST use the shape
-  `{ "meta": object }` only.
+  "games": CanonicalFcdbKey[] }`. Membership order is significant. Translation
+  list files MUST use the shape `{ "meta": object }` only. Consumers resolve
+  list keys through the package `db.json`; built lists MUST NOT duplicate game
+  records.
 - **LIST-005**: Filter and rank source list files MUST resolve to concrete
   built list files at build time; release packages MUST NOT expose source-only
   `filter` or `rank` membership rules as localized list overlays.
@@ -257,6 +266,11 @@ Requirements:
   artifact succeeds, runtime cart fields are omitted while any redistributable
   `source_file` remains available. `source_file`/`source_path` are orthogonal to
   localization and never activate localized handling by themselves.
+- **ASSET-008**: Each supported `platform + source` pair MUST have an explicit
+  extension schema in producer validation. Unknown extension keys and values of
+  the wrong type MUST fail the build. A new source updates this contract and its
+  producer validator before publication. The TypeScript model MUST use
+  `unknown`, not `any`, for values outside common typed fields.
 
 ## 7. Release Package Contract
 
@@ -285,6 +299,12 @@ Requirements:
   curated list metadata overlays for that platform.
 - **PKG-004**: Runtime ZIPs, when produced, MUST preserve runtime-relative paths
   documented by the platform extension contract.
+- **PKG-005**: The only supported publication path is a single release operation
+  that builds into staging, validates dist, packages to a temporary ZIP,
+  validates the final ZIP and manifest, then atomically promotes it. A failed
+  stage MUST leave the previous final ZIP unchanged.
+- **PKG-006**: CI MUST use a pinned FCDBTool Git revision. Checking out a moving
+  branch such as `main` for release production is forbidden.
 
 ## 8. Validation Requirements
 
@@ -296,8 +316,9 @@ FCDB contract changes should add or update cheap validation before release:
   keys that match existing canonical game keys.
 - **VAL-003**: Validate game translation overlays contain only `name`,
   `description`, and `author.name`.
-- **VAL-004**: Validate built list files contain `meta` and `games[]`, and
-  every list game has a canonical key present in `db.json`.
+- **VAL-004**: Validate built list files contain `meta` and canonical-key
+  `games[]`, preserve membership order, contain no duplicate membership keys,
+  and resolve every key through `db.json`.
 - **VAL-005**: Validate list translation files contain only `meta` overlays and
   never contain `games`, `filter`, or `rank`.
 - **VAL-006**: Validate package-local asset paths and source-repository input
@@ -305,6 +326,14 @@ FCDB contract changes should add or update cheap validation before release:
   or backslashes, and remote asset URLs are explicit `http` or `https` URLs.
 - **VAL-007**: Validate release ZIPs contain expected metadata, translations,
   lists, and assets for the selected platform when packaging is in scope.
+- **VAL-008**: Source ingestion MUST fail closed with source file and record
+  context for invalid JSON, non-array source files, missing required fields,
+  duplicate canonical ownership, unresolved overrides, retired fields, unknown
+  extension keys, and declared required assets that cannot be resolved. Logging
+  and skipping is not a valid success outcome.
+- **VAL-009**: Release validation MUST reject missing/inconsistent manifest
+  fields, unsupported schema versions, unsafe ZIP paths, missing referenced
+  package assets, and unexpected package members.
 
 ## 9. Agent Contract
 
@@ -344,12 +373,15 @@ Agent invariants:
 - **AGENT-008**: Before adding a reusable extension key used by more than one
   source or consumer, update Section 6 first.
 - **AGENT-009**: After editing FCDB source data or fcdbtool package-writing
-  logic, run `npm run test:fcdb-contract` and `node out/cli.js validate
-  <platform> --data-dir ../fcdb` from `projects/fcdbtool` for each affected
-  platform.
+  logic, run `npm run test:fcdb-contract` and `node out/cli.js release
+  <platform> --data-dir ../fcdb --check-only` from `projects/fcdbtool` for each
+  affected platform.
 - **AGENT-010**: When specs or indexes change, also run
   `node scripts/specs/validate-specs.mjs` and `bash scripts/specs/check_specs.sh`
   from the monorepo root.
+- **AGENT-011**: Consumer fixtures MUST use schema-valid package shapes and
+  include canonical-key collision, locale overlay, list membership, manifest
+  compatibility, and unsupported-schema rejection cases.
 
 Parent specs: `docs/specs/GLOBAL_SPEC.md`,
 `docs/specs/spec_management_spec.md`. Consumer specs include

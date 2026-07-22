@@ -1,5 +1,8 @@
 name: Build and Release FCDB
 
+env:
+  FCDBTOOL_REVISION: ${{ vars.FCDBTOOL_REVISION }}
+
 on:
   push:
     branches: [ main ]
@@ -89,10 +92,15 @@ jobs:
         path: fcdb
 
     - name: Checkout FCDB Tool
+      env:
+        REVISION: ${{ env.FCDBTOOL_REVISION }}
+      run: test "${#REVISION}" -eq 40 && ! printf '%s' "$REVISION" | grep -q '[^0-9a-fA-F]'
+
+    - name: Checkout pinned FCDB Tool
       uses: actions/checkout@v3
       with:
         repository: hp7hao/fcdbtool
-        ref: main
+        ref: ${{ env.FCDBTOOL_REVISION }}
         path: fcdbtool
         token: ${{ secrets.FCDBTOOL }}
 
@@ -104,11 +112,10 @@ jobs:
     - name: Install & Build Tool
       run: cd fcdbtool && npm install && npm run build
 
-    - name: Build & Pack PICO-8
+    - name: Validate & Package PICO-8
       run: |
         cd fcdbtool
-        node out/cli.js build pico8 --data-dir ../fcdb
-        node out/cli.js pack pico8 --data-dir ../fcdb
+        node out/cli.js release pico8 --data-dir ../fcdb
 
     - name: Release PICO-8
       uses: softprops/action-gh-release@v1
@@ -141,10 +148,15 @@ jobs:
         path: fcdb
 
     - name: Checkout FCDB Tool
+      env:
+        REVISION: ${{ env.FCDBTOOL_REVISION }}
+      run: test "${#REVISION}" -eq 40 && ! printf '%s' "$REVISION" | grep -q '[^0-9a-fA-F]'
+
+    - name: Checkout pinned FCDB Tool
       uses: actions/checkout@v3
       with:
         repository: hp7hao/fcdbtool
-        ref: main
+        ref: ${{ env.FCDBTOOL_REVISION }}
         path: fcdbtool
         token: ${{ secrets.FCDBTOOL }}
 
@@ -156,11 +168,10 @@ jobs:
     - name: Install & Build Tool
       run: cd fcdbtool && npm install && npm run build
 
-    - name: Build & Pack PyxelPico
+    - name: Validate & Package PyxelPico
       run: |
         cd fcdbtool
-        node out/cli.js build pyxelpico --data-dir ../fcdb
-        node out/cli.js pack pyxelpico --data-dir ../fcdb
+        node out/cli.js release pyxelpico --data-dir ../fcdb
 
     - name: Release PyxelPico
       uses: softprops/action-gh-release@v1
@@ -196,10 +207,15 @@ jobs:
         path: fcdb
 
     - name: Checkout FCDB Tool
+      env:
+        REVISION: ${{ env.FCDBTOOL_REVISION }}
+      run: test "${#REVISION}" -eq 40 && ! printf '%s' "$REVISION" | grep -q '[^0-9a-fA-F]'
+
+    - name: Checkout pinned FCDB Tool
       uses: actions/checkout@v3
       with:
         repository: hp7hao/fcdbtool
-        ref: main
+        ref: ${{ env.FCDBTOOL_REVISION }}
         path: fcdbtool
         token: ${{ secrets.FCDBTOOL }}
 
@@ -211,11 +227,10 @@ jobs:
     - name: Install & Build Tool
       run: cd fcdbtool && npm install && npm run build
 
-    - name: Build & Pack Pyxel
+    - name: Validate & Package Pyxel
       run: |
         cd fcdbtool
-        node out/cli.js build pyxel --data-dir ../fcdb
-        node out/cli.js pack pyxel --data-dir ../fcdb
+        node out/cli.js release pyxel --data-dir ../fcdb
 
     - name: Release Pyxel
       uses: softprops/action-gh-release@v1

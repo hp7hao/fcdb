@@ -4,7 +4,7 @@
     "name": "ACLM",
     "slug": "aclm",
     "source": "pyxelpico",
-    "ref_id": "103",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:103" }],
     "author": {
       "name": "Jay Kumogata"
     },
@@ -30,7 +30,7 @@
     "name": "Asteroids",
     "slug": "asteroids",
     "source": "pyxelpico",
-    "ref_id": "139",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:139" }],
     "author": {
       "name": "Jay Kumogata"
     },
@@ -56,7 +56,7 @@
     "name": "BakudanKun",
     "slug": "bakudankun",
     "source": "pyxelpico",
-    "ref_id": "88",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:88" }],
     "author": {
       "name": "Hiekichi"
     },
@@ -82,7 +82,7 @@
     "name": "Bubbles",
     "slug": "bubbles",
     "source": "pyxelpico",
-    "ref_id": "112",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:112" }],
     "author": {
       "name": "helpcomputer"
     },
@@ -108,7 +108,7 @@
     "name": "ChottoCopter",
     "slug": "chottocopter",
     "source": "pyxelpico",
-    "ref_id": "91",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:91" }],
     "author": {
       "name": "Hiekichi"
     },
@@ -134,7 +134,7 @@
     "name": "CheaperDepth",
     "slug": "cheaperdepth",
     "source": "pyxelpico",
-    "ref_id": "90",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:90" }],
     "author": {
       "name": "Hiekichi"
     },
@@ -210,7 +210,7 @@
     "name": "GrowyGardens",
     "slug": "growygardens",
     "source": "pyxelpico",
-    "ref_id": "46",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:46" }],
     "author": {
       "name": "SuperZooper3"
     },
@@ -236,7 +236,7 @@
     "name": "Kanixian",
     "slug": "kanixian",
     "source": "pyxelpico",
-    "ref_id": "89",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:89" }],
     "author": {
       "name": "Hiekichi"
     },
@@ -262,7 +262,7 @@
     "name": "Kektris",
     "slug": "kektris",
     "source": "pyxelpico",
-    "ref_id": "65",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:65" }],
     "author": {
       "name": "Konstantin Klepikov"
     },
@@ -288,7 +288,7 @@
     "name": "Pinball",
     "slug": "pinball",
     "source": "pyxelpico",
-    "ref_id": "102",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:102" }],
     "author": {
       "name": "Jay Kumogata"
     },
@@ -314,7 +314,7 @@
     "name": "Poker",
     "slug": "poker",
     "source": "pyxelpico",
-    "ref_id": "95",
+    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:95" }],
     "author": {
       "name": "Hiekichi"
     },
