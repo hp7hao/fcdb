@@ -1,2757 +1,2743 @@
 [
   {
-    "id": "175",
-    "name": "Alien Evolution",
-    "description": "Pyxel port of the ZX Spectrum game Alien Evolution",
-    "source": "examples",
-    "author": {
-      "name": "Igor Lobanov",
-      "url": "https://x.com/utilityunknown"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 175,
-      "project_url": "https://github.com/alepoydes/alien-evolution-pyport",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/175.gif"
-    }
-  },
-  {
-    "id": "174",
-    "name": "Hover Racer",
-    "description": "High-speed futuristic anti-gravity racing",
-    "source": "examples",
-    "author": {
-      "name": "haruka_apps",
-      "url": "https://x.com/haruka_apps"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 174,
-      "project_url": "https://haruka-apps-games.itch.io/hover-racer",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/174.gif"
-    }
-  },
-  {
-    "id": "173",
-    "name": "Pyxel Tempest",
-    "description": "Atari Tempest like game",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 173,
-      "project_url": "https://sanbunnoichi1962.web.fc2.com/pyxel/tempest.html",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/173.gif"
-    }
-  },
-  {
-    "id": "172",
-    "name": "Fikuś",
-    "description": "Platformer for exploring worlds and collecting coins",
-    "source": "examples",
-    "author": {
-      "name": "Cloudbuster",
-      "url": "mailto:cloudbuster.pl"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 172,
-      "project_url": "https://fikus.cloudbuster.pl/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/172.gif"
-    }
-  },
-  {
-    "id": "171",
-    "name": "Pyxel Pacman",
-    "description": "Pacman like game",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 171,
-      "project_url": "https://sanbunnoichi1962.web.fc2.com/pyxel/pyxelpac.html",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/171.gif"
-    }
-  },
-  {
-    "id": "170",
-    "name": "Falling Sand",
-    "description": "Simple falling sand simulation",
-    "source": "examples",
-    "author": {
-      "name": "shoot.er",
-      "url": "https://x.com/m4_sd"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 170,
-      "project_url": "https://github.com/5h00T/FallingSand/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/170.gif"
-    }
-  },
-  {
-    "id": "169",
-    "name": "THE COLORS",
-    "description": "A color-changing puzzle action game",
-    "source": "examples",
-    "author": {
-      "name": "FulLine",
-      "url": "https://x.com/ful_line"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 169,
-      "project_url": "https://github.com/Python-yarouze/the-colors",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/169.gif"
-    }
-  },
-  {
-    "id": "168",
-    "name": "Cursed Caverns",
-    "description": "A platformer from the Pyxel Official Book",
-    "source": "examples",
-    "author": {
-      "name": "Takashi Kitao",
-      "url": "https://x.com/kitao"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 168,
-      "project_url": "https://kitao.github.io/pyxel/web/launcher/?play=kitao.pyxel.python.pyxel.examples.apps.cursed_caverns&gamepad=enabled",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/168.gif"
-    }
-  },
-  {
-    "id": "167",
-    "name": "Mega Wing",
-    "description": "A shoot-em-up from the Pyxel Official Book",
-    "source": "examples",
-    "author": {
-      "name": "Takashi Kitao",
-      "url": "https://x.com/kitao"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 167,
-      "project_url": "https://kitao.github.io/pyxel/web/launcher/?play=kitao.pyxel.python.pyxel.examples.apps.mega_wing&gamepad=enabled",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/167.gif"
-    }
-  },
-  {
-    "id": "166",
-    "name": "Space Rescue",
-    "description": "A one-button rescue game from the Pyxel Official Book",
-    "source": "examples",
-    "author": {
-      "name": "Takashi Kitao",
-      "url": "https://x.com/kitao"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 166,
-      "project_url": "https://kitao.github.io/pyxel/web/launcher/?play=kitao.pyxel.python.pyxel.examples.apps.space_rescue&gamepad=enabled",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/166.gif"
-    }
-  },
-  {
-    "id": "165",
-    "name": "Mini Metroid",
-    "description": "A reduced version of NES Metroid",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 165,
-      "project_url": "https://aged99oow.github.io/metroid/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/165.gif"
-    }
-  },
-  {
-    "id": "164",
-    "name": "Lama",
-    "description": "A shedding game where you shed or fold for minimum points",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 164,
-      "project_url": "https://aged99oow.github.io/lama/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/164.gif"
-    }
-  },
-  {
-    "id": "163",
-    "name": "Gekka no jin (Moonlit Formation)",
-    "description": "A new Hanafuda experience in retro pixel art",
-    "source": "examples",
-    "author": {
-      "name": "saizo",
-      "url": "https://x.com/Saizo_KOGAKURE"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 163,
-      "project_url": "https://kogakure-saizo.itch.io/moonlit-formation",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/163.gif"
-    }
-  },
-  {
-    "id": "162",
-    "name": "Old ARPG like",
-    "description": "An old-school action RPG (PC-88 era-inspired)",
-    "source": "examples",
-    "author": {
-      "name": "MoQ",
-      "url": "https://github.com/ronegray"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 162,
-      "project_url": "https://github.com/ronegray/OldARPGlike/tree/main",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/162.gif"
-    }
-  },
-  {
-    "id": "161",
-    "name": "Pyxel Fighter jet Game",
-    "description": "A top-down flying-and-shooting game",
-    "source": "examples",
-    "author": {
-      "name": "life-is-plastic",
-      "url": "https://github.com/life-is-plastic"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 161,
-      "project_url": "https://github.com/life-is-plastic/pyxel-fighter-jet-game",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/161.gif"
-    }
-  },
-  {
-    "id": "160",
-    "name": "Looking for Kiara-chan!",
-    "description": "A mystery-solving mini-RPG",
-    "source": "examples",
-    "author": {
-      "name": "Kikutaro",
-      "url": "https://x.com/kikutaro_"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 160,
-      "project_url": "https://game.kiasaga.love/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/160.gif"
-    }
-  },
-  {
-    "id": "159",
-    "name": "Game of Pyxels",
-    "description": "A retro-style remake of Conway’s Game of Life",
-    "source": "examples",
-    "author": {
-      "name": "Léo Imbert",
-      "url": "https://github.com/LeoI52"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 159,
-      "project_url": "https://leo-imbert.itch.io/game-of-pyxels",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/159.gif"
-    }
-  },
-  {
-    "id": "158",
-    "name": "Queue It !",
-    "description": "A fast-paced puzzle-platformer",
-    "source": "examples",
-    "author": {
-      "name": "Léo Imbert",
-      "url": "https://github.com/LeoI52"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 158,
-      "project_url": "https://leo-imbert.itch.io/queue-it",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/158.gif"
-    }
-  },
-  {
-    "id": "157",
-    "name": "PyxelTD",
-    "description": "A simple tower defense game",
-    "source": "examples",
-    "author": {
-      "name": "shoot.er",
-      "url": "https://x.com/m4_sd"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 157,
-      "project_url": "https://github.com/5h00T/PyxelTD",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/157.gif"
-    }
-  },
-  {
-    "id": "156",
-    "name": "Loop Shot",
-    "description": "A top-down shooter about a looping arena",
-    "source": "examples",
-    "author": {
-      "name": "Léo Imbert",
-      "url": "https://github.com/LeoI52"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 156,
-      "project_url": "https://leo-imbert.itch.io/loop-shot",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/156.gif"
-    }
-  },
-  {
-    "id": "155",
-    "name": "Hanafuda Pon",
-    "description": "A game of clearing sets of three matching Hanafuda cards",
-    "source": "examples",
-    "author": {
-      "name": "saizo",
-      "url": "https://github.com/ninja-cop"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 155,
-      "project_url": "https://github.com/ninja-cop/RetroGames/tree/main/hanafudaPon",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/155.gif"
-    }
-  },
-  {
-    "id": "154",
-    "name": "Towercraft",
-    "description": "A game to build the tallest tower by stacking floors",
-    "source": "examples",
-    "author": {
-      "name": "Son Link",
-      "url": "https://x.com/sonlink"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 154,
-      "project_url": "https://codeberg.org/son_link/Towercraft",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/154.gif"
-    }
-  },
-  {
-    "id": "153",
-    "name": "Old JRPG like",
-    "description": "A game like an RPG from the early NES era",
-    "source": "examples",
-    "author": {
-      "name": "MoQ(もっQ)",
-      "url": "https://x.com/ronegray"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 153,
-      "project_url": "https://moq.dojin.com/pyxelgames.html",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/153.gif"
-    }
-  },
-  {
-    "id": "152",
-    "name": "Hanafuda Tetris",
-    "description": "A game where you match three Hanafuda cards of the same month",
-    "source": "examples",
-    "author": {
-      "name": "saizo",
-      "url": "https://github.com/ninja-cop"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 152,
-      "project_url": "https://github.com/ninja-cop/RetroGames/tree/main/hanafudaTetris",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/152.gif"
-    }
-  },
-  {
-    "id": "151",
-    "name": "FAKE DOGMENTARY \"Q\"",
-    "description": "A Souls-like animal welfare action game",
-    "source": "examples",
-    "author": {
-      "name": "hotate_curry",
-      "url": "https://x.com/hotate__curry"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 151,
-      "project_url": "https://hotatecurry.github.io/fakedogmentaryq/fakedog.html",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/151.gif"
-    }
-  },
-  {
-    "id": "150",
-    "name": "Breakout",
-    "description": "A Breakout-style game originally made for CHIP-8",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 150,
-      "project_url": "https://github.com/jay-kumogata/PyxelChip8/tree/main/pyxel/breakout",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/150.gif"
-    }
-  },
-  {
-    "id": "149",
-    "name": "Graffiti Cleanup Rush",
-    "description": "A score-based arcade clicking game",
-    "source": "examples",
-    "author": {
-      "name": "Léo Imbert",
-      "url": "https://github.com/LeoI52"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 149,
-      "project_url": "https://github.com/LeoI52/graffiti-cleanup-rush",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/149.gif"
-    }
-  },
-  {
-    "id": "148",
-    "name": "Mastermind",
-    "description": "A number-guessing game using hints",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 148,
-      "project_url": "https://github.com/jay-kumogata/PyxelChip8/tree/main/pyxel/mastermind",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/148.gif"
-    }
-  },
-  {
-    "id": "147",
-    "name": "popstar",
-    "description": "A SameGame-style puzzle game",
-    "source": "examples",
-    "author": {
-      "name": "shichunhui",
-      "url": "mailto:mrshich@foxmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 147,
-      "project_url": "https://github.com/c-hui/popstar",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/147.gif"
-    }
-  },
-  {
-    "id": "146",
-    "name": "Pyxel Mandelbrot",
-    "description": "A Mandelbrot set drawing tool",
-    "source": "examples",
-    "author": {
-      "name": "gomatama5",
-      "url": "https://github.com/gomatama5"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 146,
-      "project_url": "https://github.com/gomatama5/Pyxel_Mandelbrot",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/146.gif"
-    }
-  },
-  {
-    "id": "145",
-    "name": "Jump Jump Bouncing Ball",
-    "description": "A jumping action game with a physics engine",
-    "source": "examples",
-    "author": {
-      "name": "gomatama5",
-      "url": "https://github.com/gomatama5"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 145,
-      "project_url": "https://github.com/gomatama5/Jump_Jump_Bouncing_Ball",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/145.gif"
-    }
-  },
-  {
-    "id": "144",
-    "name": "Number Link",
-    "description": "A puzzle game about connecting matching numbers with a line",
-    "source": "examples",
-    "author": {
-      "name": "ku-ron",
-      "url": "https://github.com/ku-ron"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 144,
-      "project_url": "https://github.com/ku-ron/pyxel_minigames/blob/main/main/numberlink/readme.md",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/144.gif"
-    }
-  },
-  {
-    "id": "143",
-    "name": "Gem'X Pyxel Clone",
-    "description": "An Amiga puzzle game clone",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 143,
-      "project_url": "https://sanbunnoichi1962.web.fc2.com/pyxel_contents.html#gemx",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/143.gif"
-    }
-  },
-  {
-    "id": "142",
-    "name": "L'Épopée Pixellisée",
-    "description": "A platformer",
-    "source": "examples",
-    "author": {
-      "name": "Lamorkitu93",
-      "url": "https://github.com/Lamorkitu93"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 142,
-      "project_url": "https://www.pyxelstudio.net/cf2apb4z",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/142.gif"
-    }
-  },
-  {
-    "id": "141",
-    "name": "Stalker Bar",
-    "description": "An adventure game",
-    "source": "examples",
-    "author": {
-      "name": "s1tf",
-      "url": "https://github.com/s1tf"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 141,
-      "project_url": "https://sitf.itch.io/stalkerbar",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/141.gif"
-    }
-  },
-  {
-    "id": "140",
-    "name": "Mahjong Solitaire",
-    "description": "A simple Mahjong solitaire game",
-    "source": "examples",
-    "author": {
-      "name": "BouKiCHi",
-      "url": "https://x.com/boukichi_numloc"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 140,
-      "project_url": "https://github.com/BouKiCHi/mahjong",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/140.gif"
-    }
-  },
-  {
-    "id": "139",
-    "name": "Asteroids",
-    "description": "A multidirectional shooter",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 139,
-      "project_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/asteroids",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/139.gif"
-    }
-  },
-  {
-    "id": "138",
-    "name": "Seagull's Fishing",
-    "description": "An easy 60-second score-attack game",
-    "source": "examples",
-    "author": {
-      "name": "こいし",
-      "url": "https://x.com/koishi_dot"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 138,
-      "project_url": "https://stone-dot.itch.io/seagulls-fishing",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/138.gif"
-    }
-  },
-  {
-    "id": "137",
-    "name": "Typing Practice",
-    "description": "A typing practice game using words from Python and Pyxel",
-    "source": "examples",
-    "author": {
-      "name": "SamuraiApps",
-      "url": "https://x.com/samuraiapps"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 137,
-      "project_url": "https://github.com/samurai-apps/pyxel-games/blob/main/src/91_typing_practice.py",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/137.gif"
-    }
-  },
-  {
-    "id": "136",
-    "name": "Laser Jetman",
-    "description": "An arcade shoot-em-up",
-    "source": "examples",
-    "author": {
-      "name": "Adam",
-      "url": "https://x.com/badcomputer0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 136,
-      "project_url": "https://github.com/helpcomputer/laser-jetman",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/136.gif"
-    }
-  },
-  {
-    "id": "135",
-    "name": "Rocket Flight",
-    "description": "A side-scrolling endless runner",
-    "source": "examples",
-    "author": {
-      "name": "nadi726",
-      "url": "https://github.com/nadi726"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 135,
-      "project_url": "https://github.com/nadi726/Rocket-Flight",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/135.gif"
-    }
-  },
-  {
-    "id": "134",
-    "name": "EntroPipes",
-    "description": "A puzzle game about rotating and connecting all pipes",
-    "source": "examples",
-    "author": {
-      "name": "Son Link",
-      "url": "https://x.com/sonlink"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 134,
-      "project_url": "https://codeberg.org/son_link/EntroPipes",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/134.gif"
-    }
-  },
-  {
-    "id": "133",
-    "name": "Tapping Freecell",
-    "description": "A FreeCell game with touch controls",
-    "source": "examples",
-    "author": {
-      "name": "tiquer17",
-      "url": "https://github.com/tiquer17"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 133,
-      "project_url": "https://tiquer17.github.io/pyxel/freecell/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/133.gif"
-    }
-  },
-  {
-    "id": "132",
-    "name": "AutoRace",
-    "description": "An early car racing game",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 132,
-      "project_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/autorace",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/132.gif"
-    }
-  },
-  {
-    "id": "131",
-    "name": "HadeGame",
-    "description": "A first-person 3D maze escape game",
-    "source": "examples",
-    "author": {
-      "name": "hann-solo",
-      "url": "https://x.com/_hnsol"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 131,
-      "project_url": "https://github.com/hnsol/pyxel-hadegame/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/131.gif"
-    }
-  },
-  {
-    "id": "130",
-    "name": "3D Maze",
-    "description": "A first-person 3D maze escape game",
-    "source": "examples",
-    "author": {
-      "name": "Sanzentyo",
-      "url": "https://github.com/Sanzentyo"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 130,
-      "project_url": "https://github.com/Sanzentyo/3D_Maze",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/130.gif"
-    }
-  },
-  {
-    "id": "129",
-    "name": "PyxelChip8",
-    "description": "A CHIP-8 emulator",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 129,
-      "project_url": "https://github.com/jay-kumogata/PyxelChip8",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/129.gif"
-    }
-  },
-  {
-    "id": "128",
-    "name": "pymunk_de_smartball",
-    "description": "A Smartball simulator using the pymunk library",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 128,
-      "project_url": "https://sanbunno-ichi.github.io/pymunk_de_smartball/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/128.gif"
-    }
-  },
-  {
-    "id": "127",
-    "name": "minesweeper",
-    "description": "A Minesweeper game",
-    "source": "examples",
-    "author": {
-      "name": "tiquer17",
-      "url": "https://github.com/tiquer17"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 127,
-      "project_url": "https://github.com/tiquer17/pyxel/tree/main/minesweeper",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/127.gif"
-    }
-  },
-  {
-    "id": "126",
-    "name": "PyxelRogue",
-    "description": "A traditional roguelike game",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 126,
-      "project_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/pyxelrogue",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/126.gif"
-    }
-  },
-  {
-    "id": "125",
-    "name": "Gamaguchi's Munch Panic",
-    "description": "A simple action game",
-    "source": "examples",
-    "author": {
-      "name": "naoto",
-      "url": "https://github.com/naoto714714"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 125,
-      "project_url": "https://github.com/naoto714714/pyxel-mogumogu-panic",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/125.gif"
-    }
-  },
-  {
-    "id": "124",
-    "name": "Pyxel2D",
-    "description": "A simple physics engine",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 124,
-      "project_url": "https://github.com/jay-kumogata/Pyxel2D",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/124.gif"
-    }
-  },
-  {
-    "id": "123",
-    "name": "Columsme",
-    "description": "A falling-block puzzle game",
-    "source": "examples",
-    "author": {
-      "name": "QZK",
-      "url": "https://x.com/qzakusega"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 123,
-      "project_url": "https://github.com/qzk4078/columusume_public",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/123.gif"
-    }
-  },
-  {
-    "id": "122",
-    "name": "pymunk_de_pinball",
-    "description": "A pinball simulator using the pymunk library",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 122,
-      "project_url": "https://sanbunno-ichi.github.io/pymunk_de_pinball/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/122.gif"
-    }
-  },
-  {
-    "id": "121",
-    "name": "Falling is learning",
-    "description": "A memory puzzle",
-    "source": "examples",
-    "author": {
-      "name": "squiddy",
-      "url": "https://github.com/squiddy"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 121,
-      "project_url": "https://sqddy.itch.io/falling-is-learning",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/121.gif"
-    }
-  },
-  {
-    "id": "120",
-    "name": "pyxelvania",
-    "description": "A simple metroidvania",
-    "source": "examples",
-    "author": {
-      "name": "hulk89",
-      "url": "https://github.com/Hulk89"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 120,
-      "project_url": "https://github.com/hulk89/pyxelvania",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/120.gif"
-    }
-  },
-  {
-    "id": "119",
-    "name": "Tower of Ashura",
-    "description": "A simple dungeon-crawling RPG",
-    "source": "examples",
-    "author": {
-      "name": "Goldics",
-      "url": "https://x.com/tsapps_goldics"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 119,
-      "project_url": "https://ashura.tsapps.net/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/119.gif"
-    }
-  },
-  {
-    "id": "116",
-    "name": "Push!",
-    "description": "An action puzzle game",
-    "source": "examples",
-    "author": {
-      "name": "yuta",
-      "url": "https://x.com/yyuta342"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 116,
-      "project_url": "https://yyuta342.itch.io/push",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/116.gif"
-    }
-  },
-  {
-    "id": "115",
-    "name": "Second Best",
-    "description": "An abstract strategy game to block the opponent's best hand",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 115,
-      "project_url": "https://aged99oow.github.io/second/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/115.gif"
-    }
-  },
-  {
-    "id": "114",
-    "name": "Pyxel Bobbles",
-    "description": "A Puzzle Bobble-like game",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 114,
-      "project_url": "https://github.com/sanbunno-ichi/pyxelpb",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/114.gif"
-    }
-  },
-  {
-    "id": "113",
-    "name": "Seafish",
-    "description": "A chess AI you can play against",
-    "source": "examples",
-    "author": {
-      "name": "s3bw",
-      "url": "https://github.com/s3bw"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 113,
-      "project_url": "https://s3bw.github.io/seafish",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/113.gif"
-    }
-  },
-  {
-    "id": "112",
-    "name": "Bubbles",
-    "description": "An arcade action game",
-    "source": "examples",
-    "author": {
-      "name": "Adam",
-      "url": "https://x.com/badcomputer0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 112,
-      "project_url": "https://github.com/helpcomputer/bubbles",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/112.gif"
-    }
-  },
-  {
-    "id": "111",
-    "name": "Sarananda",
-    "description": "An escape game set inside an unidentified star",
-    "source": "examples",
-    "author": {
-      "name": "KADOYAN",
-      "url": "https://x.com/kadoyan"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 111,
-      "project_url": "https://github.com/kadoyan/sarananda",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/111.gif"
-    }
-  },
-  {
-    "id": "110",
-    "name": "Pyxel Block",
-    "description": "A block-breaking game",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 110,
-      "project_url": "https://github.com/sanbunno-ichi/pyxelblk",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/110.gif"
-    }
-  },
-  {
-    "id": "109",
-    "name": "Try Your Flash Memory",
-    "description": "A short-term memory and visual acuity test",
-    "source": "examples",
-    "author": {
-      "name": "IgarashisanT",
-      "url": "https://x.com/IgarashisanT"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 109,
-      "project_url": "https://github.com/IgarashisanT/TryYourFlashMemory",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/109.gif"
-    }
-  },
-  {
-    "id": "108",
-    "name": "Ticoban",
-    "description": "A Sokoban clone",
-    "source": "examples",
-    "author": {
-      "name": "Son Link",
-      "url": "https://x.com/sonlink"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 108,
-      "project_url": "https://github.com/son-link/ticoban-pyxel",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/108.gif"
-    }
-  },
-  {
-    "id": "107",
-    "name": "Mini Zelda",
-    "description": "A reduced version of The Legend of Zelda (NES)",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 107,
-      "project_url": "https://aged99oow.github.io/zelda/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/107.gif"
-    }
-  },
-  {
-    "id": "106",
-    "name": "mandelzoom",
-    "description": "A multicolor Mandelbrot drawing tool",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 106,
-      "project_url": "https://github.com/sanbunno-ichi/fracanim#mandelzoom",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/106.gif"
-    }
-  },
-  {
-    "id": "105",
-    "name": "Sougwachi",
-    "description": "A game about distributing New Year's gifts to visiting relatives",
-    "source": "examples",
-    "author": {
-      "name": "Yoshinori Honda",
-      "url": "https://x.com/dee_okinawa"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 105,
-      "project_url": "https://dee-okinawa.com/game/sougachi/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/105.gif"
-    }
-  },
-  {
-    "id": "104",
-    "name": "Mahjong",
-    "description": "A two-player Mahjong game against the computer",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 104,
-      "project_url": "https://github.com/sanbunno-ichi/pyxelmj",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/104.gif"
-    }
-  },
-  {
-    "id": "103",
-    "name": "ACLM",
-    "description": "A game where you pilot a plane and defeat an enemy",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 103,
-      "project_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/aclm",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/103.gif"
-    }
-  },
-  {
-    "id": "102",
-    "name": "Pinball",
-    "description": "A pinball simulator",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 102,
-      "project_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/pinball",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/102.gif"
-    }
-  },
-  {
-    "id": "101",
-    "name": "Pen Apple",
-    "description": "A roguelike deckbuilder powered by LLMs",
-    "source": "examples",
-    "author": {
-      "name": "RuneBlaze"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 101,
-      "project_url": "https://www.youtube.com/watch?v=I1tEa5poHl0",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/101.gif"
-    }
-  },
-  {
-    "id": "100",
-    "name": "Cellular Automata",
-    "description": "An implementation of Conway's Game of Life",
-    "source": "examples",
-    "author": {
-      "name": "Julian",
-      "url": "https://github.com/juliangroen"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 100,
-      "project_url": "https://juliangroen.github.io/cellular-automata/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/100.gif"
-    }
-  },
-  {
-    "id": "99",
-    "name": "Hieroglyph_Editor",
-    "description": "A small editor that converts Japanese into hieroglyphs",
-    "source": "examples",
-    "author": {
-      "name": "koidemizu"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 99,
-      "project_url": "https://koidemizu.github.io/post/hieroglyph/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/99.gif"
-    }
-  },
-  {
-    "id": "98",
-    "name": "Pyxel Invaders",
-    "description": "A Space Invaders-like shooting game",
-    "source": "examples",
-    "author": {
-      "name": "sanbunnoichi",
-      "url": "mailto:sanbunnoichi1962@gmail.com"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 98,
-      "project_url": "https://github.com/sanbunno-ichi/pyxelinv",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/98.gif"
-    }
-  },
-  {
-    "id": "97",
-    "name": "MrColorHD",
-    "description": "A platformer about a popular Brazilian festival",
-    "source": "examples",
-    "author": {
-      "name": "Carma Junino"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 97,
-      "project_url": "https://mrcolorhd.itch.io/carma-junino",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/97.gif"
-    }
-  },
-  {
-    "id": "96",
-    "name": "Mini Typing",
-    "description": "A Japanese–English translation typing game",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 96,
-      "project_url": "https://aged99oow.github.io/typing/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/96.gif"
-    }
-  },
-  {
-    "id": "95",
-    "name": "Poker",
-    "description": "A tabletop card game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 95,
-      "project_url": "https://github.com/Hiekichi/Poker",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/95.gif"
-    }
-  },
-  {
-    "id": "94",
-    "name": "Attacker",
-    "description": "A retro shooting game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 94,
-      "project_url": "https://github.com/Hiekichi/Attacker",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/94.gif"
-    }
-  },
-  {
-    "id": "93",
-    "name": "Stellar Blazer",
-    "description": "A shooting game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 93,
-      "project_url": "https://github.com/Hiekichi/StellarBlazer",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/93.gif"
-    }
-  },
-  {
-    "id": "92",
-    "name": "Vortexion",
-    "description": "A shoot-em-up",
-    "source": "examples",
-    "author": {
-      "name": "Adam",
-      "url": "https://x.com/badcomputer0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 92,
-      "project_url": "https://github.com/helpcomputer/vortexion",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/92.gif"
-    }
-  },
-  {
-    "id": "91",
-    "name": "ChottoCopter",
-    "description": "A hostage rescue game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 91,
-      "project_url": "https://github.com/Hiekichi/ChottoCopter",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/91.gif"
-    }
-  },
-  {
-    "id": "90",
-    "name": "CheaperDepth",
-    "description": "A depth charge game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 90,
-      "project_url": "https://github.com/Hiekichi/CheeperDepth",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/90.gif"
-    }
-  },
-  {
-    "id": "89",
-    "name": "Kanixian",
-    "description": "A shooting game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 89,
-      "project_url": "https://github.com/Hiekichi/Kanixian",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/89.gif"
-    }
-  },
-  {
-    "id": "88",
-    "name": "BakudanKun",
-    "description": "A bomber game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 88,
-      "project_url": "https://github.com/Hiekichi/BakudanKunPy",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/88.gif"
-    }
-  },
-  {
-    "id": "87",
-    "name": "LF3DP",
-    "description": "A game about drawing a closed-loop sketch of a dream",
-    "source": "examples",
-    "author": {
-      "name": "GANAH",
-      "url": "https://github.com/sichaozhang1112/PEANUX"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 87,
-      "project_url": "https://github.com/sichaozhang1112/LF3DP",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/87.gif"
-    }
-  },
-  {
-    "id": "86",
-    "name": "MazeWalkGame",
-    "description": "A dot-eating game",
-    "source": "examples",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 86,
-      "project_url": "https://github.com/Hiekichi/MazeWalkGame",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/86.gif"
-    }
-  },
-  {
-    "id": "85",
-    "name": "obakeHunt",
-    "description": "A shooting game with a finger gun",
-    "source": "examples",
-    "author": {
-      "name": "sirococoa",
-      "url": "https://x.com/sirococoa1"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 85,
-      "project_url": "https://sirococoa.github.io/obakeHunt/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/85.gif"
-    }
-  },
-  {
-    "id": "84",
-    "name": "Ostle",
-    "description": "An abstract strategy game on a 5x5 square grid",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 84,
-      "project_url": "https://aged99oow.github.io/ostle/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/84.gif"
-    }
-  },
-  {
-    "id": "83",
-    "name": "Dice Arithmetic",
-    "description": "A game where you make the number closest to the target",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 83,
-      "project_url": "https://aged99oow.github.io/dice/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/83.gif"
-    }
-  },
-  {
-    "id": "82",
-    "name": "Sangoku Historia",
-    "description": "A strategic simulation game set in the Three Kingdoms",
-    "source": "examples",
-    "author": {
-      "name": "frenchbread",
-      "url": "https://x.com/frenchbread1222"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 82,
-      "project_url": "https://github.com/shiromofufactory/pyxel-sangokushi-guide",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/82.gif"
-    }
-  },
-  {
-    "id": "81",
-    "name": "Lode Runner Remake",
-    "description": "A Lode Runner remake (IREM + NES)",
-    "source": "examples",
-    "author": {
-      "name": "dauet",
-      "url": "https://x.com/rfsguhfgkohbf"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 81,
-      "project_url": "https://dauet.github.io/ld/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/81.gif"
-    }
-  },
-  {
-    "id": "80",
-    "name": "Scratch Lesson Port",
-    "description": "A Pyxel version of MIT Scratch lessons",
-    "source": "examples",
-    "author": {
-      "name": "EdTheDev",
-      "url": "https://github.com/edthedev"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 80,
-      "project_url": "https://edward.delaporte.us/pyxel/doodlebug/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/80.gif"
-    }
-  },
-  {
-    "id": "79",
-    "name": "Shroomy Shroom",
-    "description": "A side-scrolling survival game made for Remix It Jam 2023",
-    "source": "examples",
-    "author": {
-      "name": "Takane",
-      "url": "https://x.com/takane_ichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 79,
-      "project_url": "https://takaneichinose.itch.io/shroomy-shroom",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/79.gif"
-    }
-  },
-  {
-    "id": "78",
-    "name": "Mini RPG",
-    "description": "A no-save mini RPG",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 78,
-      "project_url": "https://aged99oow.github.io/rpg/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/78.gif"
-    }
-  },
-  {
-    "id": "77",
-    "name": "Mini Pittan",
-    "description": "A Japanese word puzzle",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 77,
-      "project_url": "https://aged99oow.github.io/pittan/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/77.gif"
-    }
-  },
-  {
-    "id": "76",
-    "name": "Pyxel Road Demo",
-    "description": "An OutRun-like road with scalable sprites and a parallax background",
-    "source": "examples",
-    "author": {
-      "name": "Ilya",
-      "url": "https://github.com/ilya-ssh"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 76,
-      "project_url": "https://github.com/ilya-ssh/PyxelRoadDemo",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/76.gif"
-    }
-  },
-  {
-    "id": "75",
-    "name": "Chip8Mini",
-    "description": "A CHIP-8 emulator that runs inside the game cabinet",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 75,
-      "project_url": "https://github.com/jay-kumogata/Chip8Mini",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/75.gif"
-    }
-  },
-  {
-    "id": "74",
-    "name": "Panelund",
-    "description": "A boss fight where you surround and charge the enemy boss",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 74,
-      "project_url": "https://aged99oow.github.io/panel/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/74.gif"
-    }
-  },
-  {
-    "id": "73",
-    "name": "Othellomino",
-    "description": "An Othello variant with polyominoes",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 73,
-      "project_url": "https://aged99oow.github.io/othello/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/73.gif"
-    }
-  },
-  {
-    "id": "72",
-    "name": "PyGmc4",
-    "description": "A Gakken GMC-4 emulator in Python",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 72,
-      "project_url": "https://github.com/jay-kumogata/PyGmc4",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/72.gif"
-    }
-  },
-  {
-    "id": "71",
-    "name": "mini-space",
-    "description": "A mini shooter with many projectiles",
-    "source": "examples",
-    "author": {
-      "name": "bhunao",
-      "url": "https://github.com/bhunao"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 71,
-      "project_url": "https://github.com/bhunao/minispace_pyxel",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/71.gif"
-    }
-  },
-  {
-    "id": "70",
-    "name": "Mini Mario",
-    "description": "A reduced version of Super Mario Bros. (NES)",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 70,
-      "project_url": "https://aged99oow.github.io/mario/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/70.gif"
-    }
-  },
-  {
-    "id": "69",
-    "name": "Mini Mahjong",
-    "description": "A Mahjong game with reduced tiles",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 69,
-      "project_url": "https://aged99oow.github.io/mahjong/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/69.gif"
-    }
-  },
-  {
-    "id": "68",
-    "name": "Mini Shogi",
-    "description": "A shogi game with reduced pieces on a 5x5 board",
-    "source": "examples",
-    "author": {
-      "name": "aged99oow",
-      "url": "https://x.com/aged99"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 68,
-      "project_url": "https://aged99oow.github.io/shogi/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/68.gif"
-    }
-  },
-  {
-    "id": "66",
-    "name": "8bit BGM generator",
-    "description": "A tool to automatically generate 3-channel Pyxel sounds",
-    "source": "examples",
-    "author": {
-      "name": "frenchbread",
-      "url": "https://x.com/frenchbread1222"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 66,
-      "project_url": "https://retro-bgm-generator.web.app/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/66.gif"
-    }
-  },
-  {
-    "id": "65",
-    "name": "kektris",
-    "description": "A four-quadrant Tetris game",
-    "source": "examples",
-    "author": {
-      "name": "KonstantinKlepikov",
-      "url": "https://github.com/KonstantinKlepikov"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 65,
-      "project_url": "https://github.com/KonstantinKlepikov/kektris",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/65.gif"
-    }
-  },
-  {
-    "id": "64",
-    "name": "Target_shooting",
-    "description": "A simple action shooting game",
-    "source": "examples",
-    "author": {
-      "name": "koidemizu",
-      "url": "https://github.com/koidemizu"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 64,
-      "project_url": "https://koidemizu.github.io/post/action-shooting/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/64.gif"
-    }
-  },
-  {
-    "id": "63",
-    "name": "Unnamed RPG",
-    "description": "A simple RPG with 1v1 combat and party shuffling",
-    "source": "examples",
-    "author": {
-      "name": "Adam",
-      "url": "https://x.com/helpcomputer0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 63,
-      "project_url": "https://github.com/helpcomputer",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/63.gif"
-    }
-  },
-  {
-    "id": "62",
-    "name": "Hopping Hiyoko",
-    "description": "A game about helping chicks reach higher places",
-    "source": "examples",
-    "author": {
-      "name": "rococomico",
-      "url": "https://x.com/rococomico"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 62,
-      "project_url": "https://github.com/rococomico/Pyxel_games",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/62.gif"
-    }
-  },
-  {
-    "id": "61",
-    "name": "Baba Is You",
-    "description": "A Baba Is You demake",
-    "source": "examples",
-    "author": {
-      "name": "Fraser Greenlee",
-      "url": "https://x.com/FraserGreenlee"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 61,
-      "project_url": "https://github.com/Fraser-Greenlee/baba-is-you",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/61.gif"
-    }
-  },
-  {
-    "id": "60",
-    "name": "Dragon Quest 1 for Pyxel",
-    "description": "A port of the NES game of the same name",
-    "source": "examples",
-    "author": {
-      "name": "frenchbread",
-      "url": "https://x.com/frenchbread1222"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 60,
-      "project_url": "https://pyxel-dq1.web.app/?gamepad=enabled",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/60.gif"
-    }
-  },
-  {
-    "id": "59",
-    "name": "Emergency Button",
-    "description": "A clone of the emergency stop button at a train station",
-    "source": "examples",
-    "author": {
-      "name": "Tokoroteen",
-      "url": "https://x.com/Tokoroteen__"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 59,
-      "project_url": "https://emergency-button.com/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/59.gif"
-    }
-  },
-  {
-    "id": "58",
-    "name": "SUSHI SHOOTER",
-    "description": "A sushi shooting game",
-    "source": "examples",
-    "author": {
-      "name": "sejiseji",
-      "url": "https://x.com/sejiijes"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 58,
-      "project_url": "https://github.com/sejiseji/pyxel-sushi",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/58.gif"
-    }
-  },
-  {
-    "id": "57",
-    "name": "Floppy Dog",
-    "description": "A Flappy Bird clone",
-    "source": "examples",
-    "author": {
-      "name": "JosephFerano",
-      "url": "https://github.com/JosephFerano"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 57,
-      "project_url": "https://github.com/badrain-games/fancon/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/57.gif"
-    }
-  },
-  {
-    "id": "56",
-    "name": "Pie, Robot",
-    "description": "A pizza-ingredient stacking game",
-    "source": "examples",
-    "author": {
-      "name": "Jonathan Routley",
-      "url": "https://github.com/jonnyroutley"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 56,
-      "project_url": "https://github.com/jonnyroutley/robot-game",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/56.gif"
-    }
-  },
-  {
-    "id": "55",
-    "name": "Moscow Nights",
-    "description": "A tower defense game",
-    "source": "examples",
-    "author": {
-      "name": "s1tf",
-      "url": "https://github.com/s1tf"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 55,
-      "project_url": "https://aliskda.itch.io/moscownights",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/55.gif"
-    }
-  },
-  {
-    "id": "54",
-    "name": "SEKISAI",
-    "description": "A side-scrolling puzzle action game",
-    "source": "examples",
-    "author": {
-      "name": "sewohayami",
-      "url": "https://x.com/hayami_sewo"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 54,
-      "project_url": "https://store.steampowered.com/app/2154790/SEKISAI_puzzle_action/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/54.gif"
-    }
-  },
-  {
-    "id": "53",
-    "name": "Tetris Pyxel",
-    "description": "A classic Tetris game based on Tetris DX for Game Boy Color",
-    "source": "examples",
-    "author": {
-      "name": "mehrdad-mixtape",
-      "url": "https://github.com/mehrdad-mixtape"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 53,
-      "project_url": "https://github.com/mehrdad-mixtape/Tetris_Pyxel/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/53.gif"
-    }
-  },
-  {
-    "id": "52",
-    "name": "Pyxel Rogue",
-    "description": "A roguelike shooter with randomly generated rooms",
-    "source": "examples",
-    "author": {
-      "name": "Antoine-bdc",
-      "url": "https://github.com/Antoine-bdc"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 52,
-      "project_url": "https://cereale.itch.io/pyxel-rogue",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/52.gif"
-    }
-  },
-  {
-    "id": "51",
-    "name": "Tu-tu-tuweeeeep",
-    "description": "A fixed screen platformer with a 30-second time limit",
-    "source": "examples",
-    "author": {
-      "name": "Antoine-bdc",
-      "url": "https://github.com/Antoine-bdc"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 51,
-      "project_url": "https://cereale.itch.io/tu-tu-tuweeeep",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/51.gif"
-    }
-  },
-  {
-    "id": "50",
-    "name": "Bit Maze",
-    "description": "A puzzle-platformer",
-    "source": "examples",
-    "author": {
-      "name": "Takane",
-      "url": "https://x.com/takane_ichi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 50,
-      "project_url": "https://github.com/takaneichinose/pyxel_bit_maze",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/50.gif"
-    }
-  },
-  {
-    "id": "48",
-    "name": "The last space fighter",
-    "description": "A space shooter",
-    "source": "examples",
-    "author": {
-      "name": "Yuiio",
-      "url": "mailto:yuiio@sotodesign.org"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 48,
-      "project_url": "https://github.com/yuiio/last-space-fighter",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/48.gif"
-    }
-  },
-  {
-    "id": "47",
-    "name": "pytouch",
-    "description": "A hyper-casual game",
-    "source": "examples",
-    "author": {
-      "name": "kra53n",
-      "url": "https://github.com/kra53n"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 47,
-      "project_url": "https://github.com/kra53n/pytouch",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/47.gif"
-    }
-  },
-  {
-    "id": "46",
-    "name": "GrowyGardens",
-    "description": "A high-speed chaotic farming simulator",
-    "source": "examples",
-    "author": {
-      "name": "SuperZooper3",
-      "url": "https://github.com/SuperZooper3"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 46,
-      "project_url": "https://github.com/SuperZooper3/GrowyGardens",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/46.gif"
-    }
-  },
-  {
-    "id": "45",
-    "name": "platformer: prototype",
-    "description": "A 2D platformer prototype with two layers",
-    "source": "examples",
-    "author": {
-      "name": "lemon24",
-      "url": "https://github.com/lemon24"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 45,
-      "project_url": "https://github.com/lemon24/platformer/blob/master/test.py",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/45.gif"
-    }
-  },
-  {
-    "id": "44",
-    "name": "PyxelChip8",
-    "description": "A CHIP-8 emulator",
-    "source": "examples",
-    "author": {
-      "name": "Jay Kumogata",
-      "url": "https://x.com/jay_kumogata"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 44,
-      "project_url": "https://github.com/jay-kumogata/RetroGames",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/44.gif"
-    }
-  },
-  {
-    "id": "43",
-    "name": "Mini-Solitaire",
-    "description": "A \"demake\" of Klondike Solitaire",
-    "source": "examples",
-    "author": {
-      "name": "SteelWool32",
-      "url": "https://github.com/SteelWool32"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 43,
-      "project_url": "https://github.com/SteelWool32/mini-solitaire",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/43.gif"
-    }
-  },
-  {
-    "id": "42",
-    "name": "Screen Melt",
-    "description": "A screen-melting effect",
-    "source": "examples",
-    "author": {
-      "name": "ameuret",
-      "url": "https://github.com/ameuret"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 42,
-      "project_url": "https://github.com/ameuret/screenMeltDoom",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/42.gif"
-    }
-  },
-  {
-    "id": "41",
-    "name": "Tetris",
-    "description": "A Tetris game",
-    "source": "examples",
-    "author": {
-      "name": "3w36zj6",
-      "url": "https://github.com/3w36zj6"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 41,
-      "project_url": "https://github.com/3w36zj6/Tetris",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/41.gif"
-    }
-  },
-  {
-    "id": "40",
-    "name": "PyxelSand2",
-    "description": "A \"falling sand\" style game",
-    "source": "examples",
-    "author": {
-      "name": "HarryPeach",
-      "url": "https://github.com/HarryPeach"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 40,
-      "project_url": "https://github.com/HarryPeach/PyxelSand2",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/40.gif"
-    }
-  },
-  {
-    "id": "39",
-    "name": "Maze generation",
-    "description": "A maze generator",
-    "source": "examples",
-    "author": {
-      "name": "timfi",
-      "url": "https://github.com/timfi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 39,
-      "project_url": "https://github.com/timfi/pyxel_games",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/39.gif"
-    }
-  },
-  {
-    "id": "38",
-    "name": "Sudoku Solver",
-    "description": "A Sudoku solver",
-    "source": "examples",
-    "author": {
-      "name": "timfi",
-      "url": "https://github.com/timfi"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 38,
-      "project_url": "https://github.com/timfi/pyxel_games",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/38.gif"
-    }
-  },
-  {
-    "id": "37",
-    "name": "Hybrid",
-    "description": "A game about splicing DNA",
-    "source": "examples",
-    "author": {
-      "name": "gediminasz",
-      "url": "https://github.com/gediminasz"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 37,
-      "project_url": "https://github.com/gediminasz/games",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/37.gif"
-    }
-  },
-  {
-    "id": "36",
-    "name": "Onset",
-    "description": "A Guitar Hero-style game where you can play any song",
-    "source": "examples",
-    "author": {
-      "name": "gediminasz",
-      "url": "https://github.com/gediminasz"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 36,
-      "project_url": "https://github.com/gediminasz/games",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/36.gif"
-    }
-  },
-  {
-    "id": "35",
-    "name": "Typo",
-    "description": "A typing game",
-    "source": "examples",
-    "author": {
-      "name": "gediminasz",
-      "url": "https://github.com/gediminasz"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 35,
-      "project_url": "https://github.com/gediminasz/games",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/35.gif"
-    }
-  },
-  {
-    "id": "33",
-    "name": "Censor",
-    "description": "Papers, Please alike",
-    "source": "examples",
-    "author": {
-      "name": "aliskda"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 33,
-      "project_url": "https://gamedev.ru/flame/forum/?id=252482",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/33.gif"
-    }
-  },
-  {
-    "id": "32",
-    "name": "Ostrov",
-    "description": "A survival game",
-    "source": "examples",
-    "author": {
-      "name": "aliskda"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 32,
-      "project_url": "https://gamedev.ru/flame/forum/?id=245207",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/32.gif"
-    }
-  },
-  {
-    "id": "31",
-    "name": "Snow Planet",
-    "description": "A tower defense / RTS game",
-    "source": "examples",
-    "author": {
-      "name": "aliskda"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 31,
-      "project_url": "https://gamedev.ru/flame/forum/?id=248258",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/31.gif"
-    }
-  },
-  {
-    "id": "30",
-    "name": "Fiction-X",
-    "description": "A side-scrolling old-school shooting game",
-    "source": "examples",
-    "author": {
-      "name": "k-o-matic"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 30,
-      "project_url": "https://github.com/k-o-matic/fictionx",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/30.gif"
-    }
-  },
-  {
-    "id": "28",
-    "name": "Orange Juice Invasion",
-    "description": "A vertical shoot-em-up",
-    "source": "examples",
-    "author": {
-      "name": "Arthus",
-      "url": "mailto:arthus@meuret.net"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 28,
-      "project_url": "https://zoltek-s.itch.io/oji",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/28.gif"
-    }
-  },
-  {
-    "id": "27",
-    "name": "Mineral Planets",
-    "description": "A space RTS",
-    "source": "examples",
-    "author": {
-      "name": "aliskda"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 27,
-      "project_url": "https://gamedev.ru/flame/forum/?id=246559",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/27.gif"
-    }
-  },
-  {
-    "id": "22",
-    "name": "Bansoko",
-    "description": "A space-themed Sokoban clone",
-    "source": "examples",
-    "author": {
-      "name": "Krzysztof Furtak",
-      "url": "https://github.com/kfurtak1024"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 22,
-      "project_url": "https://github.com/kfurtak1024/bansoko",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/22.gif"
-    }
-  },
-  {
-    "id": "21",
-    "name": "Keikogyugo",
-    "description": "A simulation game based on Japan's \"Sengoku Jidai\"",
-    "source": "examples",
-    "author": {
-      "name": "koidemizu",
-      "url": "https://github.com/koidemizu"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 21,
-      "project_url": "https://koidemizu.itch.io/keikogyugo",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/21.gif"
-    }
-  },
-  {
-    "id": "20",
-    "name": "Pyxel Raycast",
-    "description": "A basic raycast example",
-    "source": "examples",
-    "author": {
-      "name": "Dan MacNaughtan",
-      "url": "https://github.com/danmacnaughtan"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 20,
-      "project_url": "https://github.com/danmacnaughtan/pyxel-raycast",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/20.gif"
-    }
-  },
-  {
-    "id": "19",
-    "name": "Regicide",
-    "description": "A simple retro action RPG",
-    "source": "examples",
-    "author": {
-      "name": "koidemizu",
-      "url": "https://github.com/koidemizu"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 19,
-      "project_url": "https://koidemizu.itch.io/regicide",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/19.gif"
-    }
-  },
-  {
-    "id": "18",
-    "name": "Nyan Cat",
-    "description": "A simple shooting game with Nyan Cat",
-    "source": "examples",
-    "author": {
-      "name": "3w36zj6",
-      "url": "https://github.com/3w36zj6"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 18,
-      "project_url": "https://github.com/3w36zj6/NyanCat",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/18.gif"
-    }
-  },
-  {
-    "id": "17",
-    "name": "Onyx of Black",
-    "description": "A retro-style dungeon-crawl RPG",
-    "source": "examples",
-    "author": {
-      "name": "aburi6800",
-      "url": "https://x.com/aburi6800"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 17,
-      "project_url": "https://github.com/aburi6800/Python-OnyxOfBlack",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/17.gif"
-    }
-  },
-  {
-    "id": "16",
-    "name": "mini shooting",
-    "description": "A shoot-em-up with 20 missions",
-    "source": "examples",
-    "author": {
-      "name": "shoot.er",
-      "url": "https://x.com/m4_sd"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 16,
-      "project_url": "https://github.com/5h00T/mini_shooting",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/16.gif"
-    }
-  },
-  {
-    "id": "15",
-    "name": "Megaball",
-    "description": "An arcade ball-physics game",
-    "source": "examples",
-    "author": {
-      "name": "Adam",
-      "url": "https://x.com/helpcomputer0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 15,
-      "project_url": "https://helpcomputer.itch.io/megaball",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/15.gif"
-    }
-  },
-  {
-    "id": "14",
-    "name": "Maze",
-    "description": "A simple 2D maze",
-    "source": "examples",
-    "author": {
-      "name": "odanny",
-      "url": "https://x.com/dannyso16"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 14,
-      "project_url": "https://github.com/dannyso16/Maze",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/14.gif"
-    }
-  },
-  {
-    "id": "13",
-    "name": "Pynasour",
-    "description": "A Chrome T-Rex clone",
-    "source": "examples",
-    "author": {
-      "name": "odanny",
-      "url": "https://x.com/dannyso16"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 13,
-      "project_url": "https://pypi.org/project/pynasour/",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/13.gif"
-    }
-  },
-  {
-    "id": "12",
-    "name": "Akalabeth: World of Doom",
-    "description": "An Akalabeth: World of Doom clone",
-    "source": "examples",
-    "author": {
-      "name": "CoBinee",
-      "url": "https://x.com/cobinee"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 12,
-      "project_url": "https://github.com/CoBinee/akalabeth-pyxel",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/12.gif"
-    }
-  },
-  {
-    "id": "11",
-    "name": "Tiny Trek",
-    "description": "A Star Trek text game clone",
-    "source": "examples",
-    "author": {
-      "name": "CoBinee",
-      "url": "https://x.com/cobinee"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 11,
-      "project_url": "https://github.com/CoBinee/tinytrek-pyxel",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/11.gif"
+    "id": "1",
+    "source": "examples",
+    "name": "30 Seconds of Daylight",
+    "description": "A roguelike game and 1st Pyxel Jam winner",
+    "creators": [
+      {
+        "name": "Adam",
+        "url": "https://x.com/helpcomputer0"
+      }
+    ],
+    "source_metadata": {
+      "number": 1,
+      "github_url": "https://github.com/kitao/30SecondsOfDaylight",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/1.gif"
     }
   },
   {
     "id": "10",
+    "source": "examples",
     "name": "SFZ",
     "description": "A Fantasy Zone + Space Harrier homage?",
-    "source": "examples",
-    "author": {
-      "name": "CoBinee",
-      "url": "https://x.com/cobinee"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
+    "creators": [
+      {
+        "name": "CoBinee",
+        "url": "https://x.com/cobinee"
+      }
+    ],
+    "source_metadata": {
       "number": 10,
-      "project_url": "https://github.com/CoBinee/sfz-pyxel",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/10.gif"
+      "github_url": "https://github.com/CoBinee/sfz-pyxel",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/10.gif"
     }
   },
   {
-    "id": "9",
-    "name": "Umeroose",
-    "description": "A game about filling holes",
+    "id": "100",
     "source": "examples",
-    "author": {
-      "name": "CoBinee",
-      "url": "https://x.com/cobinee"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 9,
-      "project_url": "https://github.com/CoBinee/umeroose-pyxel",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/9.gif"
+    "name": "Cellular Automata",
+    "description": "An implementation of Conway's Game of Life",
+    "creators": [
+      {
+        "name": "Julian",
+        "url": "https://github.com/juliangroen"
+      }
+    ],
+    "source_metadata": {
+      "number": 100,
+      "github_url": "https://juliangroen.github.io/cellular-automata/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/100.gif"
     }
   },
   {
-    "id": "8",
-    "name": "Pyxel Lander",
-    "description": "A Lunar Lander tribute",
+    "id": "101",
     "source": "examples",
-    "author": {
-      "name": "Humberto Rocha",
-      "url": "https://x.com/humrochagf"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 8,
-      "project_url": "https://humrochagf.itch.io/pyxel-lander",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/8.gif"
+    "name": "Pen Apple",
+    "description": "A roguelike deckbuilder powered by LLMs",
+    "creators": [
+      {
+        "name": "RuneBlaze"
+      }
+    ],
+    "source_metadata": {
+      "number": 101,
+      "github_url": "https://www.youtube.com/watch?v=I1tEa5poHl0",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/101.gif"
     }
   },
   {
-    "id": "5",
-    "name": "Diddi and the Bugs",
-    "description": "A simple shooter",
+    "id": "102",
     "source": "examples",
-    "author": {
-      "name": "Diego Ramirez",
-      "url": "https://github.com/DiddiLeija"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 5,
-      "project_url": "https://diddileija.itch.io/diddi-and-the-bugs",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/5.gif"
+    "name": "Pinball",
+    "description": "A pinball simulator",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 102,
+      "github_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/pinball",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/102.gif"
     }
   },
   {
-    "id": "4",
-    "name": "Lovely Composer",
-    "description": "A chiptune music editor",
+    "id": "103",
     "source": "examples",
-    "author": {
-      "name": "doc1oo (1oo_Games)",
-      "url": "https://x.com/1oo_games"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 4,
-      "project_url": "https://1oogames.itch.io/lovely-composer",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/4.gif"
+    "name": "ACLM",
+    "description": "A game where you pilot a plane and defeat an enemy",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 103,
+      "github_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/aclm",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/103.gif"
     }
   },
   {
-    "id": "3",
-    "name": "GRASLAY",
-    "description": "A side-scrolling shoot-em-up",
+    "id": "104",
     "source": "examples",
-    "author": {
-      "name": "Ontake44",
-      "url": "https://x.com/Ontake441"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 3,
-      "project_url": "https://www.freem.ne.jp/win/game/25159",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/3.gif"
+    "name": "Mahjong",
+    "description": "A two-player Mahjong game against the computer",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 104,
+      "github_url": "https://github.com/sanbunno-ichi/pyxelmj",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/104.gif"
+    }
+  },
+  {
+    "id": "105",
+    "source": "examples",
+    "name": "Sougwachi",
+    "description": "A game about distributing New Year's gifts to visiting relatives",
+    "creators": [
+      {
+        "name": "Yoshinori Honda",
+        "url": "https://x.com/dee_okinawa"
+      }
+    ],
+    "source_metadata": {
+      "number": 105,
+      "github_url": "https://dee-okinawa.com/game/sougachi/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/105.gif"
+    }
+  },
+  {
+    "id": "106",
+    "source": "examples",
+    "name": "mandelzoom",
+    "description": "A multicolor Mandelbrot drawing tool",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 106,
+      "github_url": "https://github.com/sanbunno-ichi/fracanim#mandelzoom",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/106.gif"
+    }
+  },
+  {
+    "id": "107",
+    "source": "examples",
+    "name": "Mini Zelda",
+    "description": "A reduced version of The Legend of Zelda (NES)",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 107,
+      "github_url": "https://aged99oow.github.io/zelda/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/107.gif"
+    }
+  },
+  {
+    "id": "108",
+    "source": "examples",
+    "name": "Ticoban",
+    "description": "A Sokoban clone",
+    "creators": [
+      {
+        "name": "Son Link",
+        "url": "https://x.com/sonlink"
+      }
+    ],
+    "source_metadata": {
+      "number": 108,
+      "github_url": "https://github.com/son-link/ticoban-pyxel",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/108.gif"
+    }
+  },
+  {
+    "id": "109",
+    "source": "examples",
+    "name": "Try Your Flash Memory",
+    "description": "A short-term memory and visual acuity test",
+    "creators": [
+      {
+        "name": "IgarashisanT",
+        "url": "https://x.com/IgarashisanT"
+      }
+    ],
+    "source_metadata": {
+      "number": 109,
+      "github_url": "https://github.com/IgarashisanT/TryYourFlashMemory",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/109.gif"
+    }
+  },
+  {
+    "id": "11",
+    "source": "examples",
+    "name": "Tiny Trek",
+    "description": "A Star Trek text game clone",
+    "creators": [
+      {
+        "name": "CoBinee",
+        "url": "https://x.com/cobinee"
+      }
+    ],
+    "source_metadata": {
+      "number": 11,
+      "github_url": "https://github.com/CoBinee/tinytrek-pyxel",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/11.gif"
+    }
+  },
+  {
+    "id": "110",
+    "source": "examples",
+    "name": "Pyxel Block",
+    "description": "A block-breaking game",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 110,
+      "github_url": "https://github.com/sanbunno-ichi/pyxelblk",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/110.gif"
+    }
+  },
+  {
+    "id": "111",
+    "source": "examples",
+    "name": "Sarananda",
+    "description": "An escape game set inside an unidentified star",
+    "creators": [
+      {
+        "name": "KADOYAN",
+        "url": "https://x.com/kadoyan"
+      }
+    ],
+    "source_metadata": {
+      "number": 111,
+      "github_url": "https://github.com/kadoyan/sarananda",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/111.gif"
+    }
+  },
+  {
+    "id": "112",
+    "source": "examples",
+    "name": "Bubbles",
+    "description": "An arcade action game",
+    "creators": [
+      {
+        "name": "Adam",
+        "url": "https://x.com/badcomputer0"
+      }
+    ],
+    "source_metadata": {
+      "number": 112,
+      "github_url": "https://github.com/helpcomputer/bubbles",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/112.gif"
+    }
+  },
+  {
+    "id": "113",
+    "source": "examples",
+    "name": "Seafish",
+    "description": "A chess AI you can play against",
+    "creators": [
+      {
+        "name": "s3bw",
+        "url": "https://github.com/s3bw"
+      }
+    ],
+    "source_metadata": {
+      "number": 113,
+      "github_url": "https://s3bw.github.io/seafish",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/113.gif"
+    }
+  },
+  {
+    "id": "114",
+    "source": "examples",
+    "name": "Pyxel Bobbles",
+    "description": "A Puzzle Bobble-like game",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 114,
+      "github_url": "https://github.com/sanbunno-ichi/pyxelpb",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/114.gif"
+    }
+  },
+  {
+    "id": "115",
+    "source": "examples",
+    "name": "Second Best",
+    "description": "An abstract strategy game to block the opponent's best hand",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 115,
+      "github_url": "https://aged99oow.github.io/second/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/115.gif"
+    }
+  },
+  {
+    "id": "116",
+    "source": "examples",
+    "name": "Push!",
+    "description": "An action puzzle game",
+    "creators": [
+      {
+        "name": "yuta",
+        "url": "https://x.com/yyuta342"
+      }
+    ],
+    "source_metadata": {
+      "number": 116,
+      "github_url": "https://yyuta342.itch.io/push",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/116.gif"
+    }
+  },
+  {
+    "id": "119",
+    "source": "examples",
+    "name": "Tower of Ashura",
+    "description": "A simple dungeon-crawling RPG",
+    "creators": [
+      {
+        "name": "Goldics",
+        "url": "https://x.com/tsapps_goldics"
+      }
+    ],
+    "source_metadata": {
+      "number": 119,
+      "github_url": "https://ashura.tsapps.net/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/119.gif"
+    }
+  },
+  {
+    "id": "12",
+    "source": "examples",
+    "name": "Akalabeth: World of Doom",
+    "description": "An Akalabeth: World of Doom clone",
+    "creators": [
+      {
+        "name": "CoBinee",
+        "url": "https://x.com/cobinee"
+      }
+    ],
+    "source_metadata": {
+      "number": 12,
+      "github_url": "https://github.com/CoBinee/akalabeth-pyxel",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/12.gif"
+    }
+  },
+  {
+    "id": "120",
+    "source": "examples",
+    "name": "pyxelvania",
+    "description": "A simple metroidvania",
+    "creators": [
+      {
+        "name": "hulk89",
+        "url": "https://github.com/Hulk89"
+      }
+    ],
+    "source_metadata": {
+      "number": 120,
+      "github_url": "https://github.com/hulk89/pyxelvania",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/120.gif"
+    }
+  },
+  {
+    "id": "121",
+    "source": "examples",
+    "name": "Falling is learning",
+    "description": "A memory puzzle",
+    "creators": [
+      {
+        "name": "squiddy",
+        "url": "https://github.com/squiddy"
+      }
+    ],
+    "source_metadata": {
+      "number": 121,
+      "github_url": "https://sqddy.itch.io/falling-is-learning",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/121.gif"
+    }
+  },
+  {
+    "id": "122",
+    "source": "examples",
+    "name": "pymunk_de_pinball",
+    "description": "A pinball simulator using the pymunk library",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 122,
+      "github_url": "https://sanbunno-ichi.github.io/pymunk_de_pinball/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/122.gif"
+    }
+  },
+  {
+    "id": "123",
+    "source": "examples",
+    "name": "Columsme",
+    "description": "A falling-block puzzle game",
+    "creators": [
+      {
+        "name": "QZK",
+        "url": "https://x.com/qzakusega"
+      }
+    ],
+    "source_metadata": {
+      "number": 123,
+      "github_url": "https://github.com/qzk4078/columusume_public",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/123.gif"
+    }
+  },
+  {
+    "id": "124",
+    "source": "examples",
+    "name": "Pyxel2D",
+    "description": "A simple physics engine",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 124,
+      "github_url": "https://github.com/jay-kumogata/Pyxel2D",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/124.gif"
+    }
+  },
+  {
+    "id": "125",
+    "source": "examples",
+    "name": "Gamaguchi's Munch Panic",
+    "description": "A simple action game",
+    "creators": [
+      {
+        "name": "naoto",
+        "url": "https://github.com/naoto714714"
+      }
+    ],
+    "source_metadata": {
+      "number": 125,
+      "github_url": "https://github.com/naoto714714/pyxel-mogumogu-panic",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/125.gif"
+    }
+  },
+  {
+    "id": "126",
+    "source": "examples",
+    "name": "PyxelRogue",
+    "description": "A traditional roguelike game",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 126,
+      "github_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/pyxelrogue",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/126.gif"
+    }
+  },
+  {
+    "id": "127",
+    "source": "examples",
+    "name": "minesweeper",
+    "description": "A Minesweeper game",
+    "creators": [
+      {
+        "name": "tiquer17",
+        "url": "https://github.com/tiquer17"
+      }
+    ],
+    "source_metadata": {
+      "number": 127,
+      "github_url": "https://github.com/tiquer17/pyxel/tree/main/minesweeper",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/127.gif"
+    }
+  },
+  {
+    "id": "128",
+    "source": "examples",
+    "name": "pymunk_de_smartball",
+    "description": "A Smartball simulator using the pymunk library",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 128,
+      "github_url": "https://sanbunno-ichi.github.io/pymunk_de_smartball/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/128.gif"
+    }
+  },
+  {
+    "id": "129",
+    "source": "examples",
+    "name": "PyxelChip8",
+    "description": "A CHIP-8 emulator",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 129,
+      "github_url": "https://github.com/jay-kumogata/PyxelChip8",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/129.gif"
+    }
+  },
+  {
+    "id": "13",
+    "source": "examples",
+    "name": "Pynasour",
+    "description": "A Chrome T-Rex clone",
+    "creators": [
+      {
+        "name": "odanny",
+        "url": "https://x.com/dannyso16"
+      }
+    ],
+    "source_metadata": {
+      "number": 13,
+      "github_url": "https://pypi.org/project/pynasour/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/13.gif"
+    }
+  },
+  {
+    "id": "130",
+    "source": "examples",
+    "name": "3D Maze",
+    "description": "A first-person 3D maze escape game",
+    "creators": [
+      {
+        "name": "Sanzentyo",
+        "url": "https://github.com/Sanzentyo"
+      }
+    ],
+    "source_metadata": {
+      "number": 130,
+      "github_url": "https://github.com/Sanzentyo/3D_Maze",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/130.gif"
+    }
+  },
+  {
+    "id": "131",
+    "source": "examples",
+    "name": "HadeGame",
+    "description": "A first-person 3D maze escape game",
+    "creators": [
+      {
+        "name": "hann-solo",
+        "url": "https://x.com/_hnsol"
+      }
+    ],
+    "source_metadata": {
+      "number": 131,
+      "github_url": "https://github.com/hnsol/pyxel-hadegame/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/131.gif"
+    }
+  },
+  {
+    "id": "132",
+    "source": "examples",
+    "name": "AutoRace",
+    "description": "An early car racing game",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 132,
+      "github_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/autorace",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/132.gif"
+    }
+  },
+  {
+    "id": "133",
+    "source": "examples",
+    "name": "Tapping Freecell",
+    "description": "A FreeCell game with touch controls",
+    "creators": [
+      {
+        "name": "tiquer17",
+        "url": "https://github.com/tiquer17"
+      }
+    ],
+    "source_metadata": {
+      "number": 133,
+      "github_url": "https://tiquer17.github.io/pyxel/freecell/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/133.gif"
+    }
+  },
+  {
+    "id": "134",
+    "source": "examples",
+    "name": "EntroPipes",
+    "description": "A puzzle game about rotating and connecting all pipes",
+    "creators": [
+      {
+        "name": "Son Link",
+        "url": "https://x.com/sonlink"
+      }
+    ],
+    "source_metadata": {
+      "number": 134,
+      "github_url": "https://codeberg.org/son_link/EntroPipes",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/134.gif"
+    }
+  },
+  {
+    "id": "135",
+    "source": "examples",
+    "name": "Rocket Flight",
+    "description": "A side-scrolling endless runner",
+    "creators": [
+      {
+        "name": "nadi726",
+        "url": "https://github.com/nadi726"
+      }
+    ],
+    "source_metadata": {
+      "number": 135,
+      "github_url": "https://github.com/nadi726/Rocket-Flight",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/135.gif"
+    }
+  },
+  {
+    "id": "136",
+    "source": "examples",
+    "name": "Laser Jetman",
+    "description": "An arcade shoot-em-up",
+    "creators": [
+      {
+        "name": "Adam",
+        "url": "https://x.com/badcomputer0"
+      }
+    ],
+    "source_metadata": {
+      "number": 136,
+      "github_url": "https://github.com/helpcomputer/laser-jetman",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/136.gif"
+    }
+  },
+  {
+    "id": "137",
+    "source": "examples",
+    "name": "Typing Practice",
+    "description": "A typing practice game using words from Python and Pyxel",
+    "creators": [
+      {
+        "name": "SamuraiApps",
+        "url": "https://x.com/samuraiapps"
+      }
+    ],
+    "source_metadata": {
+      "number": 137,
+      "github_url": "https://github.com/samurai-apps/pyxel-games/blob/main/src/91_typing_practice.py",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/137.gif"
+    }
+  },
+  {
+    "id": "138",
+    "source": "examples",
+    "name": "Seagull's Fishing",
+    "description": "An easy 60-second score-attack game",
+    "creators": [
+      {
+        "name": "こいし",
+        "url": "https://x.com/koishi_dot"
+      }
+    ],
+    "source_metadata": {
+      "number": 138,
+      "github_url": "https://stone-dot.itch.io/seagulls-fishing",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/138.gif"
+    }
+  },
+  {
+    "id": "139",
+    "source": "examples",
+    "name": "Asteroids",
+    "description": "A multidirectional shooter",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 139,
+      "github_url": "https://github.com/jay-kumogata/RetroGames/tree/main/pyxel/asteroids",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/139.gif"
+    }
+  },
+  {
+    "id": "14",
+    "source": "examples",
+    "name": "Maze",
+    "description": "A simple 2D maze",
+    "creators": [
+      {
+        "name": "odanny",
+        "url": "https://x.com/dannyso16"
+      }
+    ],
+    "source_metadata": {
+      "number": 14,
+      "github_url": "https://github.com/dannyso16/Maze",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/14.gif"
+    }
+  },
+  {
+    "id": "140",
+    "source": "examples",
+    "name": "Mahjong Solitaire",
+    "description": "A simple Mahjong solitaire game",
+    "creators": [
+      {
+        "name": "BouKiCHi",
+        "url": "https://x.com/boukichi_numloc"
+      }
+    ],
+    "source_metadata": {
+      "number": 140,
+      "github_url": "https://github.com/BouKiCHi/mahjong",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/140.gif"
+    }
+  },
+  {
+    "id": "141",
+    "source": "examples",
+    "name": "Stalker Bar",
+    "description": "An adventure game",
+    "creators": [
+      {
+        "name": "s1tf",
+        "url": "https://github.com/s1tf"
+      }
+    ],
+    "source_metadata": {
+      "number": 141,
+      "github_url": "https://sitf.itch.io/stalkerbar",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/141.gif"
+    }
+  },
+  {
+    "id": "142",
+    "source": "examples",
+    "name": "L'Épopée Pixellisée",
+    "description": "A platformer",
+    "creators": [
+      {
+        "name": "Lamorkitu93",
+        "url": "https://github.com/Lamorkitu93"
+      }
+    ],
+    "source_metadata": {
+      "number": 142,
+      "github_url": "https://www.pyxelstudio.net/cf2apb4z",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/142.gif"
+    }
+  },
+  {
+    "id": "143",
+    "source": "examples",
+    "name": "Gem'X Pyxel Clone",
+    "description": "An Amiga puzzle game clone",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 143,
+      "github_url": "https://sanbunnoichi1962.web.fc2.com/pyxel_contents.html#gemx",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/143.gif"
+    }
+  },
+  {
+    "id": "144",
+    "source": "examples",
+    "name": "Number Link",
+    "description": "A puzzle game about connecting matching numbers with a line",
+    "creators": [
+      {
+        "name": "ku-ron",
+        "url": "https://github.com/ku-ron"
+      }
+    ],
+    "source_metadata": {
+      "number": 144,
+      "github_url": "https://github.com/ku-ron/pyxel_minigames/blob/main/main/numberlink/readme.md",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/144.gif"
+    }
+  },
+  {
+    "id": "145",
+    "source": "examples",
+    "name": "Jump Jump Bouncing Ball",
+    "description": "A jumping action game with a physics engine",
+    "creators": [
+      {
+        "name": "gomatama5",
+        "url": "https://github.com/gomatama5"
+      }
+    ],
+    "source_metadata": {
+      "number": 145,
+      "github_url": "https://github.com/gomatama5/Jump_Jump_Bouncing_Ball",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/145.gif"
+    }
+  },
+  {
+    "id": "146",
+    "source": "examples",
+    "name": "Pyxel Mandelbrot",
+    "description": "A Mandelbrot set drawing tool",
+    "creators": [
+      {
+        "name": "gomatama5",
+        "url": "https://github.com/gomatama5"
+      }
+    ],
+    "source_metadata": {
+      "number": 146,
+      "github_url": "https://github.com/gomatama5/Pyxel_Mandelbrot",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/146.gif"
+    }
+  },
+  {
+    "id": "147",
+    "source": "examples",
+    "name": "popstar",
+    "description": "A SameGame-style puzzle game",
+    "creators": [
+      {
+        "name": "shichunhui"
+      }
+    ],
+    "source_metadata": {
+      "number": 147,
+      "github_url": "https://github.com/c-hui/popstar",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/147.gif"
+    }
+  },
+  {
+    "id": "148",
+    "source": "examples",
+    "name": "Mastermind",
+    "description": "A number-guessing game using hints",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 148,
+      "github_url": "https://github.com/jay-kumogata/PyxelChip8/tree/main/pyxel/mastermind",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/148.gif"
+    }
+  },
+  {
+    "id": "149",
+    "source": "examples",
+    "name": "Graffiti Cleanup Rush",
+    "description": "A score-based arcade clicking game",
+    "creators": [
+      {
+        "name": "Léo Imbert",
+        "url": "https://github.com/LeoI52"
+      }
+    ],
+    "source_metadata": {
+      "number": 149,
+      "github_url": "https://github.com/LeoI52/graffiti-cleanup-rush",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/149.gif"
+    }
+  },
+  {
+    "id": "15",
+    "source": "examples",
+    "name": "Megaball",
+    "description": "An arcade ball-physics game",
+    "creators": [
+      {
+        "name": "Adam",
+        "url": "https://x.com/helpcomputer0"
+      }
+    ],
+    "source_metadata": {
+      "number": 15,
+      "github_url": "https://helpcomputer.itch.io/megaball",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/15.gif"
+    }
+  },
+  {
+    "id": "150",
+    "source": "examples",
+    "name": "Breakout",
+    "description": "A Breakout-style game originally made for CHIP-8",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 150,
+      "github_url": "https://github.com/jay-kumogata/PyxelChip8/tree/main/pyxel/breakout",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/150.gif"
+    }
+  },
+  {
+    "id": "151",
+    "source": "examples",
+    "name": "FAKE DOGMENTARY \"Q\"",
+    "description": "A Souls-like animal welfare action game",
+    "creators": [
+      {
+        "name": "hotate_curry",
+        "url": "https://x.com/hotate__curry"
+      }
+    ],
+    "source_metadata": {
+      "number": 151,
+      "github_url": "https://hotatecurry.github.io/fakedogmentaryq/fakedog.html",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/151.gif"
+    }
+  },
+  {
+    "id": "152",
+    "source": "examples",
+    "name": "Hanafuda Tetris",
+    "description": "A game where you match three Hanafuda cards of the same month",
+    "creators": [
+      {
+        "name": "saizo",
+        "url": "https://github.com/ninja-cop"
+      }
+    ],
+    "source_metadata": {
+      "number": 152,
+      "github_url": "https://github.com/ninja-cop/RetroGames/tree/main/hanafudaTetris",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/152.gif"
+    }
+  },
+  {
+    "id": "153",
+    "source": "examples",
+    "name": "Old JRPG like",
+    "description": "A game like an RPG from the early NES era",
+    "creators": [
+      {
+        "name": "MoQ(もっQ)",
+        "url": "https://x.com/ronegray"
+      }
+    ],
+    "source_metadata": {
+      "number": 153,
+      "github_url": "https://moq.dojin.com/pyxelgames.html",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/153.gif"
+    }
+  },
+  {
+    "id": "154",
+    "source": "examples",
+    "name": "Towercraft",
+    "description": "A game to build the tallest tower by stacking floors",
+    "creators": [
+      {
+        "name": "Son Link",
+        "url": "https://x.com/sonlink"
+      }
+    ],
+    "source_metadata": {
+      "number": 154,
+      "github_url": "https://codeberg.org/son_link/Towercraft",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/154.gif"
+    }
+  },
+  {
+    "id": "155",
+    "source": "examples",
+    "name": "Hanafuda Pon",
+    "description": "A game of clearing sets of three matching Hanafuda cards",
+    "creators": [
+      {
+        "name": "saizo",
+        "url": "https://github.com/ninja-cop"
+      }
+    ],
+    "source_metadata": {
+      "number": 155,
+      "github_url": "https://github.com/ninja-cop/RetroGames/tree/main/hanafudaPon",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/155.gif"
+    }
+  },
+  {
+    "id": "156",
+    "source": "examples",
+    "name": "Loop Shot",
+    "description": "A top-down shooter about a looping arena",
+    "creators": [
+      {
+        "name": "Léo Imbert",
+        "url": "https://github.com/LeoI52"
+      }
+    ],
+    "source_metadata": {
+      "number": 156,
+      "github_url": "https://leo-imbert.itch.io/loop-shot",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/156.gif"
+    }
+  },
+  {
+    "id": "157",
+    "source": "examples",
+    "name": "PyxelTD",
+    "description": "A simple tower defense game",
+    "creators": [
+      {
+        "name": "shoot.er",
+        "url": "https://x.com/m4_sd"
+      }
+    ],
+    "source_metadata": {
+      "number": 157,
+      "github_url": "https://github.com/5h00T/PyxelTD",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/157.gif"
+    }
+  },
+  {
+    "id": "158",
+    "source": "examples",
+    "name": "Queue It !",
+    "description": "A fast-paced puzzle-platformer",
+    "creators": [
+      {
+        "name": "Léo Imbert",
+        "url": "https://github.com/LeoI52"
+      }
+    ],
+    "source_metadata": {
+      "number": 158,
+      "github_url": "https://leo-imbert.itch.io/queue-it",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/158.gif"
+    }
+  },
+  {
+    "id": "159",
+    "source": "examples",
+    "name": "Game of Pyxels",
+    "description": "A retro-style remake of Conway’s Game of Life",
+    "creators": [
+      {
+        "name": "Léo Imbert",
+        "url": "https://github.com/LeoI52"
+      }
+    ],
+    "source_metadata": {
+      "number": 159,
+      "github_url": "https://leo-imbert.itch.io/game-of-pyxels",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/159.gif"
+    }
+  },
+  {
+    "id": "16",
+    "source": "examples",
+    "name": "mini shooting",
+    "description": "A shoot-em-up with 20 missions",
+    "creators": [
+      {
+        "name": "shoot.er",
+        "url": "https://x.com/m4_sd"
+      }
+    ],
+    "source_metadata": {
+      "number": 16,
+      "github_url": "https://github.com/5h00T/mini_shooting",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/16.gif"
+    }
+  },
+  {
+    "id": "160",
+    "source": "examples",
+    "name": "Looking for Kiara-chan!",
+    "description": "A mystery-solving mini-RPG",
+    "creators": [
+      {
+        "name": "Kikutaro",
+        "url": "https://x.com/kikutaro_"
+      }
+    ],
+    "source_metadata": {
+      "number": 160,
+      "github_url": "https://game.kiasaga.love/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/160.gif"
+    }
+  },
+  {
+    "id": "161",
+    "source": "examples",
+    "name": "Pyxel Fighter jet Game",
+    "description": "A top-down flying-and-shooting game",
+    "creators": [
+      {
+        "name": "life-is-plastic",
+        "url": "https://github.com/life-is-plastic"
+      }
+    ],
+    "source_metadata": {
+      "number": 161,
+      "github_url": "https://github.com/life-is-plastic/pyxel-fighter-jet-game",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/161.gif"
+    }
+  },
+  {
+    "id": "162",
+    "source": "examples",
+    "name": "Old ARPG like",
+    "description": "An old-school action RPG (PC-88 era-inspired)",
+    "creators": [
+      {
+        "name": "MoQ",
+        "url": "https://github.com/ronegray"
+      }
+    ],
+    "source_metadata": {
+      "number": 162,
+      "github_url": "https://github.com/ronegray/OldARPGlike/tree/main",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/162.gif"
+    }
+  },
+  {
+    "id": "163",
+    "source": "examples",
+    "name": "Gekka no jin (Moonlit Formation)",
+    "description": "A new Hanafuda experience in retro pixel art",
+    "creators": [
+      {
+        "name": "saizo",
+        "url": "https://x.com/Saizo_KOGAKURE"
+      }
+    ],
+    "source_metadata": {
+      "number": 163,
+      "github_url": "https://kogakure-saizo.itch.io/moonlit-formation",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/163.gif"
+    }
+  },
+  {
+    "id": "164",
+    "source": "examples",
+    "name": "Lama",
+    "description": "A shedding game where you shed or fold for minimum points",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 164,
+      "github_url": "https://aged99oow.github.io/lama/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/164.gif"
+    }
+  },
+  {
+    "id": "165",
+    "source": "examples",
+    "name": "Mini Metroid",
+    "description": "A reduced version of NES Metroid",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 165,
+      "github_url": "https://aged99oow.github.io/metroid/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/165.gif"
+    }
+  },
+  {
+    "id": "166",
+    "source": "examples",
+    "name": "Space Rescue",
+    "description": "A one-button rescue game from the Pyxel Official Book",
+    "creators": [
+      {
+        "name": "Takashi Kitao",
+        "url": "https://x.com/kitao"
+      }
+    ],
+    "source_metadata": {
+      "number": 166,
+      "github_url": "https://kitao.github.io/pyxel/web/launcher/?play=kitao.pyxel.python.pyxel.examples.apps.space_rescue&gamepad=enabled",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/166.gif"
+    }
+  },
+  {
+    "id": "167",
+    "source": "examples",
+    "name": "Mega Wing",
+    "description": "A shoot-em-up from the Pyxel Official Book",
+    "creators": [
+      {
+        "name": "Takashi Kitao",
+        "url": "https://x.com/kitao"
+      }
+    ],
+    "source_metadata": {
+      "number": 167,
+      "github_url": "https://kitao.github.io/pyxel/web/launcher/?play=kitao.pyxel.python.pyxel.examples.apps.mega_wing&gamepad=enabled",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/167.gif"
+    }
+  },
+  {
+    "id": "168",
+    "source": "examples",
+    "name": "Cursed Caverns",
+    "description": "A platformer from the Pyxel Official Book",
+    "creators": [
+      {
+        "name": "Takashi Kitao",
+        "url": "https://x.com/kitao"
+      }
+    ],
+    "source_metadata": {
+      "number": 168,
+      "github_url": "https://kitao.github.io/pyxel/web/launcher/?play=kitao.pyxel.python.pyxel.examples.apps.cursed_caverns&gamepad=enabled",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/168.gif"
+    }
+  },
+  {
+    "id": "169",
+    "source": "examples",
+    "name": "THE COLORS",
+    "description": "A color-changing puzzle action game",
+    "creators": [
+      {
+        "name": "FulLine",
+        "url": "https://x.com/ful_line"
+      }
+    ],
+    "source_metadata": {
+      "number": 169,
+      "github_url": "https://github.com/Python-yarouze/the-colors",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/169.gif"
+    }
+  },
+  {
+    "id": "17",
+    "source": "examples",
+    "name": "Onyx of Black",
+    "description": "A retro-style dungeon-crawl RPG",
+    "creators": [
+      {
+        "name": "aburi6800",
+        "url": "https://x.com/aburi6800"
+      }
+    ],
+    "source_metadata": {
+      "number": 17,
+      "github_url": "https://github.com/aburi6800/Python-OnyxOfBlack",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/17.gif"
+    }
+  },
+  {
+    "id": "170",
+    "source": "examples",
+    "name": "Falling Sand",
+    "description": "Simple falling sand simulation",
+    "creators": [
+      {
+        "name": "shoot.er",
+        "url": "https://x.com/m4_sd"
+      }
+    ],
+    "source_metadata": {
+      "number": 170,
+      "github_url": "https://github.com/5h00T/FallingSand/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/170.gif"
+    }
+  },
+  {
+    "id": "171",
+    "source": "examples",
+    "name": "Pyxel Pacman",
+    "description": "Pacman like game",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 171,
+      "github_url": "https://sanbunnoichi1962.web.fc2.com/pyxel/pyxelpac.html",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/171.gif"
+    }
+  },
+  {
+    "id": "172",
+    "source": "examples",
+    "name": "Fikuś",
+    "description": "Platformer for exploring worlds and collecting coins",
+    "creators": [
+      {
+        "name": "Cloudbuster"
+      }
+    ],
+    "source_metadata": {
+      "number": 172,
+      "github_url": "https://fikus.cloudbuster.pl/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/172.gif"
+    }
+  },
+  {
+    "id": "173",
+    "source": "examples",
+    "name": "Pyxel Tempest",
+    "description": "Atari Tempest like game",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 173,
+      "github_url": "https://sanbunnoichi1962.web.fc2.com/pyxel/tempest.html",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/173.gif"
+    }
+  },
+  {
+    "id": "174",
+    "source": "examples",
+    "name": "Hover Racer",
+    "description": "High-speed futuristic anti-gravity racing",
+    "creators": [
+      {
+        "name": "haruka_apps",
+        "url": "https://x.com/haruka_apps"
+      }
+    ],
+    "source_metadata": {
+      "number": 174,
+      "github_url": "https://haruka-apps-games.itch.io/hover-racer",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/174.gif"
+    }
+  },
+  {
+    "id": "175",
+    "source": "examples",
+    "name": "Alien Evolution",
+    "description": "Pyxel port of the ZX Spectrum game Alien Evolution",
+    "creators": [
+      {
+        "name": "Igor Lobanov",
+        "url": "https://x.com/utilityunknown"
+      }
+    ],
+    "source_metadata": {
+      "number": 175,
+      "github_url": "https://github.com/alepoydes/alien-evolution-pyport",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/175.gif"
+    }
+  },
+  {
+    "id": "18",
+    "source": "examples",
+    "name": "Nyan Cat",
+    "description": "A simple shooting game with Nyan Cat",
+    "creators": [
+      {
+        "name": "3w36zj6",
+        "url": "https://github.com/3w36zj6"
+      }
+    ],
+    "source_metadata": {
+      "number": 18,
+      "github_url": "https://github.com/3w36zj6/NyanCat",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/18.gif"
+    }
+  },
+  {
+    "id": "19",
+    "source": "examples",
+    "name": "Regicide",
+    "description": "A simple retro action RPG",
+    "creators": [
+      {
+        "name": "koidemizu",
+        "url": "https://github.com/koidemizu"
+      }
+    ],
+    "source_metadata": {
+      "number": 19,
+      "github_url": "https://koidemizu.itch.io/regicide",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/19.gif"
     }
   },
   {
     "id": "2",
+    "source": "examples",
     "name": "Dungeon Witches",
     "description": "A roguelite game",
-    "source": "examples",
-    "author": {
-      "name": "doc1oo (1oo_Games)",
-      "url": "https://x.com/1oo_games"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
+    "creators": [
+      {
+        "name": "doc1oo (1oo_Games)",
+        "url": "https://x.com/1oo_games"
+      }
+    ],
+    "source_metadata": {
       "number": 2,
-      "project_url": "https://1oogames.itch.io/dungeon-witches",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/2.gif"
+      "github_url": "https://1oogames.itch.io/dungeon-witches",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/2.gif"
     }
   },
   {
-    "id": "1",
-    "name": "30 Seconds of Daylight",
-    "description": "A roguelike game and 1st Pyxel Jam winner",
+    "id": "20",
     "source": "examples",
-    "author": {
-      "name": "Adam",
-      "url": "https://x.com/helpcomputer0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-04-04",
-    "extension": {
-      "number": 1,
-      "project_url": "https://github.com/kitao/30SecondsOfDaylight",
-      "image_url": "https://kitao.github.io/pyxel-user-examples/images/1.gif"
+    "name": "Pyxel Raycast",
+    "description": "A basic raycast example",
+    "creators": [
+      {
+        "name": "Dan MacNaughtan",
+        "url": "https://github.com/danmacnaughtan"
+      }
+    ],
+    "source_metadata": {
+      "number": 20,
+      "github_url": "https://github.com/danmacnaughtan/pyxel-raycast",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/20.gif"
+    }
+  },
+  {
+    "id": "21",
+    "source": "examples",
+    "name": "Keikogyugo",
+    "description": "A simulation game based on Japan's \"Sengoku Jidai\"",
+    "creators": [
+      {
+        "name": "koidemizu",
+        "url": "https://github.com/koidemizu"
+      }
+    ],
+    "source_metadata": {
+      "number": 21,
+      "github_url": "https://koidemizu.itch.io/keikogyugo",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/21.gif"
+    }
+  },
+  {
+    "id": "22",
+    "source": "examples",
+    "name": "Bansoko",
+    "description": "A space-themed Sokoban clone",
+    "creators": [
+      {
+        "name": "Krzysztof Furtak",
+        "url": "https://github.com/kfurtak1024"
+      }
+    ],
+    "source_metadata": {
+      "number": 22,
+      "github_url": "https://github.com/kfurtak1024/bansoko",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/22.gif"
+    }
+  },
+  {
+    "id": "27",
+    "source": "examples",
+    "name": "Mineral Planets",
+    "description": "A space RTS",
+    "creators": [
+      {
+        "name": "aliskda"
+      }
+    ],
+    "source_metadata": {
+      "number": 27,
+      "github_url": "https://gamedev.ru/flame/forum/?id=246559",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/27.gif"
+    }
+  },
+  {
+    "id": "28",
+    "source": "examples",
+    "name": "Orange Juice Invasion",
+    "description": "A vertical shoot-em-up",
+    "creators": [
+      {
+        "name": "Arthus"
+      }
+    ],
+    "source_metadata": {
+      "number": 28,
+      "github_url": "https://zoltek-s.itch.io/oji",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/28.gif"
+    }
+  },
+  {
+    "id": "3",
+    "source": "examples",
+    "name": "GRASLAY",
+    "description": "A side-scrolling shoot-em-up",
+    "creators": [
+      {
+        "name": "Ontake44",
+        "url": "https://x.com/Ontake441"
+      }
+    ],
+    "source_metadata": {
+      "number": 3,
+      "github_url": "https://www.freem.ne.jp/win/game/25159",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/3.gif"
+    }
+  },
+  {
+    "id": "30",
+    "source": "examples",
+    "name": "Fiction-X",
+    "description": "A side-scrolling old-school shooting game",
+    "creators": [
+      {
+        "name": "k-o-matic"
+      }
+    ],
+    "source_metadata": {
+      "number": 30,
+      "github_url": "https://github.com/k-o-matic/fictionx",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/30.gif"
+    }
+  },
+  {
+    "id": "31",
+    "source": "examples",
+    "name": "Snow Planet",
+    "description": "A tower defense / RTS game",
+    "creators": [
+      {
+        "name": "aliskda"
+      }
+    ],
+    "source_metadata": {
+      "number": 31,
+      "github_url": "https://gamedev.ru/flame/forum/?id=248258",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/31.gif"
+    }
+  },
+  {
+    "id": "32",
+    "source": "examples",
+    "name": "Ostrov",
+    "description": "A survival game",
+    "creators": [
+      {
+        "name": "aliskda"
+      }
+    ],
+    "source_metadata": {
+      "number": 32,
+      "github_url": "https://gamedev.ru/flame/forum/?id=245207",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/32.gif"
+    }
+  },
+  {
+    "id": "33",
+    "source": "examples",
+    "name": "Censor",
+    "description": "Papers, Please alike",
+    "creators": [
+      {
+        "name": "aliskda"
+      }
+    ],
+    "source_metadata": {
+      "number": 33,
+      "github_url": "https://gamedev.ru/flame/forum/?id=252482",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/33.gif"
+    }
+  },
+  {
+    "id": "35",
+    "source": "examples",
+    "name": "Typo",
+    "description": "A typing game",
+    "creators": [
+      {
+        "name": "gediminasz",
+        "url": "https://github.com/gediminasz"
+      }
+    ],
+    "source_metadata": {
+      "number": 35,
+      "github_url": "https://github.com/gediminasz/games",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/35.gif"
+    }
+  },
+  {
+    "id": "36",
+    "source": "examples",
+    "name": "Onset",
+    "description": "A Guitar Hero-style game where you can play any song",
+    "creators": [
+      {
+        "name": "gediminasz",
+        "url": "https://github.com/gediminasz"
+      }
+    ],
+    "source_metadata": {
+      "number": 36,
+      "github_url": "https://github.com/gediminasz/games",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/36.gif"
+    }
+  },
+  {
+    "id": "37",
+    "source": "examples",
+    "name": "Hybrid",
+    "description": "A game about splicing DNA",
+    "creators": [
+      {
+        "name": "gediminasz",
+        "url": "https://github.com/gediminasz"
+      }
+    ],
+    "source_metadata": {
+      "number": 37,
+      "github_url": "https://github.com/gediminasz/games",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/37.gif"
+    }
+  },
+  {
+    "id": "38",
+    "source": "examples",
+    "name": "Sudoku Solver",
+    "description": "A Sudoku solver",
+    "creators": [
+      {
+        "name": "timfi",
+        "url": "https://github.com/timfi"
+      }
+    ],
+    "source_metadata": {
+      "number": 38,
+      "github_url": "https://github.com/timfi/pyxel_games",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/38.gif"
+    }
+  },
+  {
+    "id": "39",
+    "source": "examples",
+    "name": "Maze generation",
+    "description": "A maze generator",
+    "creators": [
+      {
+        "name": "timfi",
+        "url": "https://github.com/timfi"
+      }
+    ],
+    "source_metadata": {
+      "number": 39,
+      "github_url": "https://github.com/timfi/pyxel_games",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/39.gif"
+    }
+  },
+  {
+    "id": "4",
+    "source": "examples",
+    "name": "Lovely Composer",
+    "description": "A chiptune music editor",
+    "creators": [
+      {
+        "name": "doc1oo (1oo_Games)",
+        "url": "https://x.com/1oo_games"
+      }
+    ],
+    "source_metadata": {
+      "number": 4,
+      "github_url": "https://1oogames.itch.io/lovely-composer",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/4.gif"
+    }
+  },
+  {
+    "id": "40",
+    "source": "examples",
+    "name": "PyxelSand2",
+    "description": "A \"falling sand\" style game",
+    "creators": [
+      {
+        "name": "HarryPeach",
+        "url": "https://github.com/HarryPeach"
+      }
+    ],
+    "source_metadata": {
+      "number": 40,
+      "github_url": "https://github.com/HarryPeach/PyxelSand2",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/40.gif"
+    }
+  },
+  {
+    "id": "41",
+    "source": "examples",
+    "name": "Tetris",
+    "description": "A Tetris game",
+    "creators": [
+      {
+        "name": "3w36zj6",
+        "url": "https://github.com/3w36zj6"
+      }
+    ],
+    "source_metadata": {
+      "number": 41,
+      "github_url": "https://github.com/3w36zj6/Tetris",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/41.gif"
+    }
+  },
+  {
+    "id": "42",
+    "source": "examples",
+    "name": "Screen Melt",
+    "description": "A screen-melting effect",
+    "creators": [
+      {
+        "name": "ameuret",
+        "url": "https://github.com/ameuret"
+      }
+    ],
+    "source_metadata": {
+      "number": 42,
+      "github_url": "https://github.com/ameuret/screenMeltDoom",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/42.gif"
+    }
+  },
+  {
+    "id": "43",
+    "source": "examples",
+    "name": "Mini-Solitaire",
+    "description": "A \"demake\" of Klondike Solitaire",
+    "creators": [
+      {
+        "name": "SteelWool32",
+        "url": "https://github.com/SteelWool32"
+      }
+    ],
+    "source_metadata": {
+      "number": 43,
+      "github_url": "https://github.com/SteelWool32/mini-solitaire",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/43.gif"
+    }
+  },
+  {
+    "id": "44",
+    "source": "examples",
+    "name": "PyxelChip8",
+    "description": "A CHIP-8 emulator",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 44,
+      "github_url": "https://github.com/jay-kumogata/RetroGames",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/44.gif"
+    }
+  },
+  {
+    "id": "45",
+    "source": "examples",
+    "name": "platformer: prototype",
+    "description": "A 2D platformer prototype with two layers",
+    "creators": [
+      {
+        "name": "lemon24",
+        "url": "https://github.com/lemon24"
+      }
+    ],
+    "source_metadata": {
+      "number": 45,
+      "github_url": "https://github.com/lemon24/platformer/blob/master/test.py",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/45.gif"
+    }
+  },
+  {
+    "id": "46",
+    "source": "examples",
+    "name": "GrowyGardens",
+    "description": "A high-speed chaotic farming simulator",
+    "creators": [
+      {
+        "name": "SuperZooper3",
+        "url": "https://github.com/SuperZooper3"
+      }
+    ],
+    "source_metadata": {
+      "number": 46,
+      "github_url": "https://github.com/SuperZooper3/GrowyGardens",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/46.gif"
+    }
+  },
+  {
+    "id": "47",
+    "source": "examples",
+    "name": "pytouch",
+    "description": "A hyper-casual game",
+    "creators": [
+      {
+        "name": "kra53n",
+        "url": "https://github.com/kra53n"
+      }
+    ],
+    "source_metadata": {
+      "number": 47,
+      "github_url": "https://github.com/kra53n/pytouch",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/47.gif"
+    }
+  },
+  {
+    "id": "48",
+    "source": "examples",
+    "name": "The last space fighter",
+    "description": "A space shooter",
+    "creators": [
+      {
+        "name": "Yuiio"
+      }
+    ],
+    "source_metadata": {
+      "number": 48,
+      "github_url": "https://github.com/yuiio/last-space-fighter",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/48.gif"
+    }
+  },
+  {
+    "id": "5",
+    "source": "examples",
+    "name": "Diddi and the Bugs",
+    "description": "A simple shooter",
+    "creators": [
+      {
+        "name": "Diego Ramirez",
+        "url": "https://github.com/DiddiLeija"
+      }
+    ],
+    "source_metadata": {
+      "number": 5,
+      "github_url": "https://diddileija.itch.io/diddi-and-the-bugs",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/5.gif"
+    }
+  },
+  {
+    "id": "50",
+    "source": "examples",
+    "name": "Bit Maze",
+    "description": "A puzzle-platformer",
+    "creators": [
+      {
+        "name": "Takane",
+        "url": "https://x.com/takane_ichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 50,
+      "github_url": "https://github.com/takaneichinose/pyxel_bit_maze",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/50.gif"
+    }
+  },
+  {
+    "id": "51",
+    "source": "examples",
+    "name": "Tu-tu-tuweeeeep",
+    "description": "A fixed screen platformer with a 30-second time limit",
+    "creators": [
+      {
+        "name": "Antoine-bdc",
+        "url": "https://github.com/Antoine-bdc"
+      }
+    ],
+    "source_metadata": {
+      "number": 51,
+      "github_url": "https://cereale.itch.io/tu-tu-tuweeeep",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/51.gif"
+    }
+  },
+  {
+    "id": "52",
+    "source": "examples",
+    "name": "Pyxel Rogue",
+    "description": "A roguelike shooter with randomly generated rooms",
+    "creators": [
+      {
+        "name": "Antoine-bdc",
+        "url": "https://github.com/Antoine-bdc"
+      }
+    ],
+    "source_metadata": {
+      "number": 52,
+      "github_url": "https://cereale.itch.io/pyxel-rogue",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/52.gif"
+    }
+  },
+  {
+    "id": "53",
+    "source": "examples",
+    "name": "Tetris Pyxel",
+    "description": "A classic Tetris game based on Tetris DX for Game Boy Color",
+    "creators": [
+      {
+        "name": "mehrdad-mixtape",
+        "url": "https://github.com/mehrdad-mixtape"
+      }
+    ],
+    "source_metadata": {
+      "number": 53,
+      "github_url": "https://github.com/mehrdad-mixtape/Tetris_Pyxel/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/53.gif"
+    }
+  },
+  {
+    "id": "54",
+    "source": "examples",
+    "name": "SEKISAI",
+    "description": "A side-scrolling puzzle action game",
+    "creators": [
+      {
+        "name": "sewohayami",
+        "url": "https://x.com/hayami_sewo"
+      }
+    ],
+    "source_metadata": {
+      "number": 54,
+      "github_url": "https://store.steampowered.com/app/2154790/SEKISAI_puzzle_action/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/54.gif"
+    }
+  },
+  {
+    "id": "55",
+    "source": "examples",
+    "name": "Moscow Nights",
+    "description": "A tower defense game",
+    "creators": [
+      {
+        "name": "s1tf",
+        "url": "https://github.com/s1tf"
+      }
+    ],
+    "source_metadata": {
+      "number": 55,
+      "github_url": "https://aliskda.itch.io/moscownights",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/55.gif"
+    }
+  },
+  {
+    "id": "56",
+    "source": "examples",
+    "name": "Pie, Robot",
+    "description": "A pizza-ingredient stacking game",
+    "creators": [
+      {
+        "name": "Jonathan Routley",
+        "url": "https://github.com/jonnyroutley"
+      }
+    ],
+    "source_metadata": {
+      "number": 56,
+      "github_url": "https://github.com/jonnyroutley/robot-game",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/56.gif"
+    }
+  },
+  {
+    "id": "57",
+    "source": "examples",
+    "name": "Floppy Dog",
+    "description": "A Flappy Bird clone",
+    "creators": [
+      {
+        "name": "JosephFerano",
+        "url": "https://github.com/JosephFerano"
+      }
+    ],
+    "source_metadata": {
+      "number": 57,
+      "github_url": "https://github.com/badrain-games/fancon/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/57.gif"
+    }
+  },
+  {
+    "id": "58",
+    "source": "examples",
+    "name": "SUSHI SHOOTER",
+    "description": "A sushi shooting game",
+    "creators": [
+      {
+        "name": "sejiseji",
+        "url": "https://x.com/sejiijes"
+      }
+    ],
+    "source_metadata": {
+      "number": 58,
+      "github_url": "https://github.com/sejiseji/pyxel-sushi",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/58.gif"
+    }
+  },
+  {
+    "id": "59",
+    "source": "examples",
+    "name": "Emergency Button",
+    "description": "A clone of the emergency stop button at a train station",
+    "creators": [
+      {
+        "name": "Tokoroteen",
+        "url": "https://x.com/Tokoroteen__"
+      }
+    ],
+    "source_metadata": {
+      "number": 59,
+      "github_url": "https://emergency-button.com/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/59.gif"
+    }
+  },
+  {
+    "id": "60",
+    "source": "examples",
+    "name": "Dragon Quest 1 for Pyxel",
+    "description": "A port of the NES game of the same name",
+    "creators": [
+      {
+        "name": "frenchbread",
+        "url": "https://x.com/frenchbread1222"
+      }
+    ],
+    "source_metadata": {
+      "number": 60,
+      "github_url": "https://pyxel-dq1.web.app/?gamepad=enabled",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/60.gif"
+    }
+  },
+  {
+    "id": "61",
+    "source": "examples",
+    "name": "Baba Is You",
+    "description": "A Baba Is You demake",
+    "creators": [
+      {
+        "name": "Fraser Greenlee",
+        "url": "https://x.com/FraserGreenlee"
+      }
+    ],
+    "source_metadata": {
+      "number": 61,
+      "github_url": "https://github.com/Fraser-Greenlee/baba-is-you",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/61.gif"
+    }
+  },
+  {
+    "id": "62",
+    "source": "examples",
+    "name": "Hopping Hiyoko",
+    "description": "A game about helping chicks reach higher places",
+    "creators": [
+      {
+        "name": "rococomico",
+        "url": "https://x.com/rococomico"
+      }
+    ],
+    "source_metadata": {
+      "number": 62,
+      "github_url": "https://github.com/rococomico/Pyxel_games",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/62.gif"
+    }
+  },
+  {
+    "id": "63",
+    "source": "examples",
+    "name": "Unnamed RPG",
+    "description": "A simple RPG with 1v1 combat and party shuffling",
+    "creators": [
+      {
+        "name": "Adam",
+        "url": "https://x.com/helpcomputer0"
+      }
+    ],
+    "source_metadata": {
+      "number": 63,
+      "github_url": "https://github.com/helpcomputer",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/63.gif"
+    }
+  },
+  {
+    "id": "64",
+    "source": "examples",
+    "name": "Target_shooting",
+    "description": "A simple action shooting game",
+    "creators": [
+      {
+        "name": "koidemizu",
+        "url": "https://github.com/koidemizu"
+      }
+    ],
+    "source_metadata": {
+      "number": 64,
+      "github_url": "https://koidemizu.github.io/post/action-shooting/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/64.gif"
+    }
+  },
+  {
+    "id": "65",
+    "source": "examples",
+    "name": "kektris",
+    "description": "A four-quadrant Tetris game",
+    "creators": [
+      {
+        "name": "KonstantinKlepikov",
+        "url": "https://github.com/KonstantinKlepikov"
+      }
+    ],
+    "source_metadata": {
+      "number": 65,
+      "github_url": "https://github.com/KonstantinKlepikov/kektris",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/65.gif"
+    }
+  },
+  {
+    "id": "66",
+    "source": "examples",
+    "name": "8bit BGM generator",
+    "description": "A tool to automatically generate 3-channel Pyxel sounds",
+    "creators": [
+      {
+        "name": "frenchbread",
+        "url": "https://x.com/frenchbread1222"
+      }
+    ],
+    "source_metadata": {
+      "number": 66,
+      "github_url": "https://retro-bgm-generator.web.app/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/66.gif"
+    }
+  },
+  {
+    "id": "68",
+    "source": "examples",
+    "name": "Mini Shogi",
+    "description": "A shogi game with reduced pieces on a 5x5 board",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 68,
+      "github_url": "https://aged99oow.github.io/shogi/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/68.gif"
+    }
+  },
+  {
+    "id": "69",
+    "source": "examples",
+    "name": "Mini Mahjong",
+    "description": "A Mahjong game with reduced tiles",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 69,
+      "github_url": "https://aged99oow.github.io/mahjong/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/69.gif"
+    }
+  },
+  {
+    "id": "70",
+    "source": "examples",
+    "name": "Mini Mario",
+    "description": "A reduced version of Super Mario Bros. (NES)",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 70,
+      "github_url": "https://aged99oow.github.io/mario/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/70.gif"
+    }
+  },
+  {
+    "id": "71",
+    "source": "examples",
+    "name": "mini-space",
+    "description": "A mini shooter with many projectiles",
+    "creators": [
+      {
+        "name": "bhunao",
+        "url": "https://github.com/bhunao"
+      }
+    ],
+    "source_metadata": {
+      "number": 71,
+      "github_url": "https://github.com/bhunao/minispace_pyxel",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/71.gif"
+    }
+  },
+  {
+    "id": "72",
+    "source": "examples",
+    "name": "PyGmc4",
+    "description": "A Gakken GMC-4 emulator in Python",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 72,
+      "github_url": "https://github.com/jay-kumogata/PyGmc4",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/72.gif"
+    }
+  },
+  {
+    "id": "73",
+    "source": "examples",
+    "name": "Othellomino",
+    "description": "An Othello variant with polyominoes",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 73,
+      "github_url": "https://aged99oow.github.io/othello/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/73.gif"
+    }
+  },
+  {
+    "id": "74",
+    "source": "examples",
+    "name": "Panelund",
+    "description": "A boss fight where you surround and charge the enemy boss",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 74,
+      "github_url": "https://aged99oow.github.io/panel/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/74.gif"
+    }
+  },
+  {
+    "id": "75",
+    "source": "examples",
+    "name": "Chip8Mini",
+    "description": "A CHIP-8 emulator that runs inside the game cabinet",
+    "creators": [
+      {
+        "name": "Jay Kumogata",
+        "url": "https://x.com/jay_kumogata"
+      }
+    ],
+    "source_metadata": {
+      "number": 75,
+      "github_url": "https://github.com/jay-kumogata/Chip8Mini",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/75.gif"
+    }
+  },
+  {
+    "id": "76",
+    "source": "examples",
+    "name": "Pyxel Road Demo",
+    "description": "An OutRun-like road with scalable sprites and a parallax background",
+    "creators": [
+      {
+        "name": "Ilya",
+        "url": "https://github.com/ilya-ssh"
+      }
+    ],
+    "source_metadata": {
+      "number": 76,
+      "github_url": "https://github.com/ilya-ssh/PyxelRoadDemo",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/76.gif"
+    }
+  },
+  {
+    "id": "77",
+    "source": "examples",
+    "name": "Mini Pittan",
+    "description": "A Japanese word puzzle",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 77,
+      "github_url": "https://aged99oow.github.io/pittan/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/77.gif"
+    }
+  },
+  {
+    "id": "78",
+    "source": "examples",
+    "name": "Mini RPG",
+    "description": "A no-save mini RPG",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 78,
+      "github_url": "https://aged99oow.github.io/rpg/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/78.gif"
+    }
+  },
+  {
+    "id": "79",
+    "source": "examples",
+    "name": "Shroomy Shroom",
+    "description": "A side-scrolling survival game made for Remix It Jam 2023",
+    "creators": [
+      {
+        "name": "Takane",
+        "url": "https://x.com/takane_ichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 79,
+      "github_url": "https://takaneichinose.itch.io/shroomy-shroom",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/79.gif"
+    }
+  },
+  {
+    "id": "8",
+    "source": "examples",
+    "name": "Pyxel Lander",
+    "description": "A Lunar Lander tribute",
+    "creators": [
+      {
+        "name": "Humberto Rocha",
+        "url": "https://x.com/humrochagf"
+      }
+    ],
+    "source_metadata": {
+      "number": 8,
+      "github_url": "https://humrochagf.itch.io/pyxel-lander",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/8.gif"
+    }
+  },
+  {
+    "id": "80",
+    "source": "examples",
+    "name": "Scratch Lesson Port",
+    "description": "A Pyxel version of MIT Scratch lessons",
+    "creators": [
+      {
+        "name": "EdTheDev",
+        "url": "https://github.com/edthedev"
+      }
+    ],
+    "source_metadata": {
+      "number": 80,
+      "github_url": "https://edward.delaporte.us/pyxel/doodlebug/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/80.gif"
+    }
+  },
+  {
+    "id": "81",
+    "source": "examples",
+    "name": "Lode Runner Remake",
+    "description": "A Lode Runner remake (IREM + NES)",
+    "creators": [
+      {
+        "name": "dauet",
+        "url": "https://x.com/rfsguhfgkohbf"
+      }
+    ],
+    "source_metadata": {
+      "number": 81,
+      "github_url": "https://dauet.github.io/ld/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/81.gif"
+    }
+  },
+  {
+    "id": "82",
+    "source": "examples",
+    "name": "Sangoku Historia",
+    "description": "A strategic simulation game set in the Three Kingdoms",
+    "creators": [
+      {
+        "name": "frenchbread",
+        "url": "https://x.com/frenchbread1222"
+      }
+    ],
+    "source_metadata": {
+      "number": 82,
+      "github_url": "https://github.com/shiromofufactory/pyxel-sangokushi-guide",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/82.gif"
+    }
+  },
+  {
+    "id": "83",
+    "source": "examples",
+    "name": "Dice Arithmetic",
+    "description": "A game where you make the number closest to the target",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 83,
+      "github_url": "https://aged99oow.github.io/dice/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/83.gif"
+    }
+  },
+  {
+    "id": "84",
+    "source": "examples",
+    "name": "Ostle",
+    "description": "An abstract strategy game on a 5x5 square grid",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 84,
+      "github_url": "https://aged99oow.github.io/ostle/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/84.gif"
+    }
+  },
+  {
+    "id": "85",
+    "source": "examples",
+    "name": "obakeHunt",
+    "description": "A shooting game with a finger gun",
+    "creators": [
+      {
+        "name": "sirococoa",
+        "url": "https://x.com/sirococoa1"
+      }
+    ],
+    "source_metadata": {
+      "number": 85,
+      "github_url": "https://sirococoa.github.io/obakeHunt/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/85.gif"
+    }
+  },
+  {
+    "id": "86",
+    "source": "examples",
+    "name": "MazeWalkGame",
+    "description": "A dot-eating game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 86,
+      "github_url": "https://github.com/Hiekichi/MazeWalkGame",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/86.gif"
+    }
+  },
+  {
+    "id": "87",
+    "source": "examples",
+    "name": "LF3DP",
+    "description": "A game about drawing a closed-loop sketch of a dream",
+    "creators": [
+      {
+        "name": "GANAH",
+        "url": "https://github.com/sichaozhang1112/PEANUX"
+      }
+    ],
+    "source_metadata": {
+      "number": 87,
+      "github_url": "https://github.com/sichaozhang1112/LF3DP",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/87.gif"
+    }
+  },
+  {
+    "id": "88",
+    "source": "examples",
+    "name": "BakudanKun",
+    "description": "A bomber game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 88,
+      "github_url": "https://github.com/Hiekichi/BakudanKunPy",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/88.gif"
+    }
+  },
+  {
+    "id": "89",
+    "source": "examples",
+    "name": "Kanixian",
+    "description": "A shooting game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 89,
+      "github_url": "https://github.com/Hiekichi/Kanixian",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/89.gif"
+    }
+  },
+  {
+    "id": "9",
+    "source": "examples",
+    "name": "Umeroose",
+    "description": "A game about filling holes",
+    "creators": [
+      {
+        "name": "CoBinee",
+        "url": "https://x.com/cobinee"
+      }
+    ],
+    "source_metadata": {
+      "number": 9,
+      "github_url": "https://github.com/CoBinee/umeroose-pyxel",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/9.gif"
+    }
+  },
+  {
+    "id": "90",
+    "source": "examples",
+    "name": "CheaperDepth",
+    "description": "A depth charge game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 90,
+      "github_url": "https://github.com/Hiekichi/CheeperDepth",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/90.gif"
+    }
+  },
+  {
+    "id": "91",
+    "source": "examples",
+    "name": "ChottoCopter",
+    "description": "A hostage rescue game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 91,
+      "github_url": "https://github.com/Hiekichi/ChottoCopter",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/91.gif"
+    }
+  },
+  {
+    "id": "92",
+    "source": "examples",
+    "name": "Vortexion",
+    "description": "A shoot-em-up",
+    "creators": [
+      {
+        "name": "Adam",
+        "url": "https://x.com/badcomputer0"
+      }
+    ],
+    "source_metadata": {
+      "number": 92,
+      "github_url": "https://github.com/helpcomputer/vortexion",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/92.gif"
+    }
+  },
+  {
+    "id": "93",
+    "source": "examples",
+    "name": "Stellar Blazer",
+    "description": "A shooting game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 93,
+      "github_url": "https://github.com/Hiekichi/StellarBlazer",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/93.gif"
+    }
+  },
+  {
+    "id": "94",
+    "source": "examples",
+    "name": "Attacker",
+    "description": "A retro shooting game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 94,
+      "github_url": "https://github.com/Hiekichi/Attacker",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/94.gif"
+    }
+  },
+  {
+    "id": "95",
+    "source": "examples",
+    "name": "Poker",
+    "description": "A tabletop card game",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 95,
+      "github_url": "https://github.com/Hiekichi/Poker",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/95.gif"
+    }
+  },
+  {
+    "id": "96",
+    "source": "examples",
+    "name": "Mini Typing",
+    "description": "A Japanese–English translation typing game",
+    "creators": [
+      {
+        "name": "aged99oow",
+        "url": "https://x.com/aged99"
+      }
+    ],
+    "source_metadata": {
+      "number": 96,
+      "github_url": "https://aged99oow.github.io/typing/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/96.gif"
+    }
+  },
+  {
+    "id": "97",
+    "source": "examples",
+    "name": "MrColorHD",
+    "description": "A platformer about a popular Brazilian festival",
+    "creators": [
+      {
+        "name": "Carma Junino"
+      }
+    ],
+    "source_metadata": {
+      "number": 97,
+      "github_url": "https://mrcolorhd.itch.io/carma-junino",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/97.gif"
+    }
+  },
+  {
+    "id": "98",
+    "source": "examples",
+    "name": "Pyxel Invaders",
+    "description": "A Space Invaders-like shooting game",
+    "creators": [
+      {
+        "name": "sanbunnoichi"
+      }
+    ],
+    "source_metadata": {
+      "number": 98,
+      "github_url": "https://github.com/sanbunno-ichi/pyxelinv",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/98.gif"
+    }
+  },
+  {
+    "id": "99",
+    "source": "examples",
+    "name": "Hieroglyph_Editor",
+    "description": "A small editor that converts Japanese into hieroglyphs",
+    "creators": [
+      {
+        "name": "koidemizu"
+      }
+    ],
+    "source_metadata": {
+      "number": 99,
+      "github_url": "https://koidemizu.github.io/post/hieroglyph/",
+      "thumbnail_url": "https://kitao.github.io/pyxel-user-examples/images/99.gif"
     }
   }
 ]

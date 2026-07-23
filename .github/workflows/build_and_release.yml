@@ -2,6 +2,8 @@ name: Build and Release FCDB
 
 env:
   FCDBTOOL_REVISION: ${{ vars.FCDBTOOL_REVISION }}
+  FCDB_SCHEMA_VERSION: '0.5.0'
+  FCDB_PROMOTION_SCHEMA_VERSION: '0.4.0'
 
 on:
   push:
@@ -117,7 +119,14 @@ jobs:
         cd fcdbtool
         node out/cli.js release pico8 --data-dir ../fcdb
 
+    - name: Guard release channel schema
+      if: env.FCDB_SCHEMA_VERSION != env.FCDB_PROMOTION_SCHEMA_VERSION
+      run: |
+        echo "Schema $FCDB_SCHEMA_VERSION validated, but public promotion remains pinned to $FCDB_PROMOTION_SCHEMA_VERSION."
+        exit 1
+
     - name: Release PICO-8
+      if: env.FCDB_SCHEMA_VERSION == env.FCDB_PROMOTION_SCHEMA_VERSION
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pico8-latest
@@ -173,7 +182,14 @@ jobs:
         cd fcdbtool
         node out/cli.js release pyxelpico --data-dir ../fcdb
 
+    - name: Guard release channel schema
+      if: env.FCDB_SCHEMA_VERSION != env.FCDB_PROMOTION_SCHEMA_VERSION
+      run: |
+        echo "Schema $FCDB_SCHEMA_VERSION validated, but public promotion remains pinned to $FCDB_PROMOTION_SCHEMA_VERSION."
+        exit 1
+
     - name: Release PyxelPico
+      if: env.FCDB_SCHEMA_VERSION == env.FCDB_PROMOTION_SCHEMA_VERSION
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pyxelpico-latest
@@ -232,7 +248,14 @@ jobs:
         cd fcdbtool
         node out/cli.js release pyxel --data-dir ../fcdb
 
+    - name: Guard release channel schema
+      if: env.FCDB_SCHEMA_VERSION != env.FCDB_PROMOTION_SCHEMA_VERSION
+      run: |
+        echo "Schema $FCDB_SCHEMA_VERSION validated, but public promotion remains pinned to $FCDB_PROMOTION_SCHEMA_VERSION."
+        exit 1
+
     - name: Release Pyxel
+      if: env.FCDB_SCHEMA_VERSION == env.FCDB_PROMOTION_SCHEMA_VERSION
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pyxel-latest

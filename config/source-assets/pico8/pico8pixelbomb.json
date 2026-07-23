@@ -1,0 +1,112 @@
+{
+  "fcdb:pico8:pico8pixelbomb:picovibe_splooshdemo": {
+    "carts": {
+      "zh-CN": {
+        "input": "release/fcdb/picovibe_splooshdemo.zh-CN.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_splooshdemo.zh-CN.p8.png"
+      },
+      "en-US": {
+        "input": "release/fcdb/picovibe_splooshdemo.en-US.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_splooshdemo.en-US.p8.png"
+      }
+    },
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/splooshdemo/splooshdemo.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_splooshdemo.p8mod"
+    }
+  },
+  "fcdb:pico8:pico8pixelbomb:picovibe_yxkl": {
+    "carts": {
+      "zh-CN": {
+        "input": "release/fcdb/picovibe_yxkl.zh-CN.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_yxkl.zh-CN.p8.png"
+      }
+    },
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/yxkl/yxkl.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_yxkl.p8mod"
+    }
+  },
+  "fcdb:pico8:pico8pixelbomb:picovibe_i18ndemo": {
+    "carts": {
+      "zh-CN": {
+        "input": "release/fcdb/picovibe_i18ndemo.zh-CN.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_i18ndemo.zh-CN.p8.png"
+      },
+      "en-US": {
+        "input": "release/fcdb/picovibe_i18ndemo.en-US.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_i18ndemo.en-US.p8.png"
+      }
+    },
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/i18ndemo/i18ndemo.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_i18ndemo.p8mod"
+    }
+  },
+  "fcdb:pico8:pico8pixelbomb:picovibe_nezhapoems": {
+    "carts": {
+      "zh-CN": {
+        "input": "release/fcdb/picovibe_nezhapoems.zh-CN.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_nezhapoems.zh-CN.p8.png"
+      }
+    },
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/nezhapoems/nezhapoems.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_nezhapoems.p8mod"
+    }
+  },
+  "fcdb:pico8:pico8pixelbomb:picovibe_bas_mod": {
+    "carts": {
+      "zh-CN": {
+        "input": "release/fcdb/picovibe_bas_mod.zh-CN.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_bas_mod.zh-CN.p8.png"
+      },
+      "en-US": {
+        "input": "release/fcdb/picovibe_bas_mod.en-US.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_bas_mod.en-US.p8.png"
+      }
+    },
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/bas-pico8gomod/basmod.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_bas_mod.p8mod"
+    }
+  },
+  "fcdb:pico8:pico8pixelbomb:picovibe_celeste_mod": {
+    "carts": {
+      "zh-CN": {
+        "input": "release/fcdb/picovibe_celeste_mod.zh-CN.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_celeste_mod.zh-CN.p8.png"
+      },
+      "en-US": {
+        "input": "release/fcdb/picovibe_celeste_mod.en-US.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_celeste_mod.en-US.p8.png"
+      }
+    },
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/celeste-pico8gomod/celestemod.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_celeste_mod.p8mod"
+    }
+  },
+  "fcdb:pico8:pico8pixelbomb:picovibe_justoneboss_mod": {
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/justoneboss-pico8gomod/justonebossmod.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_justoneboss_mod.p8mod"
+    }
+  },
+  "fcdb:pico8:pico8pixelbomb:picovibe_petthecat_mod": {
+    "carts": {
+      "zh-CN": {
+        "input": "release/fcdb/picovibe_petthecat_mod.zh-CN.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_petthecat_mod.zh-CN.p8.png"
+      },
+      "en-US": {
+        "input": "release/fcdb/picovibe_petthecat_mod.en-US.p8.png",
+        "package_file": "carts/pico8pixelbomb/picovibe_petthecat_mod.en-US.p8.png"
+      }
+    },
+    "editable_source": {
+      "input": "carts/pico8pixelbomb/pet-the-cat-pico8gomod/pet-the-cat.p8mod",
+      "package_file": "sources/pico8pixelbomb/picovibe_petthecat_mod.p8mod"
+    }
+  }
+}

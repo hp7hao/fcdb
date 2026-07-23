@@ -1,363 +1,404 @@
 [
   {
-    "id": "103",
-    "name": "ACLM",
-    "slug": "aclm",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:103" }],
-    "author": {
-      "name": "Jay Kumogata"
-    },
-    "license": {
-      "type": "Apache-2.0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/jay-kumogata/RetroGames",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad LEFT/RIGHT steer, A/Start restart",
-      "original_resolution": "128x128",
-      "has_assets": false,
-      "migration_date": "2026-04-04",
-      "cart_file": "aclm.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "139",
-    "name": "Asteroids",
-    "slug": "asteroids",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:139" }],
-    "author": {
-      "name": "Jay Kumogata"
-    },
-    "license": {
-      "type": "Apache-2.0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/jay-kumogata/RetroGames",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad LEFT/RIGHT rotate, A shoot, Start/A restart",
-      "original_resolution": "320x320",
-      "has_assets": false,
-      "migration_date": "2026-04-04",
-      "cart_file": "asteroids.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "88",
-    "name": "BakudanKun",
-    "slug": "bakudankun",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:88" }],
-    "author": {
-      "name": "Hiekichi"
-    },
-    "license": {
-      "type": "Unlicensed"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/Hiekichi/BakudanKunPy",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move, A place bomb, Start restart from stage 1, A continue",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "bakudankun.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "112",
-    "name": "Bubbles",
-    "slug": "bubbles",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:112" }],
-    "author": {
-      "name": "helpcomputer"
-    },
-    "license": {
-      "type": "MIT"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/helpcomputer/bubbles",
-      "scaling_strategy": "integer-2x-crop",
-      "controls": "D-pad move, A jump, B menu/back",
-      "original_resolution": "128x128",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "bubbles.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "91",
-    "name": "ChottoCopter",
-    "slug": "chottocopter",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:91" }],
-    "author": {
-      "name": "Hiekichi"
-    },
-    "license": {
-      "type": "Unlicensed"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/Hiekichi/ChottoCopter",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move, A change direction, B fire, Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "chottocopter.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "90",
-    "name": "CheaperDepth",
-    "slug": "cheaperdepth",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:90" }],
-    "author": {
-      "name": "Hiekichi"
-    },
-    "license": {
-      "type": "Unlicensed"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/Hiekichi/CheeperDepth",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad LEFT/RIGHT move, Z/B drop left charge, X/A drop right charge, Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "cheaperdepth.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "flatbird",
-    "name": "FlatBird",
-    "slug": "flatbird",
-    "source": "pyxelpico",
-    "author": {
-      "name": "Hiekichi"
-    },
-    "license": {
-      "type": "Unlicensed"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/Hiekichi/FlatBird",
-      "scaling_strategy": "native-240",
-      "controls": "A jump, B/Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "flatbird.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "frogger",
-    "name": "Frogger",
-    "slug": "frogger",
-    "source": "pyxelpico",
-    "author": {
-      "name": "Jay Kumogata"
-    },
-    "license": {
-      "type": "Apache-2.0"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/jay-kumogata/RetroGames",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move (8 directions)",
-      "original_resolution": "208x240",
-      "has_assets": false,
-      "migration_date": "2026-04-04",
-      "cart_file": "frogger.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "46",
-    "name": "GrowyGardens",
-    "slug": "growygardens",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:46" }],
-    "author": {
-      "name": "SuperZooper3"
-    },
-    "license": {
-      "type": "MIT"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/SuperZooper3/GrowyGardens",
-      "scaling_strategy": "integer-2x-crop",
-      "controls": "D-pad move, A cycle action (water/plant/bonk), B execute, Start begin",
-      "original_resolution": "128x128",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "growygardens.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "89",
-    "name": "Kanixian",
-    "slug": "kanixian",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:89" }],
-    "author": {
-      "name": "Hiekichi"
-    },
-    "license": {
-      "type": "Unlicensed"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/Hiekichi/Kanixian",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad LEFT/RIGHT move, A/B shoot, Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "kanixian.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
-    "id": "65",
-    "name": "Kektris",
-    "slug": "kektris",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:65" }],
-    "author": {
-      "name": "Konstantin Klepikov"
-    },
-    "license": {
-      "type": "MIT"
-    },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/KonstantinKlepikov/kektris",
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move, A rotate left, B rotate right, Start pause, Select music",
-      "original_resolution": "256x256",
-      "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "kektris.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
-    }
-  },
-  {
     "id": "102",
+    "source": "pyxelpico",
     "name": "Pinball",
     "slug": "pinball",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:102" }],
-    "author": {
-      "name": "Jay Kumogata"
-    },
+    "creators": [
+      {
+        "name": "Jay Kumogata"
+      }
+    ],
     "license": {
       "type": "Apache-2.0"
     },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/jay-kumogata/RetroGames",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:102"
+      }
+    ],
+    "source_metadata": {
       "scaling_strategy": "integer-2x-crop",
       "controls": "D-pad LEFT/A = left flipper, D-pad RIGHT/B = right flipper, A/Start = restart",
       "original_resolution": "128x128",
       "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "pinball.zip",
+      "cart_file": "carts/pyxelpico/pinball.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/jay-kumogata/RetroGames"
+    }
+  },
+  {
+    "id": "103",
+    "source": "pyxelpico",
+    "name": "ACLM",
+    "slug": "aclm",
+    "creators": [
+      {
+        "name": "Jay Kumogata"
+      }
+    ],
+    "license": {
+      "type": "Apache-2.0"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:103"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad LEFT/RIGHT steer, A/Start restart",
+      "original_resolution": "128x128",
+      "has_assets": false,
+      "cart_file": "carts/pyxelpico/aclm.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/jay-kumogata/RetroGames"
+    }
+  },
+  {
+    "id": "112",
+    "source": "pyxelpico",
+    "name": "Bubbles",
+    "slug": "bubbles",
+    "creators": [
+      {
+        "name": "helpcomputer"
+      }
+    ],
+    "license": {
+      "type": "MIT"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:112"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "integer-2x-crop",
+      "controls": "D-pad move, A jump, B menu/back",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/bubbles.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/helpcomputer/bubbles"
+    }
+  },
+  {
+    "id": "139",
+    "source": "pyxelpico",
+    "name": "Asteroids",
+    "slug": "asteroids",
+    "creators": [
+      {
+        "name": "Jay Kumogata"
+      }
+    ],
+    "license": {
+      "type": "Apache-2.0"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:139"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad LEFT/RIGHT rotate, A shoot, Start/A restart",
+      "original_resolution": "320x320",
+      "has_assets": false,
+      "cart_file": "carts/pyxelpico/asteroids.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/jay-kumogata/RetroGames"
+    }
+  },
+  {
+    "id": "46",
+    "source": "pyxelpico",
+    "name": "GrowyGardens",
+    "slug": "growygardens",
+    "creators": [
+      {
+        "name": "SuperZooper3"
+      }
+    ],
+    "license": {
+      "type": "MIT"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:46"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "integer-2x-crop",
+      "controls": "D-pad move, A cycle action (water/plant/bonk), B execute, Start begin",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/growygardens.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/SuperZooper3/GrowyGardens"
+    }
+  },
+  {
+    "id": "65",
+    "source": "pyxelpico",
+    "name": "Kektris",
+    "slug": "kektris",
+    "creators": [
+      {
+        "name": "Konstantin Klepikov"
+      }
+    ],
+    "license": {
+      "type": "MIT"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:65"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A rotate left, B rotate right, Start pause, Select music",
+      "original_resolution": "256x256",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/kektris.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/KonstantinKlepikov/kektris"
+    }
+  },
+  {
+    "id": "88",
+    "source": "pyxelpico",
+    "name": "BakudanKun",
+    "slug": "bakudankun",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:88"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A place bomb, Start restart from stage 1, A continue",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/bakudankun.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/Hiekichi/BakudanKunPy"
+    }
+  },
+  {
+    "id": "89",
+    "source": "pyxelpico",
+    "name": "Kanixian",
+    "slug": "kanixian",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:89"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad LEFT/RIGHT move, A/B shoot, Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/kanixian.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/Hiekichi/Kanixian"
+    }
+  },
+  {
+    "id": "90",
+    "source": "pyxelpico",
+    "name": "CheaperDepth",
+    "slug": "cheaperdepth",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:90"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad LEFT/RIGHT move, Z/B drop left charge, X/A drop right charge, Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/cheaperdepth.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/Hiekichi/CheeperDepth"
+    }
+  },
+  {
+    "id": "91",
+    "source": "pyxelpico",
+    "name": "ChottoCopter",
+    "slug": "chottocopter",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:91"
+      }
+    ],
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A change direction, B fire, Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/chottocopter.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/Hiekichi/ChottoCopter"
     }
   },
   {
     "id": "95",
+    "source": "pyxelpico",
     "name": "Poker",
     "slug": "poker",
-    "source": "pyxelpico",
-    "relationships": [{ "kind": "derived-from", "target": "fcdb:pyxel:examples:95" }],
-    "author": {
-      "name": "Hiekichi"
-    },
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
     "license": {
       "type": "Unlicensed"
     },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/Hiekichi/Poker",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:95"
+      }
+    ],
+    "source_metadata": {
       "scaling_strategy": "native-240",
       "controls": "D-pad move cursor, A select/confirm, Start begin",
       "original_resolution": "240x240",
       "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "poker.zip",
+      "cart_file": "carts/pyxelpico/poker.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/Hiekichi/Poker"
+    }
+  },
+  {
+    "id": "flatbird",
+    "source": "pyxelpico",
+    "name": "FlatBird",
+    "slug": "flatbird",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "A jump, B/Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/flatbird.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/Hiekichi/FlatBird"
+    }
+  },
+  {
+    "id": "frogger",
+    "source": "pyxelpico",
+    "name": "Frogger",
+    "slug": "frogger",
+    "creators": [
+      {
+        "name": "Jay Kumogata"
+      }
+    ],
+    "license": {
+      "type": "Apache-2.0"
+    },
+    "source_metadata": {
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move (8 directions)",
+      "original_resolution": "208x240",
+      "has_assets": false,
+      "cart_file": "carts/pyxelpico/frogger.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/jay-kumogata/RetroGames"
     }
   },
   {
     "id": "stellarblazer",
+    "source": "pyxelpico",
     "name": "StellarBlazer",
     "slug": "stellarblazer",
-    "source": "pyxelpico",
-    "author": {
-      "name": "Hiekichi"
-    },
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
     "license": {
       "type": "Unlicensed"
     },
-    "created": "2026-04-04",
-    "updated": "2026-05-11",
-    "extension": {
-      "source_url": "https://github.com/Hiekichi/StellarBlazer",
+    "source_metadata": {
       "scaling_strategy": "native-240",
       "controls": "D-pad move, A/B fire blaster or drop bomb, Start begin",
       "original_resolution": "240x240",
       "has_assets": true,
-      "migration_date": "2026-04-04",
-      "cart_file": "stellarblazer.zip",
+      "cart_file": "carts/pyxelpico/stellarblazer.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico"
+      "runtime": "pyxelpico",
+      "github_url": "https://github.com/Hiekichi/StellarBlazer"
     }
   }
 ]

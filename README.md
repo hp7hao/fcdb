@@ -1,6 +1,8 @@
 # Fantasy Console Database (FCDB)
 
-A curated game database for fantasy console platforms. Each platform is built and released independently.
+A source-faithful metadata catalog for fantasy console platforms. Every record
+describes one source entry; FCDB does not merge entries into canonical games or
+decide product playability. Each platform is built independently.
 
 ## Download
 
@@ -42,17 +44,16 @@ game objects:
   "name": "Game Title",
   "description": "A short description",
   "source": "bbs",
-  "author": {
-    "name": "Author Name",
-    "url": "https://..."
-  },
+  "creators": [{ "name": "Author Name", "url": "https://example.com/profile" }],
   "license": {
     "type": "CC4-BY-NC-SA",
     "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
   },
-  "created": "2024-01-15",
-  "updated": "2024-02-20",
-  "extension": {}
+  "published_at": "2024-01-15",
+  "source_updated_at": "2024-02-20",
+  "source_metadata": {
+    "cart_url": "https://example.com/cart.p8.png"
+  }
 }
 ```
 
@@ -64,44 +65,39 @@ game objects:
 | `name` | string | Game title |
 | `description` | string? | Short description |
 | `source` | string | Data source (`bbs`, `examples`, etc.) |
-| `author.name` | string | Author display name |
-| `author.url` | string? | Author profile URL |
+| `creators` | array | Required ordered source credits |
 | `license.type` | string? | License identifier |
 | `license.url` | string? | License URL |
-| `created` | string | ISO date (YYYY-MM-DD) when first scraped |
-| `updated` | string | ISO date (YYYY-MM-DD) of last metadata change |
-| `extension` | object | Platform-specific fields (see below) |
+| `published_at` | string? | Source-asserted publication time; absent when unknown |
+| `source_updated_at` | string? | Source-asserted update time; absent when unknown |
+| `source_metadata` | object? | Strict platform/source-specific facts |
 
 The public identity for a distributed game record is
 `fcdb:<platform>:<source>:<id>`, for example
 `fcdb:pico8:pico8pixelbomb:picovibe_i18ndemo`. Do not treat `id` or `slug`
 alone as a global identity.
 
-### Platform Extensions
+### Source-specific metadata
 
 **PICO-8** (`source: "bbs"`):
-- `extension.lid` — Lexaloffle BBS lid (cartridge version ID)
-- `extension.cart_url` — Direct URL to .p8.png cartridge
-- `extension.thumb_url` — Direct URL to thumbnail on BBS
+- `source_metadata.cart_url` — remote `.p8.png` location
+- `source_metadata.thumbnail_url` — remote BBS thumbnail location
 
 **PICO-8** (non-BBS sources):
-- `extension.cart_file` — First-class primary runtime cart in `carts/{source}/`, preferably `.p8.png`
-- `extension.cart_path` — Producer path for the primary runtime cart
-- `extension.cart_locale` — Optional BCP-47 locale label for the primary cart
-- `extension.cart_variants` — Optional additional BCP-47 runtime carts as `{ "locale": { "file", "path" } }`
-- `extension.source_file` — Optional editor source in `sources/{source}/`, either `.p8mod` or `.p8`
+- `source_metadata.cart_file` — complete package-relative primary cart path
+- `source_metadata.cart_locale` — non-English primary locale; omission means `en-US`
+- `source_metadata.cart_files` — additional locale-to-package-path mappings
+- `source_metadata.source_file` — optional complete package-relative editor source path
 
 **Pyxel** (`source: "examples"`):
-- `extension.number` — Example number from the Pyxel User Examples page
-- `extension.project_url` — GitHub repository URL
-- `extension.image_url` — URL to GIF preview
+- `source_metadata.number` — example number
+- `source_metadata.github_url` — GitHub project URL
+- `source_metadata.thumbnail_url` — GIF preview URL
 
 **PyxelPico** (`platform: "pyxelpico"`, `source: "pyxelpico"`):
-- `extension.cart_file` — Single-file PyxelPico cart zip in `carts/pyxelpico/`
-- `extension.cart_format` — `pyxelpico-cart-zip`
-- `extension.runtime` — `pyxelpico`
-- `extension.controls` — Handheld control summary
-- `extension.scaling_strategy` — Migration scaling strategy
+- `source_metadata.cart_file` — complete package-relative PyxelPico cart ZIP path
+- `source_metadata.cart_format` — `pyxelpico-cart-zip`
+- `source_metadata.runtime` — `pyxelpico`
 
 PyxelPico cart zips contain `pyxelpico-cart.json`, a `native/` payload,
 browser-ready `web/index.html`, and `cover.png` when available. The shared

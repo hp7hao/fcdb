@@ -1,184 +1,229 @@
 [
   {
-    "id": "picovibe_splooshdemo",
-    "name": "Sploosh Demo",
-    "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
-    "description": "A splash demo cart for PICO-8.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_splooshdemo.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_splooshdemo.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "cart_variants": {
-        "en-US": {
-          "file": "picovibe_splooshdemo.en-US.p8.png",
-          "path": "release/fcdb/picovibe_splooshdemo.en-US.p8.png"
-        }
-      },
-      "source_file": "picovibe_splooshdemo.p8mod",
-      "source_path": "carts/pico8pixelbomb/splooshdemo/splooshdemo.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_splooshdemo.png",
-      "tags": ["demo"]
-    }
-  },
-  {
-    "id": "picovibe_yxkl",
-    "name": "元宵节快乐",
-    "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
-    "description": "Lantern Festival celebration cart.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_yxkl.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_yxkl.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "source_file": "picovibe_yxkl.p8mod",
-      "source_path": "carts/pico8pixelbomb/yxkl/yxkl.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_yxkl.png",
-      "tags": ["demo", "festival"]
-    }
-  },
-  {
-    "id": "picovibe_i18ndemo",
-    "name": "i18n Demo",
-    "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
-    "description": "Multi-language internationalization demo for PICO-8.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_i18ndemo.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_i18ndemo.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "cart_variants": {
-        "en-US": {
-          "file": "picovibe_i18ndemo.en-US.p8.png",
-          "path": "release/fcdb/picovibe_i18ndemo.en-US.p8.png"
-        }
-      },
-      "source_file": "picovibe_i18ndemo.p8mod",
-      "source_path": "carts/pico8pixelbomb/i18ndemo/i18ndemo.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_i18ndemo.png",
-      "tags": ["demo", "i18n"]
-    }
-  },
-  {
-    "id": "picovibe_nezhapoems",
-    "name": "小爷集",
-    "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
-    "description": "Poetry recitation game - 要求全文背诵.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_nezhapoems.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_nezhapoems.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "source_file": "picovibe_nezhapoems.p8mod",
-      "source_path": "carts/pico8pixelbomb/nezhapoems/nezhapoems.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_nezhapoems.png",
-      "tags": ["poetry", "education"]
-    }
-  },
-  {
     "id": "picovibe_bas_mod",
-    "name": "小鸡蹦蹦跳 (中文振动版)",
     "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
+    "name": "小鸡蹦蹦跳 (中文振动版)",
     "description": "Chinese translation and vibration mod of BAS for pico8go.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_bas_mod.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_bas_mod.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "cart_variants": {
-        "en-US": {
-          "file": "picovibe_bas_mod.en-US.p8.png",
-          "path": "release/fcdb/picovibe_bas_mod.en-US.p8.png"
-        }
-      },
-      "source_file": "picovibe_bas_mod.p8mod",
-      "source_path": "carts/pico8pixelbomb/bas-pico8gomod/basmod.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_bas_mod.png",
-      "tags": ["mod", "pico8go", "platformer"]
-    }
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_bas_mod.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_bas_mod.png",
+      "tags": [
+        "mod",
+        "pico8go",
+        "platformer"
+      ],
+      "cart_file": "carts/pico8pixelbomb/picovibe_bas_mod.en-US.p8.png",
+      "cart_files": {
+        "zh-CN": "carts/pico8pixelbomb/picovibe_bas_mod.zh-CN.p8.png"
+      }
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
   },
   {
     "id": "picovibe_celeste_mod",
-    "name": "Celeste Classic (中文振动版)",
     "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
+    "name": "Celeste Classic (中文振动版)",
     "description": "Chinese translation, vibration, and PC sound source mod of Celeste Classic for pico8go.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_celeste_mod.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_celeste_mod.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "cart_variants": {
-        "en-US": {
-          "file": "picovibe_celeste_mod.en-US.p8.png",
-          "path": "release/fcdb/picovibe_celeste_mod.en-US.p8.png"
-        }
-      },
-      "source_file": "picovibe_celeste_mod.p8mod",
-      "source_path": "carts/pico8pixelbomb/celeste-pico8gomod/celestemod.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_celeste_mod.png",
-      "tags": ["mod", "pico8go", "platformer"]
-    }
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_celeste_mod.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_celeste_mod.png",
+      "tags": [
+        "mod",
+        "pico8go",
+        "platformer"
+      ],
+      "cart_file": "carts/pico8pixelbomb/picovibe_celeste_mod.en-US.p8.png",
+      "cart_files": {
+        "zh-CN": "carts/pico8pixelbomb/picovibe_celeste_mod.zh-CN.p8.png"
+      }
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
+  },
+  {
+    "id": "picovibe_i18ndemo",
+    "source": "pico8pixelbomb",
+    "name": "i18n Demo",
+    "description": "Multi-language internationalization demo for PICO-8.",
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_i18ndemo.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_i18ndemo.png",
+      "tags": [
+        "demo",
+        "i18n"
+      ],
+      "cart_file": "carts/pico8pixelbomb/picovibe_i18ndemo.en-US.p8.png",
+      "cart_files": {
+        "zh-CN": "carts/pico8pixelbomb/picovibe_i18ndemo.zh-CN.p8.png"
+      }
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
   },
   {
     "id": "picovibe_justoneboss_mod",
-    "name": "只此一敌 (振动版)",
     "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
+    "name": "只此一敌 (振动版)",
     "description": "Vibration support mod of Just One Boss for pico8go.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_justoneboss_mod.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_justoneboss_mod.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "source_file": "picovibe_justoneboss_mod.p8mod",
-      "source_path": "carts/pico8pixelbomb/justoneboss-pico8gomod/justonebossmod.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_justoneboss_mod.png",
-      "tags": ["mod", "pico8go", "action"]
-    }
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_justoneboss_mod.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_justoneboss_mod.png",
+      "tags": [
+        "mod",
+        "pico8go",
+        "action"
+      ]
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
+  },
+  {
+    "id": "picovibe_nezhapoems",
+    "source": "pico8pixelbomb",
+    "name": "小爷集",
+    "description": "Poetry recitation game - 要求全文背诵.",
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_nezhapoems.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_nezhapoems.png",
+      "tags": [
+        "poetry",
+        "education"
+      ],
+      "cart_file": "carts/pico8pixelbomb/picovibe_nezhapoems.zh-CN.p8.png",
+      "cart_locale": "zh-CN"
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
   },
   {
     "id": "picovibe_petthecat_mod",
-    "name": "撸猫 (中文振动版)",
     "source": "pico8pixelbomb",
-    "author": { "name": "hp7hao" },
-    "license": { "type": "MIT", "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE" },
+    "name": "撸猫 (中文振动版)",
     "description": "Chinese translation and vibration mod of Pet the Cat for pico8go.",
-    "created": "2024-04-20 00:00:00",
-    "updated": "2024-05-02 00:00:00",
-    "extension": {
-      "cart_file": "picovibe_petthecat_mod.zh-CN.p8.png",
-      "cart_path": "release/fcdb/picovibe_petthecat_mod.zh-CN.p8.png",
-      "cart_locale": "zh-CN",
-      "cart_variants": {
-        "en-US": {
-          "file": "picovibe_petthecat_mod.en-US.p8.png",
-          "path": "release/fcdb/picovibe_petthecat_mod.en-US.p8.png"
-        }
-      },
-      "source_file": "picovibe_petthecat_mod.p8mod",
-      "source_path": "carts/pico8pixelbomb/pet-the-cat-pico8gomod/pet-the-cat.p8mod",
-      "thumbnail_path": "pico8pixelbomb/picovibe_petthecat_mod.png",
-      "tags": ["mod", "pico8go", "casual"]
-    }
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_petthecat_mod.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_petthecat_mod.png",
+      "tags": [
+        "mod",
+        "pico8go",
+        "casual"
+      ],
+      "cart_file": "carts/pico8pixelbomb/picovibe_petthecat_mod.en-US.p8.png",
+      "cart_files": {
+        "zh-CN": "carts/pico8pixelbomb/picovibe_petthecat_mod.zh-CN.p8.png"
+      }
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
+  },
+  {
+    "id": "picovibe_splooshdemo",
+    "source": "pico8pixelbomb",
+    "name": "Sploosh Demo",
+    "description": "A splash demo cart for PICO-8.",
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_splooshdemo.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_splooshdemo.png",
+      "tags": [
+        "demo"
+      ],
+      "cart_file": "carts/pico8pixelbomb/picovibe_splooshdemo.en-US.p8.png",
+      "cart_files": {
+        "zh-CN": "carts/pico8pixelbomb/picovibe_splooshdemo.zh-CN.p8.png"
+      }
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
+  },
+  {
+    "id": "picovibe_yxkl",
+    "source": "pico8pixelbomb",
+    "name": "元宵节快乐",
+    "description": "Lantern Festival celebration cart.",
+    "creators": [
+      {
+        "name": "hp7hao"
+      }
+    ],
+    "license": {
+      "type": "MIT",
+      "url": "https://github.com/hp7hao/picovibe/blob/main/LICENSE"
+    },
+    "source_metadata": {
+      "source_file": "sources/pico8pixelbomb/picovibe_yxkl.p8mod",
+      "thumbnail_path": "thumbs/pico8pixelbomb/picovibe_yxkl.png",
+      "tags": [
+        "demo",
+        "festival"
+      ],
+      "cart_file": "carts/pico8pixelbomb/picovibe_yxkl.zh-CN.p8.png",
+      "cart_locale": "zh-CN"
+    },
+    "published_at": "2024-04-20 00:00:00",
+    "source_updated_at": "2024-05-02 00:00:00"
   }
 ]
