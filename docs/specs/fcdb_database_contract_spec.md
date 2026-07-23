@@ -1,7 +1,7 @@
 # FCDB Database Contract Specification
 
 **Version**: 0.5.0
-**Status**: Draft
+**Status**: Active
 **Level**: feature
 **Owner**: fcdb
 **Parent**: docs/specs/GLOBAL_SPEC.md
@@ -19,9 +19,10 @@ edition, release, or person. Downstream products such as xwgamedb, Pico8Go,
 ManXiangSu, and Pico8IDE may add product-facing models, but they must treat this
 contract as the meaning of FCDB release artifacts.
 
-This draft defines target package schema `0.5.0`. Published packages and current
-consumers remain on schema `0.4.0` until the coordinated migration in Section 10
-is implemented and validated. A package always declares exactly one schema.
+This specification defines package schema `0.5.0`. Producers and declared direct
+consumers have completed the coordinated migration in Section 10. Public latest
+channels remain independently promotion-gated until release coordination is
+authorized. A package always declares exactly one schema.
 
 ## 2. Scope And Architectural Boundary
 
