@@ -372,6 +372,9 @@ Requirements:
   significant.
 - **LIST-007**: Localized membership, if introduced later, requires a distinct
   explicitly named file type rather than overloading metadata overlays.
+- **LIST-008**: Every localized list metadata overlay MUST have a corresponding
+  base list file with the same `list_id`. Producers and package validators MUST
+  reject orphan localized list files.
 
 ## 9. Release Package Contract
 
@@ -392,14 +395,19 @@ fcdb_<platform>.zip
 
 `version.json` MUST declare `schema_version`, `package_version`, `platform`,
 `default_locale`, `available_locales`, `source_revision`, `producer_revision`,
-and `built_at`. Revisions are immutable Git object IDs. `built_at` describes the
-package build only and is not an entry date.
+and `built_at`. `available_locales` is the sorted union of locales represented
+by packaged `db.<locale>.json` game overlays and
+`lists/<list_id>.<locale>.json` list overlays. Revisions are immutable Git
+object IDs. `built_at` describes the package build only and is not an entry
+date.
 
 Requirements:
 
 - **PKG-001**: Each platform package is independently versioned and published.
-- **PKG-002**: Identical inputs and revisions MUST produce deterministic record,
-  translation, and list ordering.
+- **PKG-002**: Identical inputs, release metadata, and revisions MUST produce
+  byte-identical package archives, including deterministic record,
+  translation, list, asset, and runtime-member ordering and normalized ZIP
+  member metadata.
 - **PKG-003**: `package_version` identifies packaged content rather than a fixed
   placeholder.
 - **PKG-004**: The producer builds into staging, validates staged output,
@@ -446,6 +454,9 @@ Requirements:
 - **MIG-006**: Each consumer updates its contract and fixtures, adds exact
   `0.5.0` support, and switches intentionally. Published `0.4.0` packages remain
   usable until that coordinated cutover.
+- **MIG-007**: Migration MUST validate records that already use the `0.5.0`
+  shape and MUST reject records that mix legacy and replacement
+  representations instead of choosing one and discarding the other.
 
 ## 11. Validation Requirements
 
