@@ -28,18 +28,19 @@ schema version they declare under their own project authority. Schema `0.x`
 minor changes are breaking, so `0.5.0` to `0.6.0` requires an intentional
 consumer migration rather than feature detection.
 
-A breaking schema is first built as a local revision-addressed candidate and
-remains unpublished during qualification. Every consumer runs its own full FCDB
-package suite against that candidate and changes its supported-version
-declaration only when the suite passes. FCDB does not
-keep a central consumer-readiness registry. Stable `*-latest` channels move only
-after explicit release-owner review of consumer-owned evidence; each stable
-package is also published at `<platform>-schema-<schema_version>` for consumers
-that pin an exact contract. Before a breaking cutover, the prior `*-latest`
-package is preserved under its prior schema-pinned channel, or under
-`<platform>-unversioned` when it predates `schema_version`. Old
-`version: "1.0"` values are package metadata and are never treated as schema
-versions.
+FCDB publishes each independently valid platform package without waiting for
+consumer migration. Every package is available from both `*-latest` and the
+exact `<platform>-schema-<schema_version>` channel. Before schema `1.0.0`,
+`*-latest` is intentionally unstable and may contain breaking minor-schema
+changes.
+
+Consumers must inspect `version.json` before `db.json`. They should pin their
+supported schema channel, or reject an unsupported `*-latest` package without
+replacing their last working data. Each consumer owns its migration and full
+compatibility suite; FCDB keeps no central readiness registry. Before replacing
+`*-latest`, FCDB preserves the displaced package under its schema channel, or
+under `<platform>-unversioned` when it predates `schema_version`. Old
+`version: "1.0"` values are package metadata, not schema versions.
 
 The authoritative lifecycle and test requirements are in
 `docs/specs/fcdb_database_contract_spec.md` Section 9.
