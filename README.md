@@ -28,7 +28,7 @@ schema version they declare under their own project authority. Schema `0.x`
 minor changes are breaking, so `0.5.0` to `0.6.0` requires an intentional
 consumer migration rather than feature detection.
 
-A breaking schema is first published as an immutable CI candidate. Every
+A breaking schema is first published as a revision-addressed GitHub prerelease candidate. Every
 consumer runs its own full FCDB package suite against that candidate and changes
 its own supported-version declaration only when the suite passes. FCDB does not
 keep a central consumer-readiness registry. Stable `*-latest` channels move only

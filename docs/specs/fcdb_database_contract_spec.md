@@ -408,8 +408,8 @@ A breaking schema change MUST:
 1. update this owning specification before producer implementation;
 2. update FCDBTool types, strict schemas, validators, migrations, and fixtures;
 3. preserve one schema shape per package and reject mixed shapes;
-4. publish a revision-addressed candidate package and migration notes without
-   replacing a stable latest channel; and
+4. publish a durable revision-addressed candidate prerelease and migration
+   notes without replacing a stable latest channel; and
 5. preserve the previous stable package under its schema-pinned channel before
    moving `*-latest`.
 
@@ -449,13 +449,15 @@ same change.
 A stable `*-latest` channel MAY move to a breaking schema only after the user or
 release owner reviews the required downstream repositories' own evidence and
 explicitly authorizes the cutover by changing the checked-in stable schema
-version in the release workflow. Stable packages are also published under the
+version in the release workflow. Candidate packages use
+`<platform>-schema-<schema_version>-candidate-<source_revision>` prerelease tags.
+Stable packages are also published under the
 schema-pinned channel `<platform>-schema-<schema_version>` so consumers can pin
 a declared contract independently of `*-latest`; content may advance on that
 channel only while its schema remains exact. FCDB CI MUST otherwise
 publish only a candidate artifact or fail before stable promotion. Unknown
 external consumers remain protected by exact manifest rejection, immutable
-schema/candidate artifacts, release notes that identify the schema, and
+schema/candidate release artifacts, release notes that identify the schema, and
 retention of the previous stable package under its schema-pinned channel during
 the migration window.
 

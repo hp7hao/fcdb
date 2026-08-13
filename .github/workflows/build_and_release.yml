@@ -141,6 +141,18 @@ jobs:
         if-no-files-found: error
         retention-days: 30
 
+    - name: Publish PICO-8 schema candidate prerelease
+      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: pico8-schema-${{ steps.candidate.outputs.schema }}-candidate-${{ github.sha }}
+        name: "PICO-8 Database Candidate (schema ${{ steps.candidate.outputs.schema }})"
+        files: fcdb/releases/fcdb_pico8.zip
+        prerelease: true
+        make_latest: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Validate PICO-8 candidate-only publication
       if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
       run: |
@@ -256,6 +268,20 @@ jobs:
           fcdb/releases/fcdb_runtime_pyxelpico_web.zip
         if-no-files-found: error
         retention-days: 30
+
+    - name: Publish PyxelPico schema candidate prerelease
+      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: pyxelpico-schema-${{ steps.candidate.outputs.schema }}-candidate-${{ github.sha }}
+        name: "PyxelPico Database Candidate (schema ${{ steps.candidate.outputs.schema }})"
+        files: |
+          fcdb/releases/fcdb_pyxelpico.zip
+          fcdb/releases/fcdb_runtime_pyxelpico_web.zip
+        prerelease: true
+        make_latest: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Validate PyxelPico candidate-only publication
       if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
@@ -376,6 +402,18 @@ jobs:
         path: fcdb/releases/fcdb_pyxel.zip
         if-no-files-found: error
         retention-days: 30
+
+    - name: Publish Pyxel schema candidate prerelease
+      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: pyxel-schema-${{ steps.candidate.outputs.schema }}-candidate-${{ github.sha }}
+        name: "Pyxel Database Candidate (schema ${{ steps.candidate.outputs.schema }})"
+        files: fcdb/releases/fcdb_pyxel.zip
+        prerelease: true
+        make_latest: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Validate Pyxel candidate-only publication
       if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
