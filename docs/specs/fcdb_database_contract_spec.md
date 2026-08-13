@@ -1,6 +1,6 @@
 # FCDB Database Contract Specification
 
-**Version**: 0.5.2
+**Version**: 0.5.3
 **Status**: Active
 **Level**: feature
 **Owner**: fcdb
@@ -409,9 +409,7 @@ A breaking schema change MUST:
 2. update FCDBTool types, strict schemas, validators, migrations, and fixtures;
 3. preserve one schema shape per package and reject mixed shapes;
 4. publish the valid package under its exact schema-pinned channel; and
-5. preserve the previous `*-latest` package under its actual schema identity, or
-   under `<platform>-unversioned` when it predates `schema_version`, before
-   replacing `*-latest`.
+5. replace `*-latest` only after the package has passed producer validation.
 
 ### 9.2 Independent Publication And Consumer-Owned Compatibility
 
@@ -455,12 +453,12 @@ Consumers that cannot move in lockstep MUST inspect `version.json` before
 and download from their supported schema-pinned channel rather than assuming
 `*-latest` remains compatible.
 
-Before replacing `*-latest`, CI MUST preserve the displaced package under its
-actual `<platform>-schema-<schema_version>` channel, or under
-`<platform>-unversioned` when the displaced manifest has no `schema_version`.
 Content may advance on a schema-pinned channel only while its schema remains
-exact. A future FCDB `1.0.0` stability policy may strengthen compatibility and
-latest-channel guarantees; it is not part of the current `0.x` contract.
+exact. FCDB does not publish compatibility archives for packages that predate
+`schema_version`; consumers must migrate or reject unsupported packages while
+retaining their own last working state. A future FCDB `1.0.0` stability policy
+may strengthen compatibility and latest-channel guarantees; it is not part of
+the current `0.x` contract.
 
 Requirements:
 
@@ -476,11 +474,9 @@ Requirements:
   the version string; its actual package-ingestion seam and failure rollback
   must pass representative candidate-package tests.
 - **VER-005**: Producer validation authorizes independent publication; consumer
-  migration state MUST NOT gate FCDB package publication. Before replacing
-  `*-latest`, CI MUST inspect and preserve the displaced package by its actual
-  schema identity, or label it `unversioned` when no `schema_version` exists.
-  The old package-level `version` field MUST NOT be interpreted as a schema
-  version.
+  migration state MUST NOT gate FCDB package publication. FCDB MUST NOT publish
+  compatibility archives for pre-schema packages. The old package-level
+  `version` field MUST NOT be interpreted as a schema version.
 - **VER-006**: Every published package MUST be available from its exact
   platform schema-pinned channel and from `*-latest`. Consumers MUST pin their
   supported schema channel or reject unsupported `*-latest` packages before
@@ -697,9 +693,8 @@ Agent invariants:
 - **AGENT-011**: After editing this spec or its index, run
   `node scripts/specs/validate-specs.mjs`, `bash scripts/specs/check_specs.sh`,
   and `git diff --check` from the monorepo root.
-- **AGENT-012**: After editing release publication, run
-  `python3 projects/fcdb/.github/scripts/test_preserve_stable_contract.py` and
-  workflow syntax validation from the monorepo root.
+- **AGENT-012**: After editing release publication, run workflow syntax
+  validation and the producer release checks from the monorepo root.
 - **AGENT-013**: Never claim consumer compatibility from FCDBTool tests or
   source inspection. Run the affected consumer's own complete FCDB package
   suite against a producer-generated candidate and update that consumer's

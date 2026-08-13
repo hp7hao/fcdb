@@ -37,10 +37,9 @@ changes.
 Consumers must inspect `version.json` before `db.json`. They should pin their
 supported schema channel, or reject an unsupported `*-latest` package without
 replacing their last working data. Each consumer owns its migration and full
-compatibility suite; FCDB keeps no central readiness registry. Before replacing
-`*-latest`, FCDB preserves the displaced package under its schema channel, or
-under `<platform>-unversioned` when it predates `schema_version`. Old
-`version: "1.0"` values are package metadata, not schema versions.
+compatibility suite; FCDB keeps no central readiness registry and publishes no
+compatibility archive for pre-schema packages. Old `version: "1.0"` values are
+package metadata, not schema versions.
 
 The authoritative lifecycle and test requirements are in
 `docs/specs/fcdb_database_contract_spec.md` Section 9.

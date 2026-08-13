@@ -28,9 +28,6 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: Test release preservation
-      run: python3 .github/scripts/test_preserve_stable_contract.py
-
     - name: Detect changed platforms
       id: check
       run: |
@@ -129,16 +126,6 @@ jobs:
         schema=$(unzip -p fcdb/releases/fcdb_pico8.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
 
-    - name: Preserve displaced PICO-8 latest package
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        python3 fcdb/.github/scripts/preserve_stable_contract.py \
-          --platform pico8 \
-          --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --asset fcdb_pico8.zip \
-          --repository "${{ github.repository }}"
-
     - name: Release PICO-8 schema channel
       uses: softprops/action-gh-release@v1
       with:
@@ -211,17 +198,6 @@ jobs:
       run: |
         schema=$(unzip -p fcdb/releases/fcdb_pyxelpico.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
-
-    - name: Preserve displaced PyxelPico latest package
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        python3 fcdb/.github/scripts/preserve_stable_contract.py \
-          --platform pyxelpico \
-          --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --asset fcdb_pyxelpico.zip \
-          --asset fcdb_runtime_pyxelpico_web.zip \
-          --repository "${{ github.repository }}"
 
     - name: Release PyxelPico schema channel
       uses: softprops/action-gh-release@v1
@@ -300,16 +276,6 @@ jobs:
       run: |
         schema=$(unzip -p fcdb/releases/fcdb_pyxel.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
-
-    - name: Preserve displaced Pyxel latest package
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        python3 fcdb/.github/scripts/preserve_stable_contract.py \
-          --platform pyxel \
-          --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --asset fcdb_pyxel.zip \
-          --repository "${{ github.repository }}"
 
     - name: Release Pyxel schema channel
       uses: softprops/action-gh-release@v1
