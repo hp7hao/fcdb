@@ -1,11 +1,11 @@
 # FCDB Database Contract Specification
 
-**Version**: 0.5.0
+**Version**: 0.5.1
 **Status**: Active
 **Level**: feature
 **Owner**: fcdb
 **Parent**: docs/specs/GLOBAL_SPEC.md
-**Last Reviewed**: 2026-07-23
+**Last Reviewed**: 2026-08-13
 
 ## 1. Purpose
 
@@ -19,10 +19,13 @@ edition, release, or person. Downstream products such as xwgamedb, Pico8Go,
 ManXiangSu, and Pico8IDE may add product-facing models, but they must treat this
 contract as the meaning of FCDB release artifacts.
 
-This specification defines package schema `0.5.0`. Producers and declared direct
-consumers have completed the coordinated migration in Section 10. Public latest
-channels remain independently promotion-gated until release coordination is
-authorized. A package always declares exactly one schema.
+This specification defines package schema `0.5.0`. The specification document
+version and package `schema_version` are separate: documentation-only
+clarifications may change the former without changing the latter. Every
+consumer owns its supported-version declaration, migration, and compatibility
+evidence. Public latest channels remain independently promotion-gated until
+release coordination is authorized. A package always declares exactly one
+schema.
 
 ## 2. Scope And Architectural Boundary
 
@@ -376,7 +379,111 @@ Requirements:
   base list file with the same `list_id`. Producers and package validators MUST
   reject orphan localized list files.
 
-## 9. Release Package Contract
+## 9. Schema Lifecycle And Release Package Contract
+
+### 9.1 Schema And Content Versions
+
+FCDB maintains separate schema, content, and provenance identities:
+
+| Identity | Owner and meaning | Change rule |
+|---|---|---|
+| `schema_version` | FCDB package contract accepted by producers and consumers. | Changes only when accepted package structure, field meaning, invariants, or validation behavior changes. |
+| `package_version` | One platform package's content identity. | Changes whenever released records, lists, declared assets, or package provenance inputs change. |
+| `source_revision` | Immutable FCDB data revision. | Names the exact FCDB Git object used as input. |
+| `producer_revision` | Immutable FCDBTool revision. | Names the exact producer Git object used to build and validate the package. |
+| Specification `Version` metadata | Revision of this canonical document. | May change for clarifications that do not alter the package schema. |
+
+`schema_version` uses Semantic Versioning syntax, but consumers MUST continue to
+match an exact declared version and MUST NOT infer compatibility from numeric
+ranges. Before schema `1.0.0`, every consumer-visible contract delta is treated
+as breaking and increments the minor version, such as `0.5.0` to `0.6.0`.
+After `1.0.0`, breaking deltas increment the major version; additive deltas may
+increment the minor version only after old-consumer rejection behavior and
+qualification are explicitly settled. Documentation corrections that do not
+change accepted packages or field semantics change the specification version,
+not `schema_version`.
+
+A breaking schema change MUST:
+
+1. update this owning specification before producer implementation;
+2. update FCDBTool types, strict schemas, validators, migrations, and fixtures;
+3. preserve one schema shape per package and reject mixed shapes;
+4. publish a revision-addressed candidate package and migration notes without
+   replacing a stable latest channel; and
+5. preserve the previous stable package under its schema-pinned channel before
+   moving `*-latest`.
+
+### 9.2 Consumer-Owned Compatibility And Promotion
+
+Each downstream consumer is the sole owner of:
+
+- its exact supported FCDB schema version or versions;
+- its package download, staging, validation, fallback, and cache-replacement
+  behavior;
+- migrations into its product-owned model; and
+- the test suite proving whether a candidate schema is compatible.
+
+FCDB MUST NOT maintain a central registry that claims consumer readiness. A
+producer-side list of consumers becomes stale authority and cannot prove each
+consumer's real ingestion behavior. Release coordination may collect links to
+consumer-owned test runs as transient evidence, but those links do not replace
+the consumer's contract or suite.
+
+Before a consumer adopts a new schema, its full FCDB contract suite MUST run
+against a producer-generated candidate package. The suite MUST cover, where the
+consumer uses the feature:
+
+1. complete `version.json` validation and exact-version rejection;
+2. base records and every source-specific projection used by the consumer;
+3. locale overlays and list membership/order;
+4. referenced carts, sources, thumbnails, and companion runtime artifacts;
+5. malformed, mixed-version, missing-member, and unsafe-path packages;
+6. staging, atomic replacement, and retention of the last working cache; and
+7. migration or normalization into the consumer-owned model.
+
+A source-code string check, producer unit test, or successful JSON parse is not
+consumer compatibility evidence. The consumer's owning repository decides
+whether its suite passes and changes its supported-version declaration in the
+same change.
+
+A stable `*-latest` channel MAY move to a breaking schema only after the user or
+release owner reviews the required downstream repositories' own evidence and
+explicitly authorizes the cutover by changing the checked-in stable schema
+version in the release workflow. Stable packages are also published under the
+schema-pinned channel `<platform>-schema-<schema_version>` so consumers can pin
+a declared contract independently of `*-latest`; content may advance on that
+channel only while its schema remains exact. FCDB CI MUST otherwise
+publish only a candidate artifact or fail before stable promotion. Unknown
+external consumers remain protected by exact manifest rejection, immutable
+schema/candidate artifacts, release notes that identify the schema, and
+retention of the previous stable package under its schema-pinned channel during
+the migration window.
+
+Requirements:
+
+- **VER-001**: Producers and consumers MUST distinguish schema, package content,
+  source revision, producer revision, and specification-document versions.
+- **VER-002**: Every package consumer MUST validate the complete manifest and
+  exact supported `schema_version` before reading records or replacing working
+  state.
+- **VER-003**: Each consumer MUST keep its supported-version declaration and
+  full compatibility suite under its own authority; FCDB MUST NOT duplicate
+  those declarations in a producer-owned readiness registry.
+- **VER-004**: A consumer is not compatible merely because its source contains
+  the version string; its actual package-ingestion seam and failure rollback
+  must pass representative candidate-package tests.
+- **VER-005**: Stable-channel promotion of a breaking schema requires explicit
+  cutover authorization after review of consumer-owned evidence; producer
+  success alone MUST NOT authorize promotion. During cutover CI MUST inspect
+  each displaced `*-latest` manifest and preserve its actual schema or legacy
+  contract identity before replacement.
+- **VER-006**: Each promoted stable package MUST also be available from its
+  platform's schema-pinned channel. Before a breaking cutover, the prior
+  `*-latest` package MUST be preserved under its prior schema-pinned channel.
+  Consumers SHOULD pin a schema channel when their release cadence must not
+  follow `*-latest`.
+
+### 9.3 Main Platform Package
 
 Each platform release package retains the flat deterministic layout:
 
@@ -519,6 +626,10 @@ Source-aware consumers may project declared `source_metadata` fields:
 Those projections do not make FCDB the owner of canonical identity,
 installability, playability, launch behavior, or product cache policy.
 
+Known direct package consumers keep their supported-version declarations and
+compatibility suites under their own authority. FCDB references consumer
+contracts for discovery but MUST NOT restate their readiness or support state.
+
 ## 13. Agent Contract
 
 Governed files:
@@ -559,14 +670,24 @@ Agent invariants:
 - **AGENT-011**: After editing this spec or its index, run
   `node scripts/specs/validate-specs.mjs`, `bash scripts/specs/check_specs.sh`,
   and `git diff --check` from the monorepo root.
+- **AGENT-012**: After editing the stable-channel gate, run
+  `python3 projects/fcdb/.github/scripts/test_check_promotion.py` and
+  `python3 projects/fcdb/.github/scripts/test_preserve_stable_contract.py` from
+  the monorepo root.
+- **AGENT-013**: Never claim consumer compatibility from FCDBTool tests or
+  source inspection. Run the affected consumer's own complete FCDB package
+  suite against a producer-generated candidate and update that consumer's
+  supported-version declaration under its own authority.
 
 Parent specs: `docs/specs/GLOBAL_SPEC.md` and
 `docs/specs/spec_management_spec.md`.
 
-Direct consumer contracts include
+Direct consumer authorities include
 `projects/xwgamedb/docs/specs/fcdb_import_spec.md`,
-`projects/pico8go/docs/specs/fcdb_browser_integration_spec.md`, and
-`projects/manxiangsu.web/docs/specs/game_collections_spec.md`.
+`projects/pico8go/docs/specs/fcdb_browser_integration_spec.md`,
+`projects/manxiangsu.web/docs/specs/game_collections_spec.md`,
+`projects/pyxelpico/docs/specs/pyxelpico_spec.md`, and
+`projects/pico8ide/AGENTS.md`.
 
 ## 14. References
 
@@ -575,3 +696,5 @@ Direct consumer contracts include
 - xwgamedb importer: `projects/xwgamedb/docs/specs/fcdb_import_spec.md`
 - Pico8Go consumer: `projects/pico8go/docs/specs/fcdb_browser_integration_spec.md`
 - ManXiangSu consumer: `projects/manxiangsu.web/docs/specs/game_collections_spec.md`
+- PyxelPico consumer: `projects/pyxelpico/docs/specs/pyxelpico_spec.md`
+- Pico8IDE consumer guidance: `projects/pico8ide/AGENTS.md`

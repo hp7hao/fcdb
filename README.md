@@ -14,6 +14,32 @@ decide product playability. Each platform is built independently.
 
 Each ZIP is updated independently — downloading one platform won't pull changes from another.
 
+## Versioning And Breaking Changes
+
+FCDB separates contract, content, and build provenance:
+
+- `schema_version` identifies the exact package and database contract.
+- `package_version` identifies one platform package's content.
+- `source_revision` and `producer_revision` identify the exact FCDB and
+  FCDBTool Git inputs.
+
+Consumers must read `version.json` before `db.json` and accept only an exact
+schema version they declare under their own project authority. Schema `0.x`
+minor changes are breaking, so `0.5.0` to `0.6.0` requires an intentional
+consumer migration rather than feature detection.
+
+A breaking schema is first published as an immutable CI candidate. Every
+consumer runs its own full FCDB package suite against that candidate and changes
+its own supported-version declaration only when the suite passes. FCDB does not
+keep a central consumer-readiness registry. Stable `*-latest` channels move only
+after explicit release-owner review of consumer-owned evidence; each stable
+package is also published at `<platform>-schema-<schema_version>` for consumers
+that pin an exact contract. Before a breaking cutover, the prior `*-latest`
+package is preserved under its prior schema-pinned channel.
+
+The authoritative lifecycle and test requirements are in
+`docs/specs/fcdb_database_contract_spec.md` Section 9.
+
 ## ZIP Contents
 
 ```

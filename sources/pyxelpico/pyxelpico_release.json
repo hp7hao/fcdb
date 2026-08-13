@@ -1,69 +1,249 @@
 [
   {
-    "id": "102",
+    "id": "2048",
+    "name": "2048",
+    "slug": "2048",
     "source": "pyxelpico",
-    "name": "Pinball",
-    "slug": "pinball",
     "creators": [
       {
-        "name": "Jay Kumogata"
+        "name": "straversi"
       }
     ],
     "license": {
-      "type": "Apache-2.0"
+      "type": "CC BY-NC-SA 4.0"
     },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:102"
-      }
-    ],
     "source_metadata": {
-      "scaling_strategy": "integer-2x-crop",
-      "controls": "D-pad LEFT/A = left flipper, D-pad RIGHT/B = right flipper, A/Start = restart",
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=153397",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad slide tiles, A/B/Start restart",
       "original_resolution": "128x128",
       "has_assets": true,
-      "cart_file": "carts/pyxelpico/pinball.zip",
+      "cart_file": "carts/pyxelpico/2048.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/jay-kumogata/RetroGames"
+      "runtime": "pyxelpico"
     }
   },
   {
     "id": "103",
-    "source": "pyxelpico",
     "name": "ACLM",
     "slug": "aclm",
-    "creators": [
-      {
-        "name": "Jay Kumogata"
-      }
-    ],
-    "license": {
-      "type": "Apache-2.0"
-    },
+    "source": "pyxelpico",
     "relationships": [
       {
         "kind": "derived-from",
         "target": "fcdb:pyxel:examples:103"
       }
     ],
+    "creators": [
+      {
+        "name": "Jay Kumogata"
+      }
+    ],
+    "license": {
+      "type": "Apache-2.0"
+    },
     "source_metadata": {
+      "github_url": "https://github.com/jay-kumogata/RetroGames",
       "scaling_strategy": "native-240",
       "controls": "D-pad LEFT/RIGHT steer, A/Start restart",
       "original_resolution": "128x128",
       "has_assets": false,
       "cart_file": "carts/pyxelpico/aclm.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/jay-kumogata/RetroGames"
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "advancedmicroplatformer",
+    "name": "Advanced Micro Platformer - Starter Kit",
+    "slug": "advancedmicroplatformer",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "mhughson"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=28793",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, hold A jump, Start/Select restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/advancedmicroplatformer.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "airdelivery",
+    "name": "Air Delivery",
+    "slug": "airdelivery",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "pianoman373"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=52598",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move/climb, A jump, B interact/glide/drill, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/airdelivery.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "139",
+    "name": "Asteroids",
+    "slug": "asteroids",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:139"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Jay Kumogata"
+      }
+    ],
+    "license": {
+      "type": "Apache-2.0"
+    },
+    "source_metadata": {
+      "github_url": "https://github.com/jay-kumogata/RetroGames",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad LEFT/RIGHT rotate, A shoot, Start/A restart",
+      "original_resolution": "320x320",
+      "has_assets": false,
+      "cart_file": "carts/pyxelpico/asteroids.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "88",
+    "name": "BakudanKun",
+    "slug": "bakudankun",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:88"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "source_metadata": {
+      "github_url": "https://github.com/Hiekichi/BakudanKunPy",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A place bomb, Start restart from stage 1, A continue",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/bakudankun.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "bas",
+    "name": "BAS",
+    "slug": "bas",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "yokozuna / yokoboko"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=54986",
+      "scaling_strategy": "native-240",
+      "controls": "Left/A jump left, Right/B jump right, A/B/Start retry, Select title",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/bas.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "birdswithguns",
+    "name": "Birds With Guns",
+    "slug": "birdswithguns",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Yolwoocle and Gouspourd"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=45334",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A shoot, B/Select swap weapon, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/birdswithguns.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "brutalpicorace",
+    "name": "Brutal Pico Race",
+    "slug": "brutalpicorace",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Damien Hostin / dhostin"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=31490",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad steer, A/Down accelerate, B/Up brake, Select boost, Left/Right on title choose ship",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/brutalpicorace.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
     }
   },
   {
     "id": "112",
-    "source": "pyxelpico",
     "name": "Bubbles",
     "slug": "bubbles",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:112"
+      }
+    ],
     "creators": [
       {
         "name": "helpcomputer"
@@ -72,28 +252,322 @@
     "license": {
       "type": "MIT"
     },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:112"
-      }
-    ],
     "source_metadata": {
+      "github_url": "https://github.com/helpcomputer/bubbles",
       "scaling_strategy": "integer-2x-crop",
       "controls": "D-pad move, A jump, B menu/back",
       "original_resolution": "128x128",
       "has_assets": true,
       "cart_file": "carts/pyxelpico/bubbles.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/helpcomputer/bubbles"
+      "runtime": "pyxelpico"
     }
   },
   {
-    "id": "139",
+    "id": "buns",
+    "name": "Buns: Bunny Survivor",
+    "slug": "buns",
     "source": "pyxelpico",
-    "name": "Asteroids",
-    "slug": "asteroids",
+    "creators": [
+      {
+        "name": "unikotoast"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=48032",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, Left/Right choose upgrade, A/Start begin or pick, B/Select title",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/buns.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "cabride",
+    "name": "Cab Ride",
+    "slug": "cabride",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Powersaurus; music by Stephen 'rych-t' Jones; tutorial basis by Mot"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=41332",
+      "scaling_strategy": "native-240",
+      "controls": "Down throttle, Up brake, A horn/start, B doors, Right/Select express, hold Left last station",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/cabride.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "90",
+    "name": "CheaperDepth",
+    "slug": "cheaperdepth",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:90"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "source_metadata": {
+      "github_url": "https://github.com/Hiekichi/CheeperDepth",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad LEFT/RIGHT move, Z/B drop left charge, X/A drop right charge, Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/cheaperdepth.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "cherrybomb",
+    "name": "Cherry Bomb",
+    "slug": "cherrybomb",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Krystian Majewski / Lazy Devs Academy"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=48986",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A shoot, B bomb, Start/Select restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/cherrybomb.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "91",
+    "name": "ChottoCopter",
+    "slug": "chottocopter",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:91"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "source_metadata": {
+      "github_url": "https://github.com/Hiekichi/ChottoCopter",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A change direction, B fire, Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/chottocopter.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "combopool",
+    "name": "Combo Pool",
+    "slug": "combopool",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "NuSan"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=3467",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad left/right aim, hold B/Down for fine aim, A shoot",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/combopool.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "driftmania",
+    "name": "Driftmania",
+    "slug": "driftmania",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Max Bize; music by Vav; cars based on art by PixelArtM; cover art by TerracotaScarf"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=140202",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad Left/Right steer, A/Up accelerate, Down brake or reverse, B drift brake, Select restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/driftmania.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "dungeonbang",
+    "name": "DUNGEON!",
+    "slug": "dungeonbang",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "deklaswas"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=46206",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move/shop select, A jump/wall jump, B buy or attack, Start portal, Select reset",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/dungeonbang.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "eightlegslove",
+    "name": "8 Legs to Love",
+    "slug": "eightlegslove",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "bridgs"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=29451",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, hold A spin web, release A place strand, B anchor strand, Start restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/eightlegslove.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "fieldjump",
+    "name": "Field Jump",
+    "slug": "fieldjump",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "fieldjump"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=154315",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad Up/A jump, D-pad Down duck, A/Start begin, advance, or restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/fieldjump.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "flatbird",
+    "name": "FlatBird",
+    "slug": "flatbird",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "source_metadata": {
+      "github_url": "https://github.com/Hiekichi/FlatBird",
+      "scaling_strategy": "native-240",
+      "controls": "A jump, B/Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/flatbird.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "freezingknights",
+    "name": "Freezing Knights",
+    "slug": "freezingknights",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "tinyevilwizard"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=50683",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad choose path/target/knight, A travel or strike, B potion, Select defend, Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/freezingknights.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "frogger",
+    "name": "Frogger",
+    "slug": "frogger",
+    "source": "pyxelpico",
     "creators": [
       {
         "name": "Jay Kumogata"
@@ -102,28 +576,28 @@
     "license": {
       "type": "Apache-2.0"
     },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:139"
-      }
-    ],
     "source_metadata": {
+      "github_url": "https://github.com/jay-kumogata/RetroGames",
       "scaling_strategy": "native-240",
-      "controls": "D-pad LEFT/RIGHT rotate, A shoot, Start/A restart",
-      "original_resolution": "320x320",
+      "controls": "D-pad move (8 directions)",
+      "original_resolution": "208x240",
       "has_assets": false,
-      "cart_file": "carts/pyxelpico/asteroids.zip",
+      "cart_file": "carts/pyxelpico/frogger.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/jay-kumogata/RetroGames"
+      "runtime": "pyxelpico"
     }
   },
   {
     "id": "46",
-    "source": "pyxelpico",
     "name": "GrowyGardens",
     "slug": "growygardens",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:46"
+      }
+    ],
     "creators": [
       {
         "name": "SuperZooper3"
@@ -132,28 +606,178 @@
     "license": {
       "type": "MIT"
     },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:46"
-      }
-    ],
     "source_metadata": {
+      "github_url": "https://github.com/SuperZooper3/GrowyGardens",
       "scaling_strategy": "integer-2x-crop",
       "controls": "D-pad move, A cycle action (water/plant/bonk), B execute, Start begin",
       "original_resolution": "128x128",
       "has_assets": true,
       "cart_file": "carts/pyxelpico/growygardens.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/SuperZooper3/GrowyGardens"
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "guncho",
+    "name": "Guncho",
+    "slug": "guncho",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "spoike; original 7DRL by Arnold Rauers and Terri Vellman"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=48452",
+      "scaling_strategy": "native-240",
+      "controls": "Left/Right aim, Up/Down action, A use, B next action, Start restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/guncho.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "haroldsbad",
+    "name": "Harold's Bad Day",
+    "slug": "haroldsbad",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "biovoid; inspiration and additional graphics by thefreakar"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=45507",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump, Select reset, A/Start begin or next level",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/haroldsbad.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "highstakes",
+    "name": "High Stakes",
+    "slug": "highstakes",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Krystian Majewski / Lazy Devs"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=40099",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move cursor, A action, B/Select cycle tool, Start pass",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/highstakes.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "intoruins",
+    "name": "Into Ruins",
+    "slug": "intoruins",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Eric Billingsley"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=49928",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move and bump attack, A wait/start/retry, B/Select title",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/intoruins.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "justoneboss",
+    "name": "Just One Boss",
+    "slug": "justoneboss",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "bridgs"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=49234",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A/Start begin or retry, B/Select return to title",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/justoneboss.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "89",
+    "name": "Kanixian",
+    "slug": "kanixian",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:89"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "source_metadata": {
+      "github_url": "https://github.com/Hiekichi/Kanixian",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad LEFT/RIGHT move, A/B shoot, Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/kanixian.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
     }
   },
   {
     "id": "65",
-    "source": "pyxelpico",
     "name": "Kektris",
     "slug": "kektris",
+    "source": "pyxelpico",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:65"
+      }
+    ],
     "creators": [
       {
         "name": "Konstantin Klepikov"
@@ -162,202 +786,484 @@
     "license": {
       "type": "MIT"
     },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:65"
-      }
-    ],
     "source_metadata": {
+      "github_url": "https://github.com/KonstantinKlepikov/kektris",
       "scaling_strategy": "native-240",
       "controls": "D-pad move, A rotate left, B rotate right, Start pause, Select music",
       "original_resolution": "256x256",
       "has_assets": true,
       "cart_file": "carts/pyxelpico/kektris.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/KonstantinKlepikov/kektris"
+      "runtime": "pyxelpico"
     }
   },
   {
-    "id": "88",
+    "id": "lightwalk",
+    "name": "LightWalk",
+    "slug": "lightwalk",
     "source": "pyxelpico",
-    "name": "BakudanKun",
-    "slug": "bakudankun",
     "creators": [
       {
-        "name": "Hiekichi"
+        "name": "juliusspeak"
       }
     ],
     "license": {
-      "type": "Unlicensed"
+      "type": "CC BY-NC-SA 4.0"
     },
+    "source_metadata": {
+      "github_url": "https://github.com/juliusspeak/lightwalk",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move cursor, A rotate tile, B/Start restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/lightwalk.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "littledragon",
+    "name": "Little Dragon Adventure",
+    "slug": "littledragon",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Mush"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=31469",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump/double jump, B fireball, Select restart, Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/littledragon.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "lostnight",
+    "name": "The Lost Night",
+    "slug": "lostnight",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "arlefreak"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=41791",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move or dodge, A fire/confirm, B drink tea/back, Select shop, Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/lostnight.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "maichanssweetbuns",
+    "name": "Mai-Chan's Sweet Buns",
+    "slug": "maichanssweetbuns",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Krystman"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=31864",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad choose bun, A add to tray, B/Start serve completed order",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/maichanssweetbuns.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "marballs2",
+    "name": "Marballs 2",
+    "slug": "marballs2",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "lucatron"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=28414",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad roll, B/Select restart, B on title toggles 45-degree controls, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/marballs2.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "mot8ballpool",
+    "name": "Mot's 8-Ball Pool",
+    "slug": "mot8ballpool",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Mot"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=39859",
+      "scaling_strategy": "native-240",
+      "controls": "Left/Right aim, Up/Down power, A shoot, Select reset",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/mot8ballpool.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "motionrec",
+    "name": "MOTION.REC",
+    "slug": "motionrec",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "shomaisshi"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=53392",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, B jump, Up+A record, A replay, Down+A reverse replay, Select restart, Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/motionrec.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "nightride",
+    "name": "Night Ride",
+    "slug": "nightride",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "vladcom"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=39650",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad Left/Right change lane, A/B shoot after weapon unlock, Select restart, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/nightride.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "officehell",
+    "name": "Office Hell",
+    "slug": "officehell",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "OlieB123"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=154283",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad left/right choose direction, A/Up jump, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/officehell.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "pcraft",
+    "name": "P.Craft",
+    "slug": "pcraft",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "NuSan"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=3200",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A use/gather/explore/escape, B craft selected recipe, Select cycle recipe, Start restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/pcraft.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "pico8tunesvol1",
+    "name": "Pico-8 Tunes Volume 1",
+    "slug": "pico8tunesvol1",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Gruber; code and animations by Krajzeg"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=29008",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad left/right choose track, A/Start play or pause, B/Select reset album",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/pico8tunesvol1.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "picoball",
+    "name": "PICO-BALL",
+    "slug": "picoball",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Munchkin"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=150620",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move Jelpi, A/Up jump, A/Start serve or rematch",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/picoball.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "picocheckmate",
+    "name": "Pico Checkmate",
+    "slug": "picocheckmate",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Krystman"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=31213",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move cursor, A select or move, B cancel, Select restart, Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/picocheckmate.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "picoracer2048",
+    "name": "PICORACER-2048",
+    "slug": "picoracer2048",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "impbox"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=2243",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad steer, A/Up accelerate, B/Down brake, Start/Select speed class, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/picoracer2048.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "picosnail",
+    "name": "Pico Snail!: Dream Castle",
+    "slug": "picosnail",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "GiantLNT / Floofinator"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=39897",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump/double jump, B thwack or wand shot, Up collect star, Down switch, Start warp or boss action, Select restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/picosnail.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "picotennis",
+    "name": "Pico Tennis",
+    "slug": "picotennis",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "paranoidcactus"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=31450",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad Left/Right move, A serve or hit, B power shot, Start serve, A/Start replay",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/picotennis.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "picoware",
+    "name": "PICOWARE",
+    "slug": "picoware",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "The PICOWARE team / szczm_"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=34751",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad plus A/B for timed microgame prompts, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/picoware.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "picoworldrace",
+    "name": "Pico World Race 1.2",
+    "slug": "picoworldrace",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "PAK9"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=46495",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad steer, A/Up gas, B/Down drift, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/picoworldrace.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "pigments",
+    "name": "pigments",
+    "slug": "pigments",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "benjamin_soule"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=40490",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move and paint, A wait, B/Start restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/pigments.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "102",
+    "name": "Pinball",
+    "slug": "pinball",
+    "source": "pyxelpico",
     "relationships": [
       {
         "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:88"
+        "target": "fcdb:pyxel:examples:102"
       }
     ],
-    "source_metadata": {
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move, A place bomb, Start restart from stage 1, A continue",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "cart_file": "carts/pyxelpico/bakudankun.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/Hiekichi/BakudanKunPy"
-    }
-  },
-  {
-    "id": "89",
-    "source": "pyxelpico",
-    "name": "Kanixian",
-    "slug": "kanixian",
-    "creators": [
-      {
-        "name": "Hiekichi"
-      }
-    ],
-    "license": {
-      "type": "Unlicensed"
-    },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:89"
-      }
-    ],
-    "source_metadata": {
-      "scaling_strategy": "native-240",
-      "controls": "D-pad LEFT/RIGHT move, A/B shoot, Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "cart_file": "carts/pyxelpico/kanixian.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/Hiekichi/Kanixian"
-    }
-  },
-  {
-    "id": "90",
-    "source": "pyxelpico",
-    "name": "CheaperDepth",
-    "slug": "cheaperdepth",
-    "creators": [
-      {
-        "name": "Hiekichi"
-      }
-    ],
-    "license": {
-      "type": "Unlicensed"
-    },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:90"
-      }
-    ],
-    "source_metadata": {
-      "scaling_strategy": "native-240",
-      "controls": "D-pad LEFT/RIGHT move, Z/B drop left charge, X/A drop right charge, Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "cart_file": "carts/pyxelpico/cheaperdepth.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/Hiekichi/CheeperDepth"
-    }
-  },
-  {
-    "id": "91",
-    "source": "pyxelpico",
-    "name": "ChottoCopter",
-    "slug": "chottocopter",
-    "creators": [
-      {
-        "name": "Hiekichi"
-      }
-    ],
-    "license": {
-      "type": "Unlicensed"
-    },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:91"
-      }
-    ],
-    "source_metadata": {
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move, A change direction, B fire, Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "cart_file": "carts/pyxelpico/chottocopter.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/Hiekichi/ChottoCopter"
-    }
-  },
-  {
-    "id": "95",
-    "source": "pyxelpico",
-    "name": "Poker",
-    "slug": "poker",
-    "creators": [
-      {
-        "name": "Hiekichi"
-      }
-    ],
-    "license": {
-      "type": "Unlicensed"
-    },
-    "relationships": [
-      {
-        "kind": "derived-from",
-        "target": "fcdb:pyxel:examples:95"
-      }
-    ],
-    "source_metadata": {
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move cursor, A select/confirm, Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "cart_file": "carts/pyxelpico/poker.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/Hiekichi/Poker"
-    }
-  },
-  {
-    "id": "flatbird",
-    "source": "pyxelpico",
-    "name": "FlatBird",
-    "slug": "flatbird",
-    "creators": [
-      {
-        "name": "Hiekichi"
-      }
-    ],
-    "license": {
-      "type": "Unlicensed"
-    },
-    "source_metadata": {
-      "scaling_strategy": "native-240",
-      "controls": "A jump, B/Start begin",
-      "original_resolution": "240x240",
-      "has_assets": true,
-      "cart_file": "carts/pyxelpico/flatbird.zip",
-      "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/Hiekichi/FlatBird"
-    }
-  },
-  {
-    "id": "frogger",
-    "source": "pyxelpico",
-    "name": "Frogger",
-    "slug": "frogger",
     "creators": [
       {
         "name": "Jay Kumogata"
@@ -367,21 +1273,27 @@
       "type": "Apache-2.0"
     },
     "source_metadata": {
-      "scaling_strategy": "native-240",
-      "controls": "D-pad move (8 directions)",
-      "original_resolution": "208x240",
-      "has_assets": false,
-      "cart_file": "carts/pyxelpico/frogger.zip",
+      "github_url": "https://github.com/jay-kumogata/RetroGames",
+      "scaling_strategy": "integer-2x-crop",
+      "controls": "D-pad LEFT/A = left flipper, D-pad RIGHT/B = right flipper, A/Start = restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/pinball.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/jay-kumogata/RetroGames"
+      "runtime": "pyxelpico"
     }
   },
   {
-    "id": "stellarblazer",
+    "id": "95",
+    "name": "Poker",
+    "slug": "poker",
     "source": "pyxelpico",
-    "name": "StellarBlazer",
-    "slug": "stellarblazer",
+    "relationships": [
+      {
+        "kind": "derived-from",
+        "target": "fcdb:pyxel:examples:95"
+      }
+    ],
     "creators": [
       {
         "name": "Hiekichi"
@@ -391,14 +1303,446 @@
       "type": "Unlicensed"
     },
     "source_metadata": {
+      "github_url": "https://github.com/Hiekichi/Poker",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move cursor, A select/confirm, Start begin",
+      "original_resolution": "240x240",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/poker.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "porklike",
+    "name": "Porklike",
+    "slug": "porklike",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Krystman"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=37045",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move and bump attack, A wait/start/retry, B/Select title",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/porklike.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "rolly",
+    "name": "Rolly",
+    "slug": "rolly",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Davbo and Rory"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=31526",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump, B roll/hop, Start retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/rolly.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "santaban",
+    "name": "Santaban",
+    "slug": "santaban",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "skutter-de"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=153450",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A/Start confirm and next level, B undo, Select menu",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/santaban.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "scrapboy",
+    "name": "Scrap Boy",
+    "slug": "scrapboy",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "BoneVolt"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=39800",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move/aim, A jump, B fire/use weapon, Select cycle form, Start restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/scrapboy.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "shadowsofdunwich",
+    "name": "Shadows of Dunwich 2.0",
+    "slug": "shadowsofdunwich",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "paranoidcactus"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=34047",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move cursor, B cycle soldier, Select cycle action, A confirm action, Start resolve enemy turn or next battle",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/shadowsofdunwich.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "starjump",
+    "name": "Starjump",
+    "slug": "starjump",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "lucatron / Luca Harris"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=41874",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump/double/triple jump, B toggle solid color, Up add jump charge, Start use cannon, Select reset",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/starjump.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "stellarblazer",
+    "name": "StellarBlazer",
+    "slug": "stellarblazer",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Hiekichi"
+      }
+    ],
+    "license": {
+      "type": "Unlicensed"
+    },
+    "source_metadata": {
+      "github_url": "https://github.com/Hiekichi/StellarBlazer",
       "scaling_strategy": "native-240",
       "controls": "D-pad move, A/B fire blaster or drop bomb, Start begin",
       "original_resolution": "240x240",
       "has_assets": true,
       "cart_file": "carts/pyxelpico/stellarblazer.zip",
       "cart_format": "pyxelpico-cart-zip",
-      "runtime": "pyxelpico",
-      "github_url": "https://github.com/Hiekichi/StellarBlazer"
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "subsurface",
+    "name": "subsurface",
+    "slug": "subsurface",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "JulianR / Julian Reid"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=54080",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump/glide, B shoot, Up grant next upgrade, Select reset",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/subsurface.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "toastarling",
+    "name": "To a Starling",
+    "slug": "toastarling",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Peteksi and Gruber"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=45958",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump, hold B/Down glide or fast-fall, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/toastarling.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "trialsorcerer",
+    "name": "Trial of the Sorcerer",
+    "slug": "trialsorcerer",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Mot"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=43833",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad Up/Down move, Left/Right turn, hold B and Left/Right strafe, A shoot staff, Select restart, Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/trialsorcerer.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "twohikingcats",
+    "name": "Two Hiking Cats",
+    "slug": "twohikingcats",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "solar"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=2719",
+      "scaling_strategy": "native-240",
+      "controls": "Left/Right speed, Up randomize palette, Down/Start reset, A/B meow",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/twohikingcats.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "ufoswamp",
+    "name": "UFO Swamp Odyssey",
+    "slug": "ufoswamp",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "paranoidcactus"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=38153",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, A jump, B zap, Up/Down cycle zapper, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/ufoswamp.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "villager",
+    "name": "Villager",
+    "slug": "villager",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "partnano; inspired by Cluly tile set"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=38905",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move cursor, A gather, B build or cycle plan, Start cycle plan, Select new island",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/villager.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "whiplashtaxi",
+    "name": "Whiplash Taxi Co",
+    "slug": "whiplashtaxi",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "Mot"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=53583",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad Left/Right steer, A/Up accelerate, B/Down brake or reverse, Select restart",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/whiplashtaxi.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "wobblepaint",
+    "name": "Wobblepaint 1.6",
+    "slug": "wobblepaint",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "zep"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=40058",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move cursor, A paint, hold B plus Left undo, Right color, Up/Down brush size, Select clear",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/wobblepaint.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "woodworm",
+    "name": "Woodworm",
+    "slug": "woodworm",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "spratt"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=142717",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move, B undo, Select reset, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/woodworm.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "xmaspong",
+    "name": "XMAS Pong",
+    "slug": "xmaspong",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "ReturnOH"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=153606",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad up/down move paddle, A/B/Start begin or rematch",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/xmaspong.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
+    }
+  },
+  {
+    "id": "xzero",
+    "name": "X-Zero",
+    "slug": "xzero",
+    "source": "pyxelpico",
+    "creators": [
+      {
+        "name": "paranoidcactus"
+      }
+    ],
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "source_metadata": {
+      "github_url": "https://www.lexaloffle.com/bbs/?tid=36053",
+      "scaling_strategy": "native-240",
+      "controls": "D-pad move and aim, A shoot, B jump, A/Start begin or retry",
+      "original_resolution": "128x128",
+      "has_assets": true,
+      "cart_file": "carts/pyxelpico/xzero.zip",
+      "cart_format": "pyxelpico-cart-zip",
+      "runtime": "pyxelpico"
     }
   }
 ]
