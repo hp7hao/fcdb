@@ -119,6 +119,9 @@ jobs:
       run: cd fcdbtool && npm install && npm run build
 
     - name: Validate & Package PICO-8
+      env:
+        FCDB_SOURCE_REVISION: ${{ github.sha }}
+        FCDB_PRODUCER_REVISION: ${{ env.FCDBTOOL_REVISION }}
       run: |
         cd fcdbtool
         node out/cli.js release pico8 --data-dir ../fcdb
@@ -163,7 +166,8 @@ jobs:
         python3 fcdb/.github/scripts/preserve_stable_contract.py \
           --platform pico8 \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --asset fcdb_pico8.zip
+          --asset fcdb_pico8.zip \
+          --repository "${{ github.repository }}"
 
     - name: Release PICO-8 schema channel
       if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
@@ -229,6 +233,9 @@ jobs:
       run: cd fcdbtool && npm install && npm run build
 
     - name: Validate & Package PyxelPico
+      env:
+        FCDB_SOURCE_REVISION: ${{ github.sha }}
+        FCDB_PRODUCER_REVISION: ${{ env.FCDBTOOL_REVISION }}
       run: |
         cd fcdbtool
         node out/cli.js release pyxelpico --data-dir ../fcdb
@@ -276,7 +283,8 @@ jobs:
           --platform pyxelpico \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
           --asset fcdb_pyxelpico.zip \
-          --asset fcdb_runtime_pyxelpico_web.zip
+          --asset fcdb_runtime_pyxelpico_web.zip \
+          --repository "${{ github.repository }}"
 
     - name: Release PyxelPico schema channel
       if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
@@ -347,6 +355,9 @@ jobs:
       run: cd fcdbtool && npm install && npm run build
 
     - name: Validate & Package Pyxel
+      env:
+        FCDB_SOURCE_REVISION: ${{ github.sha }}
+        FCDB_PRODUCER_REVISION: ${{ env.FCDBTOOL_REVISION }}
       run: |
         cd fcdbtool
         node out/cli.js release pyxel --data-dir ../fcdb
@@ -391,7 +402,8 @@ jobs:
         python3 fcdb/.github/scripts/preserve_stable_contract.py \
           --platform pyxel \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --asset fcdb_pyxel.zip
+          --asset fcdb_pyxel.zip \
+          --repository "${{ github.repository }}"
 
     - name: Release Pyxel schema channel
       if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT

@@ -26,7 +26,11 @@ def contract_identity(manifest: dict[str, Any]) -> tuple[str, str]:
 
 
 def run(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(args, check=check, text=True, capture_output=True)
+    result = subprocess.run(args, check=False, text=True, capture_output=True)
+    if check and result.returncode != 0:
+        detail = (result.stderr or result.stdout).strip()
+        raise RuntimeError(f"command failed ({result.returncode}): {' '.join(args)}: {detail}")
+    return result
 
 
 def main() -> int:
@@ -34,6 +38,7 @@ def main() -> int:
     parser.add_argument("--platform", required=True)
     parser.add_argument("--candidate-schema", required=True)
     parser.add_argument("--asset", action="append", required=True)
+    parser.add_argument("--repository", required=True)
     args = parser.parse_args()
 
     for value, label in ((args.platform, "platform"), (args.candidate_schema, "candidate schema")):
@@ -48,7 +53,12 @@ def main() -> int:
     with tempfile.TemporaryDirectory(prefix="fcdb-stable-") as temp:
         root = Path(temp)
         for asset in args.asset:
-            run("gh", "release", "download", f"{args.platform}-latest", "--pattern", asset, "--dir", temp)
+            run(
+                "gh", "release", "download", f"{args.platform}-latest",
+                "--repo", args.repository,
+                "--pattern", asset,
+                "--dir", temp,
+            )
         with zipfile.ZipFile(root / expected_main) as archive:
             manifest = json.loads(archive.read("version.json"))
         contract, channel_kind = contract_identity(manifest)
@@ -57,13 +67,14 @@ def main() -> int:
             return 0
 
         tag = f"{args.platform}-{channel_kind}-{contract}"
-        if run("gh", "release", "view", tag, check=False).returncode == 0:
+        if run("gh", "release", "view", tag, "--repo", args.repository, check=False).returncode == 0:
             print(f"Previous stable contract already preserved: {tag}")
             return 0
 
         files = [str(root / asset) for asset in args.asset]
         run(
             "gh", "release", "create", tag, *files,
+            "--repo", args.repository,
             "--title", f"{args.platform} database ({contract})",
             "--notes", f"Preserved {args.platform}-latest before promotion to schema {args.candidate_schema}.",
         )
