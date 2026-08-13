@@ -1,6 +1,6 @@
 # FCDB Database Contract Specification
 
-**Version**: 0.5.3
+**Version**: 0.5.4
 **Status**: Active
 **Level**: feature
 **Owner**: fcdb
@@ -393,29 +393,30 @@ FCDB maintains separate schema, content, and provenance identities:
 | `producer_revision` | Immutable FCDBTool revision. | Names the exact producer Git object used to build and validate the package. |
 | Specification `Version` metadata | Revision of this canonical document. | May change for clarifications that do not alter the package schema. |
 
-`schema_version` uses Semantic Versioning syntax, but consumers MUST continue to
-match an exact declared version and MUST NOT infer compatibility from numeric
-ranges. Before schema `1.0.0`, every consumer-visible contract delta is treated
-as breaking and increments the minor version, such as `0.5.0` to `0.6.0`.
-After `1.0.0`, breaking deltas increment the major version; additive deltas may
-increment the minor version only after old-consumer rejection behavior and
-qualification are explicitly settled. Documentation corrections that do not
-change accepted packages or field semantics change the specification version,
-not `schema_version`.
+`schema_version` uses Semantic Versioning. The compatibility line is
+`<major>.<minor>`: all patch releases within one line, such as `0.5.0`, `0.5.1`,
+and `0.5.9`, MUST remain backward compatible. A patch release may fix producer
+or validator defects, clarify metadata, and add content, but MUST NOT remove or
+rename fields, change field meaning or type, strengthen valid-package rejection,
+or otherwise require consumer migration. Any consumer-visible breaking change
+MUST start a new minor line before `1.0.0`, such as `0.5.x` to `0.6.0`. After
+`1.0.0`, breaking changes increment the major version. Documentation corrections
+that do not change accepted packages or field semantics change the specification
+version, not `schema_version`.
 
 A breaking schema change MUST:
 
 1. update this owning specification before producer implementation;
 2. update FCDBTool types, strict schemas, validators, migrations, and fixtures;
 3. preserve one schema shape per package and reject mixed shapes;
-4. publish the valid package under its exact schema-pinned channel; and
+4. publish the valid package under its compatibility-line channel; and
 5. replace `*-latest` only after the package has passed producer validation.
 
 ### 9.2 Independent Publication And Consumer-Owned Compatibility
 
 Each downstream consumer is the sole owner of:
 
-- its exact supported FCDB schema version or versions;
+- its supported FCDB compatibility line or lines;
 - its package download, staging, validation, fallback, and cache-replacement
   behavior;
 - migrations into its product-owned model; and
@@ -445,16 +446,16 @@ whether its suite passes and changes its supported-version declaration in the
 same change.
 
 FCDB publication MUST NOT wait for downstream migration. Every independently
-valid platform package publishes to `<platform>-schema-<schema_version>` and
+valid platform package publishes to `<platform>-schema-<major>.<minor>` and
 updates `<platform>-latest`. Before schema `1.0.0`, `*-latest` is explicitly an
 unstable producer channel and may contain breaking minor-schema changes.
 Consumers that cannot move in lockstep MUST inspect `version.json` before
-`db.json`, reject unsupported exact schemas without replacing working state,
-and download from their supported schema-pinned channel rather than assuming
-`*-latest` remains compatible.
+`db.json`, accept only supported major.minor lines without replacing working
+state on rejection, and download from their supported compatibility-line
+channel rather than assuming `*-latest` remains compatible.
 
-Content may advance on a schema-pinned channel only while its schema remains
-exact. FCDB does not publish compatibility archives for packages that predate
+Content and patch versions may advance on a compatibility-line channel only
+while the package remains in that major.minor line. FCDB does not publish compatibility archives for packages that predate
 `schema_version`; consumers must migrate or reject unsupported packages while
 retaining their own last working state. A future FCDB `1.0.0` stability policy
 may strengthen compatibility and latest-channel guarantees; it is not part of
@@ -465,8 +466,8 @@ Requirements:
 - **VER-001**: Producers and consumers MUST distinguish schema, package content,
   source revision, producer revision, and specification-document versions.
 - **VER-002**: Every package consumer MUST validate the complete manifest and
-  exact supported `schema_version` before reading records or replacing working
-  state.
+  supported `schema_version` major.minor line before reading records or
+  replacing working state.
 - **VER-003**: Each consumer MUST keep its supported-version declaration and
   full compatibility suite under its own authority; FCDB MUST NOT duplicate
   those declarations in a producer-owned readiness registry.
@@ -477,10 +478,13 @@ Requirements:
   migration state MUST NOT gate FCDB package publication. FCDB MUST NOT publish
   compatibility archives for pre-schema packages. The old package-level
   `version` field MUST NOT be interpreted as a schema version.
-- **VER-006**: Every published package MUST be available from its exact
-  platform schema-pinned channel and from `*-latest`. Consumers MUST pin their
-  supported schema channel or reject unsupported `*-latest` packages before
-  state replacement.
+- **VER-006**: Every published package MUST be available from its platform
+  compatibility-line channel `<platform>-schema-<major>.<minor>` and from
+  `*-latest`. Consumers MUST pin their supported line or reject unsupported
+  `*-latest` packages before state replacement.
+- **VER-007**: Patch releases within one major.minor line MUST be backward
+  compatible. Any change requiring consumer migration MUST bump the minor line
+  before `1.0.0`.
 
 ### 9.3 Main Platform Package
 
@@ -583,7 +587,7 @@ Schema `0.5.0` validation MUST cover:
 - **VAL-007**: Bundled-cart default/locale invariants, canonical BCP-47 tags,
   no duplicate paths or locale ownership, and existence of every referenced
   package member.
-- **VAL-008**: Complete and consistent manifests, exact schema version, safe ZIP
+- **VAL-008**: Complete and consistent manifests, supported schema line, safe ZIP
   members, expected translations/lists/assets, and no unexpected members.
 - **VAL-009**: Fail-closed ingestion with source file and entry-key context for
   invalid JSON, non-array sources, missing fields, duplicate ownership,

@@ -120,17 +120,19 @@ jobs:
         cd fcdbtool
         node out/cli.js release pico8 --data-dir ../fcdb
 
-    - name: Read PICO-8 candidate schema
+    - name: Read PICO-8 schema line
       id: candidate
       run: |
         schema=$(unzip -p fcdb/releases/fcdb_pico8.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
+        line=$(python3 -c 'import re, sys; match = re.fullmatch(r"(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)", sys.argv[1]); assert match; print(f"{match[1]}.{match[2]}")' "$schema")
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
+        echo "line=$line" >> "$GITHUB_OUTPUT"
 
     - name: Release PICO-8 schema channel
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: pico8-schema-${{ steps.candidate.outputs.schema }}
-        name: "PICO-8 Database (schema ${{ steps.candidate.outputs.schema }})"
+        tag_name: pico8-schema-${{ steps.candidate.outputs.line }}
+        name: "PICO-8 Database (schema line ${{ steps.candidate.outputs.line }})"
         files: fcdb/releases/fcdb_pico8.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -193,17 +195,19 @@ jobs:
         cd fcdbtool
         node out/cli.js release pyxelpico --data-dir ../fcdb
 
-    - name: Read PyxelPico candidate schema
+    - name: Read PyxelPico schema line
       id: candidate
       run: |
         schema=$(unzip -p fcdb/releases/fcdb_pyxelpico.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
+        line=$(python3 -c 'import re, sys; match = re.fullmatch(r"(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)", sys.argv[1]); assert match; print(f"{match[1]}.{match[2]}")' "$schema")
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
+        echo "line=$line" >> "$GITHUB_OUTPUT"
 
     - name: Release PyxelPico schema channel
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: pyxelpico-schema-${{ steps.candidate.outputs.schema }}
-        name: "PyxelPico Database (schema ${{ steps.candidate.outputs.schema }})"
+        tag_name: pyxelpico-schema-${{ steps.candidate.outputs.line }}
+        name: "PyxelPico Database (schema line ${{ steps.candidate.outputs.line }})"
         files: |
           fcdb/releases/fcdb_pyxelpico.zip
           fcdb/releases/fcdb_runtime_pyxelpico_web.zip
@@ -271,17 +275,19 @@ jobs:
         cd fcdbtool
         node out/cli.js release pyxel --data-dir ../fcdb
 
-    - name: Read Pyxel candidate schema
+    - name: Read Pyxel schema line
       id: candidate
       run: |
         schema=$(unzip -p fcdb/releases/fcdb_pyxel.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
+        line=$(python3 -c 'import re, sys; match = re.fullmatch(r"(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)", sys.argv[1]); assert match; print(f"{match[1]}.{match[2]}")' "$schema")
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
+        echo "line=$line" >> "$GITHUB_OUTPUT"
 
     - name: Release Pyxel schema channel
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: pyxel-schema-${{ steps.candidate.outputs.schema }}
-        name: "Pyxel Database (schema ${{ steps.candidate.outputs.schema }})"
+        tag_name: pyxel-schema-${{ steps.candidate.outputs.line }}
+        name: "Pyxel Database (schema line ${{ steps.candidate.outputs.line }})"
         files: fcdb/releases/fcdb_pyxel.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
