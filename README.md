@@ -8,9 +8,9 @@ decide product playability. Each platform is built independently.
 
 | Platform | Download | Contents |
 |----------|----------|----------|
-| PICO-8 | [fcdb_pico8.zip](https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip) | Game metadata + thumbnails + permitted non-BBS carts/source artifacts |
-| Pyxel | [fcdb_pyxel.zip](https://github.com/hp7hao/fcdb/releases/download/pyxel-latest/fcdb_pyxel.zip) | Game metadata + GIF thumbnails |
-| PyxelPico | [fcdb_pyxelpico.zip](https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_pyxelpico.zip) + [runtime](https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_runtime_pyxelpico_web.zip) | Game metadata + PyxelPico zip carts + optional web runtime |
+| PICO-8 | [fcdb_pico8.zip](https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip) | Game metadata plus record-declared non-BBS carts, editable sources, and thumbnails |
+| Pyxel | [fcdb_pyxel.zip](https://github.com/hp7hao/fcdb/releases/download/pyxel-latest/fcdb_pyxel.zip) | Game metadata with remote GIF preview URLs |
+| PyxelPico | [fcdb_pyxelpico.zip](https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_pyxelpico.zip) + [runtime](https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_runtime_pyxelpico_web.zip) | Game metadata plus PyxelPico cart ZIPs and optional web runtime |
 
 Each ZIP is updated independently — downloading one platform won't pull changes from another.
 
@@ -28,14 +28,18 @@ schema version they declare under their own project authority. Schema `0.x`
 minor changes are breaking, so `0.5.0` to `0.6.0` requires an intentional
 consumer migration rather than feature detection.
 
-A breaking schema is first published as a revision-addressed GitHub prerelease candidate. Every
-consumer runs its own full FCDB package suite against that candidate and changes
-its own supported-version declaration only when the suite passes. FCDB does not
+A breaking schema is first built as a local revision-addressed candidate and
+remains unpublished during qualification. Every consumer runs its own full FCDB
+package suite against that candidate and changes its supported-version
+declaration only when the suite passes. FCDB does not
 keep a central consumer-readiness registry. Stable `*-latest` channels move only
 after explicit release-owner review of consumer-owned evidence; each stable
 package is also published at `<platform>-schema-<schema_version>` for consumers
 that pin an exact contract. Before a breaking cutover, the prior `*-latest`
-package is preserved under its prior schema-pinned channel.
+package is preserved under its prior schema-pinned channel, or under
+`<platform>-unversioned` when it predates `schema_version`. Old
+`version: "1.0"` values are package metadata and are never treated as schema
+versions.
 
 The authoritative lifecycle and test requirements are in
 `docs/specs/fcdb_database_contract_spec.md` Section 9.
@@ -50,12 +54,12 @@ fcdb_{platform}.zip
 ├── lists/                # Curated + auto-generated game lists
 │   ├── {name}.json       # List with { meta, games[] }
 │   └── {name}.{locale}.json # List meta translations, e.g. celeste.zh-CN.json
-├── carts/                # Non-BBS cartridge files
+├── carts/                # Record-declared cartridge files
 │   └── {source}/         # e.g. pico8pixelbomb/, pyxelpico/
-├── sources/              # Optional editable source artifacts
+├── sources/              # Record-declared editable source artifacts
 │   └── {source}/         # e.g. .p8mod files for Pico8IDE
-└── thumbs/               # Thumbnail images
-    └── {source}/          # e.g. bbs/, pico8pixelbomb/, examples/
+└── thumbs/               # Record-declared thumbnail images
+    └── {source}/         # e.g. pico8pixelbomb/, community/
 ```
 
 ## Database Schema
@@ -149,40 +153,43 @@ download URL to check for updates without re-downloading the full ZIP.
 
 ```
 fcdb/
-├── sources/{platform}/              # Raw scraped metadata
-│   ├── {source}.json                # Game data (single-dot basename)
-│   └── {source}.{locale}.json       # Game-level translations, e.g. source.zh-CN.json
 ├── platforms/{platform}/
-│   ├── carts/{source}/              # Game cartridges
-│   └── thumbs/{source}/             # Thumbnail images
-├── curated/{platform}/
-│   ├── overrides.json               # Manual metadata overrides
-│   └── lists/                       # Curated game lists
-│       ├── {name}.json              # List definition (IDs, filters, or inline games)
-│       └── {name}.{locale}.json     # List meta translations, e.g. celeste.zh-CN.json
-├── dist/{platform}/                 # Built output
-│   ├── db.json                      # Master database
-│   ├── db.{locale}.json             # Canonical-key game translation overlays
-│   └── lists/                       # Curated + auto-generated lists
-├── releases/                        # Packaged ZIPs
-└── build/                           # Temp build artifacts (gitignored)
+│   ├── metadata/
+│   │   ├── sources/                 # Records, locale companions, .p8mod mappings
+│   │   └── collections/             # Lists and flat locale companions
+│   └── artifacts/                   # Retained source and release artifacts
+├── dist/{platform}/                 # Generated db and list projections
+├── releases/                        # Generated ZIPs
+└── build/{platform}/                # Ignored transient fetch/build data
 ```
 
 ### Translation (i18n)
 
 Two layers of companion files:
 
-1. **Game-level**: `sources/{platform}/{source}.{locale}.json` — keyed by
-   canonical FCDB key, merged into `dist/db.{locale}.json` at build time
-2. **List-level**: `curated/{platform}/lists/{name}.{locale}.json` — `meta`
-   overlays copied to `dist/lists/` at build time
+1. **Game-level**:
+   `platforms/{platform}/metadata/sources/{source}.{locale}.json` — keyed by
+   canonical FCDB key and merged into `dist/{platform}/db.{locale}.json`
+2. **List-level**:
+   `platforms/{platform}/metadata/collections/{name}.{locale}.json` — `meta`
+   overlays copied to `dist/{platform}/lists/`
 
 Locale filenames use BCP-47 casing such as `zh-CN`, `en-US`, and `ja-JP`.
 Missing localized fields fall back to base `db.json` fields.
 
+`{source}.p8mod.json` is reserved for the P8Mod artifact mapping used by sources
+such as `pico8pixelbomb`; it is not a locale companion. Its local input paths
+remain build-only and do not enter `db.json` or release manifests.
+
 ### Auto-generated Lists
 
-Sources without a hand-curated list in `curated/{platform}/lists/` get an auto-generated list view at build time. BBS sources are excluded (too large for a single list).
+Sources without a hand-curated list in
+`platforms/{platform}/metadata/collections/` get an auto-generated list view at
+build time. BBS sources are excluded because the complete BBS list is too large.
+
+`artifacts/` is storage, not release authority. It may retain source-faithful
+files such as the licensed PICO-8 BBS carts and thumbnails. Only paths declared
+by records, plus declared runtime families, enter release ZIPs.
 
 ## Maintenance
 
@@ -209,10 +216,11 @@ node out/cli.js build pyxelpico
 node out/cli.js pack pyxelpico
 ```
 
-Commit `sources/pyxelpico/pyxelpico_release.json`,
-`platforms/pyxelpico/carts/pyxelpico/*.zip`, and
-`platforms/pyxelpico/runtimes/pyxelpico/web/` after refreshing PyxelPico games. The
-`fetch pyxelpico pyxelpico` command creates those zip carts from a local
+Commit `platforms/pyxelpico/metadata/sources/pyxelpico.json`,
+`platforms/pyxelpico/artifacts/carts/pyxelpico/*.zip`, and
+`platforms/pyxelpico/artifacts/runtimes/pyxelpico/web/` after refreshing
+PyxelPico games. The `fetch pyxelpico pyxelpico` command creates those cart ZIPs
+from a local
 `../pyxelpico-games` checkout and copies the shared web runtime from a local
 `../pyxelpico` checkout.
 

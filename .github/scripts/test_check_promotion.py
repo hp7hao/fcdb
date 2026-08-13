@@ -18,39 +18,39 @@ class CheckPromotionTests(unittest.TestCase):
     def test_allows_current_stable_schema(self) -> None:
         result = self.run_gate(
             "--platform", "pico8",
-            "--candidate-schema", "0.4.0",
-            "--stable-contract", "0.4.0",
+            "--candidate-schema", "0.5.0",
+            "--latest-schema", "0.5.0",
         )
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("Stable promotion allowed", result.stdout)
 
-    def test_blocks_breaking_candidate_from_legacy_channel(self) -> None:
+    def test_blocks_candidate_from_unversioned_latest(self) -> None:
         result = self.run_gate(
             "--platform", "pico8",
             "--candidate-schema", "0.5.0",
-            "--stable-contract", "legacy-1.0",
+            "--latest-schema", "unversioned",
         )
         self.assertEqual(result.returncode, 1)
         self.assertIn("each downstream consumer's own full FCDB package suite", result.stderr)
         self.assertIn("release owner authorizes cutover", result.stderr)
-        self.assertIn("checked-in stable schema version", result.stderr)
+        self.assertIn("checked-in latest schema", result.stderr)
 
-    def test_allows_breaking_candidate_without_stable_promotion(self) -> None:
+    def test_allows_candidate_without_latest_promotion(self) -> None:
         result = self.run_gate(
             "--platform", "pyxel",
             "--candidate-schema", "0.5.0",
-            "--stable-contract", "legacy-1.0",
+            "--latest-schema", "unversioned",
             "--candidate-only",
         )
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn("Candidate-only publication allowed", result.stdout)
-        self.assertIn("pyxel-latest remains contract legacy-1.0", result.stdout)
+        self.assertIn("Candidate validation allowed without publication", result.stdout)
+        self.assertIn("pyxel-latest remains unversioned", result.stdout)
 
     def test_rejects_non_semver_candidate_schema(self) -> None:
         result = self.run_gate(
             "--platform", "pyxelpico",
             "--candidate-schema", "latest",
-            "--stable-contract", "legacy-1.0",
+            "--latest-schema", "unversioned",
         )
         self.assertEqual(result.returncode, 2)
         self.assertIn("Semantic Versioning", result.stderr)

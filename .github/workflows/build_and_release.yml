@@ -2,7 +2,7 @@ name: Build and Release FCDB
 
 env:
   FCDBTOOL_REVISION: ${{ vars.FCDBTOOL_REVISION }}
-  FCDB_PROMOTION_CONTRACT: 'legacy-1.0'
+  FCDB_LATEST_SCHEMA: 'unversioned'
 
 on:
   push:
@@ -62,13 +62,13 @@ jobs:
         PYXEL=false
         PYXELPICO=false
 
-        if echo "$CHANGED" | grep -qE "^(sources/pico8|platforms/pico8|curated/pico8|i18n/.*/pico8)"; then
+        if echo "$CHANGED" | grep -qE "^(platforms/pico8)"; then
           PICO8=true
         fi
-        if echo "$CHANGED" | grep -qE "^(sources/pyxel|platforms/pyxel|curated/pyxel|i18n/.*/pyxel)"; then
+        if echo "$CHANGED" | grep -qE "^(platforms/pyxel)"; then
           PYXEL=true
         fi
-        if echo "$CHANGED" | grep -qE "^(sources/pyxelpico|platforms/pyxelpico|curated/pyxelpico|i18n/.*/pyxelpico)"; then
+        if echo "$CHANGED" | grep -qE "^(platforms/pyxelpico)"; then
           PYXELPICO=true
         fi
 
@@ -132,46 +132,25 @@ jobs:
         schema=$(unzip -p fcdb/releases/fcdb_pico8.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
 
-    - name: Upload PICO-8 schema candidate
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
-      uses: actions/upload-artifact@v4
-      with:
-        name: fcdb-pico8-schema-${{ steps.candidate.outputs.schema }}-${{ github.sha }}
-        path: fcdb/releases/fcdb_pico8.zip
-        if-no-files-found: error
-        retention-days: 30
-
-    - name: Publish PICO-8 schema candidate prerelease
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: pico8-schema-${{ steps.candidate.outputs.schema }}-candidate-${{ github.sha }}
-        name: "PICO-8 Database Candidate (schema ${{ steps.candidate.outputs.schema }})"
-        files: fcdb/releases/fcdb_pico8.zip
-        prerelease: true
-        make_latest: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Validate PICO-8 candidate-only publication
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema != env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
           --platform pico8 \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --stable-contract "$FCDB_PROMOTION_CONTRACT" \
+          --latest-schema "$FCDB_LATEST_SCHEMA" \
           --candidate-only
 
     - name: Guard PICO-8 stable promotion
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
           --platform pico8 \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --stable-contract "$FCDB_PROMOTION_CONTRACT"
+          --latest-schema "$FCDB_LATEST_SCHEMA"
 
-    - name: Preserve previous PICO-8 stable contract
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+    - name: Preserve displaced PICO-8 latest package
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
@@ -182,7 +161,7 @@ jobs:
           --repository "${{ github.repository }}"
 
     - name: Release PICO-8 schema channel
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pico8-schema-${{ steps.candidate.outputs.schema }}
@@ -193,7 +172,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Release PICO-8
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pico8-latest
@@ -258,50 +237,25 @@ jobs:
         schema=$(unzip -p fcdb/releases/fcdb_pyxelpico.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
 
-    - name: Upload PyxelPico schema candidate
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
-      uses: actions/upload-artifact@v4
-      with:
-        name: fcdb-pyxelpico-schema-${{ steps.candidate.outputs.schema }}-${{ github.sha }}
-        path: |
-          fcdb/releases/fcdb_pyxelpico.zip
-          fcdb/releases/fcdb_runtime_pyxelpico_web.zip
-        if-no-files-found: error
-        retention-days: 30
-
-    - name: Publish PyxelPico schema candidate prerelease
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: pyxelpico-schema-${{ steps.candidate.outputs.schema }}-candidate-${{ github.sha }}
-        name: "PyxelPico Database Candidate (schema ${{ steps.candidate.outputs.schema }})"
-        files: |
-          fcdb/releases/fcdb_pyxelpico.zip
-          fcdb/releases/fcdb_runtime_pyxelpico_web.zip
-        prerelease: true
-        make_latest: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Validate PyxelPico candidate-only publication
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema != env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
           --platform pyxelpico \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --stable-contract "$FCDB_PROMOTION_CONTRACT" \
+          --latest-schema "$FCDB_LATEST_SCHEMA" \
           --candidate-only
 
     - name: Guard PyxelPico stable promotion
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
           --platform pyxelpico \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --stable-contract "$FCDB_PROMOTION_CONTRACT"
+          --latest-schema "$FCDB_LATEST_SCHEMA"
 
-    - name: Preserve previous PyxelPico stable contract
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+    - name: Preserve displaced PyxelPico latest package
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
@@ -313,7 +267,7 @@ jobs:
           --repository "${{ github.repository }}"
 
     - name: Release PyxelPico schema channel
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pyxelpico-schema-${{ steps.candidate.outputs.schema }}
@@ -326,7 +280,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Release PyxelPico
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pyxelpico-latest
@@ -394,46 +348,25 @@ jobs:
         schema=$(unzip -p fcdb/releases/fcdb_pyxel.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
 
-    - name: Upload Pyxel schema candidate
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
-      uses: actions/upload-artifact@v4
-      with:
-        name: fcdb-pyxel-schema-${{ steps.candidate.outputs.schema }}-${{ github.sha }}
-        path: fcdb/releases/fcdb_pyxel.zip
-        if-no-files-found: error
-        retention-days: 30
-
-    - name: Publish Pyxel schema candidate prerelease
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: pyxel-schema-${{ steps.candidate.outputs.schema }}-candidate-${{ github.sha }}
-        name: "Pyxel Database Candidate (schema ${{ steps.candidate.outputs.schema }})"
-        files: fcdb/releases/fcdb_pyxel.zip
-        prerelease: true
-        make_latest: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Validate Pyxel candidate-only publication
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema != env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
           --platform pyxel \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --stable-contract "$FCDB_PROMOTION_CONTRACT" \
+          --latest-schema "$FCDB_LATEST_SCHEMA" \
           --candidate-only
 
     - name: Guard Pyxel stable promotion
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
           --platform pyxel \
           --candidate-schema "${{ steps.candidate.outputs.schema }}" \
-          --stable-contract "$FCDB_PROMOTION_CONTRACT"
+          --latest-schema "$FCDB_LATEST_SCHEMA"
 
-    - name: Preserve previous Pyxel stable contract
-      if: steps.candidate.outputs.schema != env.FCDB_PROMOTION_CONTRACT
+    - name: Preserve displaced Pyxel latest package
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
@@ -444,7 +377,7 @@ jobs:
           --repository "${{ github.repository }}"
 
     - name: Release Pyxel schema channel
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pyxel-schema-${{ steps.candidate.outputs.schema }}
@@ -455,7 +388,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Release Pyxel
-      if: steps.candidate.outputs.schema == env.FCDB_PROMOTION_CONTRACT
+      if: steps.candidate.outputs.schema == env.FCDB_LATEST_SCHEMA
       uses: softprops/action-gh-release@v1
       with:
         tag_name: pyxel-latest

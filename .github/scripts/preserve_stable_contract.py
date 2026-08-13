@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Preserve a displaced FCDB latest release under a contract-pinned tag."""
+"""Preserve a displaced FCDB latest release under a schema or unversioned tag."""
 
 from __future__ import annotations
 
@@ -15,14 +15,11 @@ from typing import Any
 SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 
 
-def contract_identity(manifest: dict[str, Any]) -> tuple[str, str]:
+def schema_identity(manifest: dict[str, Any]) -> str:
     schema = manifest.get("schema_version")
     if isinstance(schema, str) and SAFE_ID.fullmatch(schema):
-        return schema, "schema"
-    legacy = manifest.get("version")
-    if isinstance(legacy, str) and SAFE_ID.fullmatch(legacy):
-        return f"legacy-{legacy}", "contract"
-    raise ValueError("stable version.json has neither schema_version nor a safe legacy version")
+        return schema
+    return "unversioned"
 
 
 def run(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
@@ -61,24 +58,24 @@ def main() -> int:
             )
         with zipfile.ZipFile(root / expected_main) as archive:
             manifest = json.loads(archive.read("version.json"))
-        contract, channel_kind = contract_identity(manifest)
-        if contract == args.candidate_schema:
-            print(f"{args.platform}-latest already uses schema {contract}; no preservation needed")
+        schema = schema_identity(manifest)
+        if schema == args.candidate_schema:
+            print(f"{args.platform}-latest already uses schema {schema}; no preservation needed")
             return 0
 
-        tag = f"{args.platform}-{channel_kind}-{contract}"
+        tag = f"{args.platform}-schema-{schema}" if schema != "unversioned" else f"{args.platform}-unversioned"
         if run("gh", "release", "view", tag, "--repo", args.repository, check=False).returncode == 0:
-            print(f"Previous stable contract already preserved: {tag}")
+            print(f"Previous latest package already preserved: {tag}")
             return 0
 
         files = [str(root / asset) for asset in args.asset]
         run(
             "gh", "release", "create", tag, *files,
             "--repo", args.repository,
-            "--title", f"{args.platform} database ({contract})",
+            "--title", f"{args.platform} database ({schema})",
             "--notes", f"Preserved {args.platform}-latest before promotion to schema {args.candidate_schema}.",
         )
-        print(f"Preserved displaced stable contract: {tag}")
+        print(f"Preserved displaced latest package: {tag}")
         return 0
 
 

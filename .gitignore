@@ -1,34 +1,12 @@
-# Temporary build artifacts and cache
+# Generated build and release outputs
 build/
 dist/
 releases/
 
-# Large binaries / Assets
-/platforms/*
-# Track pico8 platform including BBS carts and thumbs
-!/platforms/pico8/
-# Track pyxel thumbs only
-!/platforms/pyxel/
-/platforms/pyxel/*
-!/platforms/pyxel/thumbs/
-
-# Track PyxelPico single-file cart zips
-!/platforms/pyxelpico/
-/platforms/pyxelpico/*
-!/platforms/pyxelpico/carts/
-/platforms/pyxelpico/carts/*
-!/platforms/pyxelpico/carts/pyxelpico/
-!/platforms/pyxelpico/runtimes/
-/platforms/pyxelpico/runtimes/*
-!/platforms/pyxelpico/runtimes/pyxelpico/
-/platforms/pyxelpico/runtimes/pyxelpico/*
-!/platforms/pyxelpico/runtimes/pyxelpico/web/
-
-# Track TIC-80 community carts and covers
-!/platforms/tic80/
-/platforms/tic80/*
-!/platforms/tic80/carts/
-!/platforms/tic80/thumbs/
+# Transitional layout tombstone: old phase-first roots must not return.
+/sources/
+/curated/
+/config/source-assets/
 
 # System files
 .DS_Store
@@ -40,7 +18,7 @@ Thumbs.db
 .idea/
 *.swp
 
-# Node modules (if any)
+# Node modules and logs
 node_modules/
 npm-debug.log
 

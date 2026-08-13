@@ -408,8 +408,9 @@ A breaking schema change MUST:
 1. update this owning specification before producer implementation;
 2. update FCDBTool types, strict schemas, validators, migrations, and fixtures;
 3. preserve one schema shape per package and reject mixed shapes;
-4. publish a durable revision-addressed candidate prerelease and migration
-   notes without replacing a stable latest channel; and
+4. build a local revision-addressed candidate and migration notes, keep the
+   candidate unpublished during qualification, and never replace a stable latest
+   channel before authorization; and
 5. preserve the previous stable package under its schema-pinned channel before
    moving `*-latest`.
 
@@ -448,16 +449,15 @@ same change.
 
 A stable `*-latest` channel MAY move to a breaking schema only after the user or
 release owner reviews the required downstream repositories' own evidence and
-explicitly authorizes the cutover by changing the checked-in stable schema
-version in the release workflow. Candidate packages use
-`<platform>-schema-<schema_version>-candidate-<source_revision>` prerelease tags.
-Stable packages are also published under the
-schema-pinned channel `<platform>-schema-<schema_version>` so consumers can pin
-a declared contract independently of `*-latest`; content may advance on that
-channel only while its schema remains exact. FCDB CI MUST otherwise
-publish only a candidate artifact or fail before stable promotion. Unknown
-external consumers remain protected by exact manifest rejection, immutable
-schema/candidate release artifacts, release notes that identify the schema, and
+explicitly authorizes the cutover by changing the checked-in `*-latest` schema
+in the release workflow. Candidate packages remain local qualification inputs.
+Stable packages are published under the schema-pinned channel
+`<platform>-schema-<schema_version>` so consumers can pin a declared contract
+independently of `*-latest`; content may advance on that channel only while its
+schema remains exact. FCDB CI MUST otherwise validate without publishing and
+fail before stable promotion. Unknown external consumers remain protected by
+exact manifest rejection, immutable schema-pinned releases, release notes that
+identify the schema, and
 retention of the previous stable package under its schema-pinned channel during
 the migration window.
 
@@ -477,8 +477,10 @@ Requirements:
 - **VER-005**: Stable-channel promotion of a breaking schema requires explicit
   cutover authorization after review of consumer-owned evidence; producer
   success alone MUST NOT authorize promotion. During cutover CI MUST inspect
-  each displaced `*-latest` manifest and preserve its actual schema or legacy
-  contract identity before replacement.
+  each displaced `*-latest` manifest and preserve its actual schema identity, or
+  label it `unversioned` when no `schema_version` exists, before replacement.
+The old package-level `version` field MUST NOT be interpreted as a schema
+version.
 - **VER-006**: Each promoted stable package MUST also be available from its
   platform's schema-pinned channel. Before a breaking cutover, the prior
   `*-latest` package MUST be preserved under its prior schema-pinned channel.
@@ -632,13 +634,37 @@ Known direct package consumers keep their supported-version declarations and
 compatibility suites under their own authority. FCDB references consumer
 contracts for discovery but MUST NOT restate their readiness or support state.
 
-## 13. Agent Contract
+## 13. Source Repository Layout
+
+FCDB repository inputs are platform-first:
+
+```text
+platforms/<platform>/
+├── metadata/
+│   ├── sources/       # <source>.json, <source>.<locale>.json, <source>.p8mod.json
+│   └── collections/   # <list>.json, <list>.<locale>.json, optional overrides.json
+└── artifacts/         # record-referenced carts/sources/thumbs and declared runtimes
+```
+
+`build/`, `dist/`, and `releases/` are ignored generated outputs. Transient
+fetch pages, downloaded previews, and retry state belong under `build/`; FCDB
+MUST NOT keep repository-local `cache/` or `corpus/` classes. `artifacts/`
+contains source-faithful files retained by an explicit producer policy, files
+referenced by package metadata, and declared runtime families. Artifact location
+does not imply ZIP membership; records and runtime declarations remain the
+release-membership authority. The repository `artifacts/` prefix never appears
+in public ZIP member paths.
+
+Source and collection identifiers MUST NOT contain `.`. The final dot-delimited
+filename segment is reserved for canonical BCP-47 locale companions such as
+`pico8pixelbomb.zh-CN.json` and `celeste.zh-CN.json`.
+
+## 14. Agent Contract
 
 Governed files:
 
 - `projects/fcdb/README.md`
-- `projects/fcdb/sources/**`
-- `projects/fcdb/curated/**`
+- `projects/fcdb/platforms/**`
 - `projects/fcdb/dist/**`
 - `projects/fcdb/releases/**`
 - `projects/fcdb/docs/specs/**`
@@ -691,7 +717,7 @@ Direct consumer authorities include
 `projects/pyxelpico/docs/specs/pyxelpico_spec.md`, and
 `projects/pico8ide/AGENTS.md`.
 
-## 14. References
+## 15. References
 
 - FCDB README: `projects/fcdb/README.md`
 - FCDBTool guidance: `projects/fcdbtool/AGENTS.md`
