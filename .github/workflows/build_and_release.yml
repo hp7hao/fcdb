@@ -132,7 +132,7 @@ jobs:
         schema=$(unzip -p fcdb/releases/fcdb_pico8.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
 
-    - name: Validate PICO-8 candidate-only publication
+    - name: Validate PICO-8 candidate without publication
       if: steps.candidate.outputs.schema != env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
@@ -237,7 +237,7 @@ jobs:
         schema=$(unzip -p fcdb/releases/fcdb_pyxelpico.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
 
-    - name: Validate PyxelPico candidate-only publication
+    - name: Validate PyxelPico candidate without publication
       if: steps.candidate.outputs.schema != env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
@@ -348,7 +348,7 @@ jobs:
         schema=$(unzip -p fcdb/releases/fcdb_pyxel.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
         echo "schema=$schema" >> "$GITHUB_OUTPUT"
 
-    - name: Validate Pyxel candidate-only publication
+    - name: Validate Pyxel candidate without publication
       if: steps.candidate.outputs.schema != env.FCDB_LATEST_SCHEMA
       run: |
         python3 fcdb/.github/scripts/check_promotion.py \
