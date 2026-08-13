@@ -145,7 +145,6 @@ jobs:
         tag_name: pico8-schema-${{ steps.candidate.outputs.schema }}
         name: "PICO-8 Database (schema ${{ steps.candidate.outputs.schema }})"
         files: fcdb/releases/fcdb_pico8.zip
-        make_latest: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -161,7 +160,6 @@ jobs:
           **Download:** `https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip`
 
           Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
-        make_latest: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -233,7 +231,6 @@ jobs:
         files: |
           fcdb/releases/fcdb_pyxelpico.zip
           fcdb/releases/fcdb_runtime_pyxelpico_web.zip
-        make_latest: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -252,7 +249,6 @@ jobs:
           **Web Runtime:** `https://github.com/hp7hao/fcdb/releases/download/pyxelpico-latest/fcdb_runtime_pyxelpico_web.zip`
 
           Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
-        make_latest: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -321,7 +317,6 @@ jobs:
         tag_name: pyxel-schema-${{ steps.candidate.outputs.schema }}
         name: "Pyxel Database (schema ${{ steps.candidate.outputs.schema }})"
         files: fcdb/releases/fcdb_pyxel.zip
-        make_latest: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -337,6 +332,5 @@ jobs:
           **Download:** `https://github.com/hp7hao/fcdb/releases/download/pyxel-latest/fcdb_pyxel.zip`
 
           Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
-        make_latest: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
