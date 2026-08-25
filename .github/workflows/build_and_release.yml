@@ -21,6 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       pico8: ${{ steps.check.outputs.pico8 }}
+      tic80: ${{ steps.check.outputs.tic80 }}
       pyxel: ${{ steps.check.outputs.pyxel }}
       pyxelpico: ${{ steps.check.outputs.pyxelpico }}
     steps:
@@ -36,13 +37,16 @@ jobs:
           PLATFORMS="${{ github.event.inputs.platforms || 'all' }}"
           if [ "$PLATFORMS" = "all" ]; then
             echo "pico8=true" >> $GITHUB_OUTPUT
+            echo "tic80=true" >> $GITHUB_OUTPUT
             echo "pyxel=true" >> $GITHUB_OUTPUT
             echo "pyxelpico=true" >> $GITHUB_OUTPUT
           else
             echo "pico8=false" >> $GITHUB_OUTPUT
+            echo "tic80=false" >> $GITHUB_OUTPUT
             echo "pyxel=false" >> $GITHUB_OUTPUT
             echo "pyxelpico=false" >> $GITHUB_OUTPUT
             if echo "$PLATFORMS" | grep -q "pico8"; then echo "pico8=true" >> $GITHUB_OUTPUT; fi
+            if echo "$PLATFORMS" | grep -q "tic80"; then echo "tic80=true" >> $GITHUB_OUTPUT; fi
             if echo "$PLATFORMS" | grep -q "pyxel"; then echo "pyxel=true" >> $GITHUB_OUTPUT; fi
             if echo "$PLATFORMS" | grep -q "pyxelpico"; then echo "pyxelpico=true" >> $GITHUB_OUTPUT; fi
           fi
@@ -53,11 +57,15 @@ jobs:
         CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
 
         PICO8=false
+        TIC80=false
         PYXEL=false
         PYXELPICO=false
 
         if echo "$CHANGED" | grep -qE "^(platforms/pico8)"; then
           PICO8=true
+        fi
+        if echo "$CHANGED" | grep -qE "^(platforms/tic80)"; then
+          TIC80=true
         fi
         if echo "$CHANGED" | grep -qE "^(platforms/pyxel)"; then
           PYXEL=true
@@ -69,11 +77,13 @@ jobs:
         # If workflow file changed, rebuild all
         if echo "$CHANGED" | grep -q "build_and_release.yml"; then
           PICO8=true
+          TIC80=true
           PYXEL=true
           PYXELPICO=true
         fi
 
         echo "pico8=$PICO8" >> $GITHUB_OUTPUT
+        echo "tic80=$TIC80" >> $GITHUB_OUTPUT
         echo "pyxel=$PYXEL" >> $GITHUB_OUTPUT
         echo "pyxelpico=$PYXELPICO" >> $GITHUB_OUTPUT
 
@@ -147,6 +157,81 @@ jobs:
           PICO-8 game database from Lexaloffle BBS.
 
           **Download:** `https://github.com/hp7hao/fcdb/releases/download/pico8-latest/fcdb_pico8.zip`
+
+          Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Build and release TIC-80
+  release-tic80:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.tic80 == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout FCDB Data
+      uses: actions/checkout@v3
+      with:
+        path: fcdb
+
+    - name: Checkout FCDB Tool
+      env:
+        REVISION: ${{ env.FCDBTOOL_REVISION }}
+      run: test "${#REVISION}" -eq 40 && ! printf '%s' "$REVISION" | grep -q '[^0-9a-fA-F]'
+
+    - name: Checkout pinned FCDB Tool
+      uses: actions/checkout@v3
+      with:
+        repository: hp7hao/fcdbtool
+        ref: ${{ env.FCDBTOOL_REVISION }}
+        path: fcdbtool
+        token: ${{ secrets.FCDBTOOL }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install & Build Tool
+      run: cd fcdbtool && npm install && npm run build
+
+    - name: Validate & Package TIC-80
+      env:
+        FCDB_SOURCE_REVISION: ${{ github.sha }}
+        FCDB_PRODUCER_REVISION: ${{ env.FCDBTOOL_REVISION }}
+      run: |
+        cd fcdbtool
+        node out/cli.js release tic80 --data-dir ../fcdb
+
+    - name: Read TIC-80 schema line
+      id: candidate
+      run: |
+        schema=$(unzip -p fcdb/releases/fcdb_tic80.zip version.json | python3 -c 'import json, sys; print(json.load(sys.stdin)["schema_version"])')
+        line=$(python3 -c 'import re, sys; match = re.fullmatch(r"(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)", sys.argv[1]); assert match; print(f"{match[1]}.{match[2]}")' "$schema")
+        echo "schema=$schema" >> "$GITHUB_OUTPUT"
+        echo "line=$line" >> "$GITHUB_OUTPUT"
+
+    - name: Release TIC-80 schema channel
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: tic80-schema-${{ steps.candidate.outputs.line }}
+        name: "TIC-80 Database (schema line ${{ steps.candidate.outputs.line }})"
+        files: fcdb/releases/fcdb_tic80.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Release TIC-80
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: tic80-latest
+        name: "TIC-80 Database"
+        files: fcdb/releases/fcdb_tic80.zip
+        body: |
+          TIC-80 game database from tic80.com.
+
+          **Download:** `https://github.com/hp7hao/fcdb/releases/download/tic80-latest/fcdb_tic80.zip`
 
           Updated: ${{ github.event.head_commit.timestamp || github.event.repository.updated_at }}
       env:

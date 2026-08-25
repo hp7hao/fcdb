@@ -1,6 +1,6 @@
 # FCDB Database Contract Specification
 
-**Version**: 0.5.4
+**Version**: 0.5.5
 **Status**: Active
 **Level**: feature
 **Owner**: fcdb
@@ -529,6 +529,10 @@ Requirements:
   version it supports before replacing a working package or cache.
 - **PKG-007**: Schema `0.x` minor versions are breaking. Consumers MUST NOT infer
   compatibility from field presence.
+- **PKG-008**: The release workflow MUST detect and publish every platform with
+  committed release inputs, including TIC-80, independently. A change to one
+  platform MUST NOT require rebuilding or delaying another platform, and manual
+  `all` publication MUST include every supported platform.
 
 ## 10. Schema 0.5 Migration And Compatibility
 
