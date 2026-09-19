@@ -24,8 +24,9 @@ FCDB separates contract, content, and build provenance:
   FCDBTool Git inputs.
 
 Consumers must read `version.json` before `db.json` and accept only a supported
-major.minor schema line. Patch versions within a line are backward compatible:
-`0.5.0`, `0.5.1`, and later `0.5.x` packages share the `0.5` contract. A
+major.minor schema line. Current packages declare `schema_version` `0.5.1`.
+Patch versions within a line are backward compatible: `0.5.0`, `0.5.1`, and
+later `0.5.x` packages share the `0.5` contract. A
 breaking change bumps the minor line, so `0.5.x` to `0.6.0` requires an
 intentional consumer migration.
 

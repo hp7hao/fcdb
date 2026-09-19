@@ -1,11 +1,11 @@
 # FCDB Database Contract Specification
 
-**Version**: 0.5.5
+**Version**: 0.5.7
 **Status**: Active
 **Level**: feature
 **Owner**: fcdb
 **Parent**: docs/specs/GLOBAL_SPEC.md
-**Last Reviewed**: 2026-08-13
+**Last Reviewed**: 2026-09-19
 
 ## 1. Purpose
 
@@ -19,8 +19,9 @@ edition, release, or person. Downstream products such as xwgamedb, Pico8Go,
 ManXiangSu, and Pico8IDE may add product-facing models, but they must treat this
 contract as the meaning of FCDB release artifacts.
 
-This specification defines package schema `0.5.0`. The specification document
-version and package `schema_version` are separate: documentation-only
+This specification defines package schema `0.5.1` in compatibility line `0.5`.
+Schema `0.5.1` is a backward-compatible patch of `0.5.0`. The specification
+document version and package `schema_version` are separate: documentation-only
 clarifications may change the former without changing the latter. Every
 consumer owns its supported-version declaration, migration, and compatibility
 evidence. Before FCDB reaches schema `1.0.0`, independently valid platform
@@ -533,6 +534,12 @@ Requirements:
   committed release inputs, including TIC-80, independently. A change to one
   platform MUST NOT require rebuilding or delaying another platform, and manual
   `all` publication MUST include every supported platform.
+- **PKG-009**: Producer publication policy MAY omit repository source records
+  and curated lists from a platform package without deleting those inputs.
+  Omitted records MUST NOT appear in `db.json`, locale overlays, or as
+  declared package assets. Omitted lists MUST NOT appear as `lists/<list_id>.json`
+  or locale companions. This policy is FCDBTool-owned and MUST NOT add a field
+  to the package schema.
 
 ## 10. Schema 0.5 Migration And Compatibility
 
