@@ -4,7 +4,7 @@
 **Status**: Active
 **Level**: feature
 **Owner**: fcdb
-**Parent**: docs/specs/GLOBAL_SPEC.md
+**Parent**: none
 **Last Reviewed**: 2026-09-19
 
 ## 1. Purpose
@@ -673,12 +673,12 @@ filename segment is reserved for canonical BCP-47 locale companions such as
 
 Governed files:
 
-- `projects/fcdb/README.md`
-- `projects/fcdb/platforms/**`
-- `projects/fcdb/dist/**`
-- `projects/fcdb/releases/**`
-- `projects/fcdb/docs/specs/**`
-- FCDB package-writing logic in `projects/fcdbtool/src/**`
+- `README.md`
+- `platforms/**`
+- `dist/**`
+- `releases/**`
+- `docs/specs/**`
+- FCDB package-writing logic in the fcdbtool repository
 
 Agent invariants:
 
@@ -703,34 +703,17 @@ Agent invariants:
   migration; their readiness does not gate FCDB publication.
 - **AGENT-010**: After editing FCDB data or package-writing logic, run
   `npm run test:fcdb-contract` and `node out/cli.js release <platform>
-  --data-dir ../fcdb --check-only` from `projects/fcdbtool` for each affected
+  --data-dir <this-repository> --check-only` from the fcdbtool repository for each affected
   platform.
-- **AGENT-011**: After editing this spec or its index, run
-  `node scripts/specs/validate-specs.mjs`, `bash scripts/specs/check_specs.sh`,
-  and `git diff --check` from the monorepo root.
-- **AGENT-012**: After editing release publication, run workflow syntax
-  validation and the producer release checks from the monorepo root.
+- **AGENT-011**: After editing this spec or its index, keep the index row aligned with this file's metadata.
+- **AGENT-012**: After editing release publication, run this repository's release checks.
 - **AGENT-013**: Never claim consumer compatibility from FCDBTool tests or
   source inspection. Run the affected consumer's own complete FCDB package
   suite against a producer-generated candidate and update that consumer's
   supported-version declaration under its own authority.
 
-Parent specs: `docs/specs/GLOBAL_SPEC.md` and
-`docs/specs/spec_management_spec.md`.
-
-Direct consumer authorities include
-`projects/xwgamedb/docs/specs/fcdb_import_spec.md`,
-`projects/pico8go/docs/specs/fcdb_browser_integration_spec.md`,
-`projects/manxiangsu.web/docs/specs/game_collections_spec.md`,
-`projects/pyxelpico/docs/specs/pyxelpico_spec.md`, and
-`projects/pico8ide/AGENTS.md`.
+Parent specs: none.
 
 ## 15. References
 
-- FCDB README: `projects/fcdb/README.md`
-- FCDBTool guidance: `projects/fcdbtool/AGENTS.md`
-- xwgamedb importer: `projects/xwgamedb/docs/specs/fcdb_import_spec.md`
-- Pico8Go consumer: `projects/pico8go/docs/specs/fcdb_browser_integration_spec.md`
-- ManXiangSu consumer: `projects/manxiangsu.web/docs/specs/game_collections_spec.md`
-- PyxelPico consumer: `projects/pyxelpico/docs/specs/pyxelpico_spec.md`
-- Pico8IDE consumer guidance: `projects/pico8ide/AGENTS.md`
+- FCDB README: `README.md`
